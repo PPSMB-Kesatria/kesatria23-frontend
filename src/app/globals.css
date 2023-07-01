@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Alstoria Font */
+@font-face {
+  font-family: "Alstoria";
+  src: url("/fonts/Alstoria.ttf");
+}
+
+/* Creato Display font */
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-SemiBold.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Bold.otf");
+  font-weight: 700;
+}
+
 html {
   overflow-x: hidden !important;
 }
