@@ -2,7 +2,23 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <>
+      <navbar className="bg-green-400 w-full h-auto text-orange-100 flex items-center justify-between h-auto px-12 font-creato">
+        <a className=" ml-4 items-center flex" href="">
+          <img src="/logo.png" alt="" />
+        <span className=" font-extrabold text-lg">PPSMB KESATRIA 2023</span>
+        </a>
+        <div>
+          <ul className="items-center justify-between flex">
+            <li className=" px-8 py-6 block"><a href="">Beranda</a></li>
+            <li className="px-8 py-6 block"><a href="">Dokumentasi</a></li>
+            <li className="px-8 py-6 block"><a href="">Agenda</a></li>
+            <li className="px-8 py-6 block"><a href="">Materi</a></li>
+            <li className="px-8 py-6 block"><a href="">FAQ</a></li>
+          </ul>
+        </div>
+      </navbar>
+      <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
@@ -109,5 +125,6 @@ export default function Home() {
         </a>
       </div>
     </main>
+    </>
   )
 }
