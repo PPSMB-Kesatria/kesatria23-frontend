@@ -27,6 +27,10 @@ module.exports = {
         alstoria: "Alstoria",
         creato: "Creato Display",
       },
+      backgroundImage: {
+        "pattern-green": "url('/anyaman_green.png')",
+        "pattern-cream": "url('/anyaman_cream.png')",
+      }
     },
   },
   plugins: [],
