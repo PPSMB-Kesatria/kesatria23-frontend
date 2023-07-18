@@ -69,7 +69,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div className="relative">
+      <div className="relative lg:hidden">
         <div
           className="flex lg:hidden flex-col items-center justify-evenly aspect-square cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -102,7 +102,7 @@ export default function Navbar() {
 
         <div
           className={
-            "absolute flex flex-col items-center gap-3 duration-300 font-bold top-[calc(100%+40px)] right-0 bg-green-400/90 outline outline-neutral-100 outline-1 px-8 py-5 rounded-[9px]" +
+            "absolute lg:hidden flex flex-col items-center gap-3 duration-300 font-bold top-[calc(100%+40px)] right-0 bg-green-400/90 outline outline-neutral-100 outline-1 px-8 py-5 rounded-[9px]" +
             (isMenuOpen ? " translate-x-0" : " translate-x-[200%]")
           }
         >
