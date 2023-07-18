@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <navbar className="bg-green-400 w-full h-auto text-orange-100 flex items-center justify-between h-auto px-12 font-creato">
+    <navbar className="bg-green-400 w-full h-auto text-orange-100 flex items-center justify-between px-12 font-creato drop-shadow-2xl ">
       <a className=" ml-4 items-center flex" href="">
         <img src="/logo.png" alt="" />
         <span className=" font-extrabold text-lg">PPSMB KESATRIA 2023</span>
