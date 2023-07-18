@@ -9,7 +9,7 @@ export const PlaceholderVideoSejarah1 = () => {
             <iframe
             src="https://www.youtube.com/embed/cAfRzKW-Tyw"
             className="w-full h-full"
-            allowfullscreen />
+            allowFullScreen />
           </div>
         </div>
         <div className="absolute z-[11] w-96 flex justify-end -mt-48 ml-64">
