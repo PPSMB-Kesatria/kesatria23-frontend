@@ -52,7 +52,7 @@ export default function KesatriaMuda() {
           <SwiperCard title="Fasilitas Teknik" />
         </SwiperSlide>
         <div
-          className="z-[1] hidden lg:block absolute left-[10%] text-[80px] top-[50%] translate-y-[-50%]"
+          className="z-[1] hidden cursor-pointer unselectable lg:block absolute left-[10%] text-[80px] top-[50%] translate-y-[-50%]"
           onClick={() => {
             if (swiper.activeIndex == 0) return;
             swiper.slidePrev();
@@ -62,7 +62,7 @@ export default function KesatriaMuda() {
           <IoIosArrowBack />
         </div>
         <div
-          className="z-[1] hidden lg:block absolute right-[10%] text-[80px] top-[50%] translate-y-[-50%]"
+          className="z-[1] hidden cursor-pointer unselectable lg:block absolute right-[10%] text-[80px] top-[50%] translate-y-[-50%]"
           onClick={() => {
             if (swiper.activeIndex == 3) return;
             swiper.slideNext();
@@ -73,7 +73,7 @@ export default function KesatriaMuda() {
         </div>
       </Swiper>
 
-      <div className="hidden md:flex gap-10 xl:gap-40 mt-5 text-[18px] sm:text-[20px] lg:text-[25px]">
+      <div className="hidden md:flex gap-10 2xl:gap-40 mt-5 text-[18px] sm:text-[20px] 2xl:text-[25px]">
         <div
           className={
             "font-creato cursor-pointer flex flex-col gap-1 after:duration-300 font-bold text-neutral-100 after:bg-green-200 after:h-[4px] after:w-full " +
@@ -150,13 +150,13 @@ export default function KesatriaMuda() {
 
 function SwiperCard({ title, content, img, link }) {
   return (
-    <div className="flex flex-col 2xl:flex-row ml-[20px] !mx-auto bg-green-400 p-5 sm:px-10 sm:py-10 lg:py-12 lg:px-20 rounded-[30px] sm:rounded-[40px] gap-10 shadow-[0_0_10px_#54BB9C] w-[90%] lg:w-[900px] 2xl:w-[1200px] items-center">
-      <div className="bg-red-500 flex-shrink-0 w-full !aspect-[65.5/41] lg:w-[655px] self-center lg:h-[410px] outline outline-[11px] outline-green-200 rounded-[20px]"></div>
+    <div className="flex flex-col lg:flex-row ml-[20px] !mx-auto bg-green-400 p-5 sm:px-10 sm:py-10 2xl:py-12 2xl:px-20 rounded-[30px] sm:rounded-[40px] gap-10 shadow-[0_0_10px_#54BB9C] w-[90%] lg:w-[900px] 2xl:w-[1200px] items-center">
+      <div className="bg-red-500 flex-shrink-0 w-full sm:w-[400px] !aspect-[65.5/41] 2xl:w-[655px] self-center 2xl:h-[410px] outline outline-[11px] outline-green-200 rounded-[20px]"></div>
       <div className="flex flex-col justify-evenly gap-2 md:gap-5 h-max">
-        <h2 className="font-creato text-[25px] sm:text-[30px] lg:text-[40px] font-bold italic leading-[100%]">
+        <h2 className="font-creato text-center 2xl:text-left text-[25px] sm:text-[30px] 2xl:text-[40px] font-bold italic leading-[100%]">
           {title}
         </h2>
-        <p className="text-[16px] sm:text-[20px] lg:text-[25px] 2xl:max-w-[435px] font-normal font-creato text-justify leading-tight">
+        <p className="text-[16px] sm:text-[20px] 2xl:text-[25px] 2xl:max-w-[435px] font-normal font-creato text-justify leading-tight">
           Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
           "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
           "Gamadhira" layaknya burung merak yang identik dengan keberagaman,
@@ -165,7 +165,7 @@ function SwiperCard({ title, content, img, link }) {
         </p>
         <Link
           href="/"
-          className="block bg-neutral-100 w-fit font-bold italic text-green-400 font-creato rounded-[20px] text-[18px] sm:text-[20px] lg:text-[25px] px-7 py-3 mt-[10px]"
+          className="block bg-neutral-100 w-fit font-bold italic text-green-400 font-creato rounded-[20px] text-[18px] sm:text-[20px] 2xl:text-[25px] px-7 py-3 mt-[10px]"
         >
           Baca Modul
         </Link>
