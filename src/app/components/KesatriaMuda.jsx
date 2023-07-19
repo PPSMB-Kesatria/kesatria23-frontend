@@ -10,7 +10,7 @@ export default function KesatriaMuda() {
   const [swiper, setSwiper] = useState(null);
   const [activeSwiper, setActiveSwiper] = useState(0);
   return (
-    <section className="min-h-screen text-neutral-100 py-20 relative bg-pattern-green bg-contain bg-repeat flex gap-[35px] justify-center items-center flex-col">
+    <section className="min-h-screen text-neutral-100 py-10 md:py-20 relative bg-pattern-green bg-contain bg-repeat flex gap-[35px] justify-center items-center flex-col">
       <img
         src="/TransitionGreenBegin.png"
         alt=""
@@ -146,12 +146,12 @@ export default function KesatriaMuda() {
         </div>
       </div>
 
-      <div className="mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[100px]">
-        <div className="bg-neutral-100 max-w-[940px] p-10 pl-20 text-green-400 sm:w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
-          <h1 className="font-alstoria text-[45px] 2xl:text-[60px]">
+      <div className="mt-[50px] lg:mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[50px] md:mb-[100px]">
+        <div className="bg-neutral-100 max-w-[940px] mt-5 lg:mt-0 p-10 lg:pl-20 text-green-400 w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
+          <h1 className="font-alstoria text-[45px] 2xl:text-[60px] leading-[100%]">
             Transisi Materi
           </h1>
-          <p className="text-[18px] sm:text-[20px] 2xl:text-[25px] font-creato">
+          <p className="text-[18px] md:text-[20px] 2xl:text-[25px] font-creato text-justify">
             Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan
             kata "dhira" yang berarti kebijaksanaan, kecerdasan, dan
             keberagaman. "Gamadhira" layaknya burung merak yang identik dengan
@@ -159,8 +159,8 @@ export default function KesatriaMuda() {
             Kesatria Muda memiliki perjalanan yang indah.
           </p>
         </div>
-        <div className="p-0 sm:p-5 lg:p-20 2xl:p-10 sm:w-[90%] lg:w-1/2 max-w-[825px] flex-shrink-0">
-        <div className="aspect-[76.7/48] bg-[#54BB9C] p-[25px] rounded-[40px]">
+        <div className="p-0 sm:p-5 lg:p-10  w-[90%] lg:w-1/2 max-w-[600px] lg:max-w-[825px] flex-shrink-0">
+        <div className="aspect-[76.7/48] bg-[#54BB9C] p-[15px] md:p-[25px] rounded-[40px]">
           <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
         </div>
         </div>
