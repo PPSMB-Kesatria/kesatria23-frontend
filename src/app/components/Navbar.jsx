@@ -9,6 +9,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
+    setIsMenuOpen(false);
     setActivePage(pathname);
   }, [pathname]);
 
@@ -25,7 +26,7 @@ export default function Navbar() {
         <Link
           href="/"
           className={
-            "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+            "flex flex-col after:bg-neutral-100 after:h-[2px] after:duration-300 " +
             (activePage == "/" ? "after:w-full" : "after:w-0")
           }
         >
@@ -34,7 +35,7 @@ export default function Navbar() {
         <Link
           href="/dokumentasi"
           className={
-            "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+            "flex flex-col after:bg-neutral-100 after:h-[2px] after:duration-300 " +
             (activePage == "/dokumentasi" ? "after:w-full" : "after:w-0")
           }
         >
@@ -43,7 +44,7 @@ export default function Navbar() {
         <Link
           href="/agenda"
           className={
-            "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+            "flex flex-col after:bg-neutral-100 after:h-[2px] after:duration-300 " +
             (activePage == "/agenda" ? "after:w-full" : "after:w-0")
           }
         >
@@ -52,7 +53,7 @@ export default function Navbar() {
         <Link
           href="/materi"
           className={
-            "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+            "flex flex-col after:bg-neutral-100 after:h-[2px] after:duration-300 " +
             (activePage == "/materi" ? "after:w-full" : "after:w-0")
           }
         >
@@ -61,7 +62,7 @@ export default function Navbar() {
         <Link
           href="/faq"
           className={
-            "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+            "flex flex-col after:bg-neutral-100 after:h-[2px] after:duration-300 " +
             (activePage == "/faq" ? "after:w-full" : "after:w-0")
           }
         >
@@ -77,7 +78,7 @@ export default function Navbar() {
           <div
             className={
               "w-[25px] duration-300 h-[3px] bg-neutral-100 " +
-              (isMenuOpen ? "w-0" : "w-full")
+              (isMenuOpen ? "!w-0" : "w-full")
             }
           ></div>
           <div
@@ -95,7 +96,7 @@ export default function Navbar() {
           <div
             className={
               "w-[25px] duration-300 h-[3px] bg-neutral-100 " +
-              (isMenuOpen ? "w-0" : "w-full")
+              (isMenuOpen ? "!w-0" : "w-full")
             }
           ></div>
         </div>
@@ -109,7 +110,7 @@ export default function Navbar() {
           <Link
             href="/"
             className={
-              "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+              "flex flex-col after:bg-neutral-100 justify-center items-center after:h-[2px] after:duration-300 " +
               (activePage == "/" ? "after:w-full" : "after:w-0")
             }
           >
@@ -118,7 +119,7 @@ export default function Navbar() {
           <Link
             href="/dokumentasi"
             className={
-              "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+              "flex flex-col after:bg-neutral-100 justify-center items-center after:h-[2px] after:duration-300 " +
               (activePage == "/dokumentasi" ? "after:w-full" : "after:w-0")
             }
           >
@@ -127,7 +128,7 @@ export default function Navbar() {
           <Link
             href="/agenda"
             className={
-              "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+              "flex flex-col after:bg-neutral-100 justify-center items-center after:h-[2px] duration-200 " +
               (activePage == "/agenda" ? "after:w-full" : "after:w-0")
             }
           >
@@ -136,7 +137,7 @@ export default function Navbar() {
           <Link
             href="/materi"
             className={
-              "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+              "flex flex-col after:bg-neutral-100 justify-center items-center after:h-[2px] duration-200 " +
               (activePage == "/materi" ? "after:w-full" : "after:w-0")
             }
           >
@@ -145,7 +146,7 @@ export default function Navbar() {
           <Link
             href="/faq"
             className={
-              "flex flex-col after:bg-neutral-100 after:h-[2px] duration-200 " +
+              "flex flex-col after:bg-neutral-100 justify-center items-center after:h-[2px] duration-200 " +
               (activePage == "/faq" ? "after:w-full" : "after:w-0")
             }
           >
