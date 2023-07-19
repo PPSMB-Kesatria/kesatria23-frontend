@@ -20,7 +20,7 @@ export default function KesatriaMuda() {
         <h1 className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 md:mt-10">
           Aku Sebagai Kesatria Muda
         </h1>
-        <p className="text-[18px] sm:text-[20px] px-5 2xl:text-[25px] font-creato font-normal max-w-[923px] text-center">
+        <p className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center">
           Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
           "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
           "Gamadhira" layaknya burung merak yang identik dengan keberagaman,
@@ -142,6 +142,26 @@ export default function KesatriaMuda() {
           }}
         >
           <IoIosArrowForward />
+        </div>
+      </div>
+
+      <div className="mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center">
+        <div className="bg-neutral-100 max-w-[940px] p-10 pl-20 text-green-400 sm:w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
+          <h1 className="font-alstoria text-[45px] 2xl:text-[60px]">
+            Transisi Materi
+          </h1>
+          <p className="text-[18px] sm:text-[20px] 2xl:text-[25px] font-creato">
+            Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan
+            kata "dhira" yang berarti kebijaksanaan, kecerdasan, dan
+            keberagaman. "Gamadhira" layaknya burung merak yang identik dengan
+            keberagaman, ketangguhan, dan keindahan. Dengan Gamadhira diharapkan
+            Kesatria Muda memiliki perjalanan yang indah.
+          </p>
+        </div>
+        <div className="p-0 sm:p-5 lg:p-20 2xl:p-10 sm:w-[90%] lg:w-1/2 max-w-[825px] flex-shrink-0">
+        <div className="aspect-[76.7/48] bg-[#54BB9C] p-[25px] rounded-[40px]">
+          <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
+        </div>
         </div>
       </div>
     </section>
