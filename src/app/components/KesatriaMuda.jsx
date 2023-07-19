@@ -17,10 +17,10 @@ export default function KesatriaMuda() {
       />
 
       <div>
-        <h1 className="font-alstoria text-[45px] lg:text-[60px] text-center mb-7 mt-5 md:mt-10">
+        <h1 className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 md:mt-10">
           Aku Sebagai Kesatria Muda
         </h1>
-        <p className="text-[18px] sm:text-[20px] px-5 lg:text-[25px] font-creato font-normal max-w-[923px] text-center">
+        <p className="text-[18px] sm:text-[20px] px-5 2xl:text-[25px] font-creato font-normal max-w-[923px] text-center">
           Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
           "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
           "Gamadhira" layaknya burung merak yang identik dengan keberagaman,
@@ -153,7 +153,7 @@ function SwiperCard({ title, content, img, link }) {
     <div className="flex flex-col lg:flex-row ml-[20px] !mx-auto bg-green-400 p-5 sm:px-10 sm:py-10 2xl:py-12 2xl:px-20 rounded-[30px] sm:rounded-[40px] gap-10 shadow-[0_0_10px_#54BB9C] w-[90%] lg:w-[900px] 2xl:w-[1200px] items-center">
       <div className="bg-red-500 flex-shrink-0 w-full sm:w-[400px] !aspect-[65.5/41] 2xl:w-[655px] self-center 2xl:h-[410px] outline outline-[11px] outline-green-200 rounded-[20px]"></div>
       <div className="flex flex-col justify-evenly gap-2 md:gap-5 h-max">
-        <h2 className="font-creato text-center 2xl:text-left text-[25px] sm:text-[30px] 2xl:text-[40px] font-bold italic leading-[100%]">
+        <h2 className="font-creato text-center lg:text-left text-[25px] sm:text-[30px] 2xl:text-[40px] font-bold italic leading-[100%]">
           {title}
         </h2>
         <p className="text-[16px] sm:text-[20px] 2xl:text-[25px] 2xl:max-w-[435px] font-normal font-creato text-justify leading-tight">
