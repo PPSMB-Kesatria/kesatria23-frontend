@@ -165,7 +165,7 @@ function SwiperCard({ title, content, img, link }) {
         </p>
         <Link
           href="/"
-          className="block bg-neutral-100 w-fit font-bold italic text-green-400 font-creato rounded-[20px] text-[20px] lg:text-[25px] px-7 py-3 mt-[10px]"
+          className="block bg-neutral-100 w-fit font-bold italic text-green-400 font-creato rounded-[20px] text-[18px] sm:text-[20px] lg:text-[25px] px-7 py-3 mt-[10px]"
         >
           Baca Modul
         </Link>
