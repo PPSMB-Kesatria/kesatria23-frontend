@@ -13,6 +13,7 @@ export default function KesatriaMuda() {
     <section className="min-h-screen text-neutral-100 py-20 relative bg-pattern-green bg-contain bg-repeat flex gap-[35px] justify-center items-center flex-col">
       <img
         src="/TransitionGreenBegin.png"
+        alt=""
         className="absolute top-[0px] translate-y-[-50%] w-full drop-shadow-[0_-10px_10px_rgba(0,0,0,.5)]"
       />
 
@@ -145,7 +146,7 @@ export default function KesatriaMuda() {
         </div>
       </div>
 
-      <div className="mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center">
+      <div className="mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[100px]">
         <div className="bg-neutral-100 max-w-[940px] p-10 pl-20 text-green-400 sm:w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
           <h1 className="font-alstoria text-[45px] 2xl:text-[60px]">
             Transisi Materi
