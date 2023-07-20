@@ -9,7 +9,7 @@ import Silhouette from "../../../public/silhouette_tugu_teknik_hero.svg"
 export default function Hero() {
   return (
       <section className="min-h-screen bg-pattern-green bg-repeat z-[0] flex">
-          <Image src={Topbar} className="w-[100%] -top-[20px] absolute" alt="" width={1920}/>
+          <Image src={Topbar} className=" -top-[20px] absolute w-[100%] min-w-[1200px] right-0" alt="" width={1920}/>
         <div className="flex flex-row flex-wrap justify-center items-center content-center">
           <Image src={Nala} width={1400} alt="Nala" className="sm:w-[50%] w-[70%] h-fit min-w-[200px]" />
           <div className="flex justify-center flex-col text-white mb-[10%] z-[100]">
@@ -19,9 +19,9 @@ export default function Hero() {
           </div>
         </div>
         <div className="self-end flex absolute left-0 right-0 w-[100%]">
-          <Image src={Silhouette} width={1920} height={220} alt="" className="absolute self-end w-[100%]"/>
-          <Image src={Botbar_1} width={1920} height={220} alt="" className="absolute self-end w-[100%]"/>
-          <Image src={Botbar_2} width={1920} height={165} alt="" className="absolute self-end w-[100%]"/>
+          <Image src={Silhouette} width={1920} height={220} alt="" className="absolute self-end min-w-[600px] w-[100%] right-0"/>
+          <Image src={Botbar_1} width={1920} height={220} alt="" className="absolute self-end min-w-[600px] w-[100%] right-0"/>
+          <Image src={Botbar_2} width={1920} height={165} alt="" className="absolute self-end min-w-[600px] w-[100%] right-0"/>
         </div>
 
       </section>
