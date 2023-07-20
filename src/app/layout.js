@@ -11,6 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="!overflow-x-hidden" lang="en">
+      <link rel="icon" href="/logo_cream.png" />
       <body>
         <Navbar />
         {children}
