@@ -22,8 +22,8 @@ export default function Dokumentasi() {
   return (
     <section className="min-h-screen text-neutral-100 py-10 md:py-20 relative bg-pattern-green bg-contain bg-repeat flex gap-[35px] justify-center items-center flex-col">
       <Image src={Silhouette} width={1920} height={220}  className="absolute bottom-0 right-0 min-w-[600px]"/>
-      <Image src={Top} className="absolute top-0 left-0 sm:w-[70%] md:w-[60%] lg:w-[50%]" width={700}/>
-      <Image src={Bot} className="absolute bottom-0 right-0 sm:w-[70%] md:w-[60%] lg:w-[50%]" width={700}/>
+      <Image src={Top} className="absolute top-0 left-0 sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[35%]" width={700}/>
+      <Image src={Bot} className="absolute bottom-0 right-0 sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[35%]" width={700}/>
 
 
 
