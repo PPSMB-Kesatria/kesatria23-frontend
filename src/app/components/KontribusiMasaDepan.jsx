@@ -23,7 +23,7 @@ export default function KontribusiMasaDepan() {
         memiliki perjalanan yang indah.
       </p>
 
-      <div className="mt-[50px] lg:mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[50px] md:mb-[100px]">
+      <div className="mt-[50px] lg:mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[50px]">
         <div className="p-0 sm:p-5 lg:p-20 2xl:p-10 w-[90%] lg:w-1/2 max-w-[600px] lg:max-w-[825px] flex-shrink-0">
           <div className="aspect-[76.7/48] bg-green-400 p-[15px] md:p-[25px] rounded-[40px]">
             <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
@@ -42,9 +42,9 @@ export default function KontribusiMasaDepan() {
           </p>
         </div>
       </div>
-      <div className="mt-[100px] flex flex-col lg:flex-row w-full items-center lg:items-start 2xl:justify-center">
+      <div className="flex flex-col lg:flex-row w-full items-center lg:items-start 2xl:justify-center">
         <div>
-          <div className=" max-w-[940px] p-10 pl-20 text-green-400 sm:w-[90%]  h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
+          <div className=" max-w-[940px] p-10 text-green-400 sm:w-[90%] h-fit rounded-l-[40px] xl:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
             <h2 className="font-creato text-[40px] 2xl:text-[60px] italic font-bold">
               Modul 3 - Karya Aplikatif
             </h2>
@@ -59,7 +59,7 @@ export default function KontribusiMasaDepan() {
           </div>
         </div>
 
-        <div className="p-4 sm:p-5 lg:p-20 2xl:p-10 sm:w-[90%] lg:w-1/2 max-w-[825px] flex-shrink-0 mb-[100px]">
+        <div className="p-4 sm:p-5 lg:p-20 2xl:p-10 w-[90%] lg:w-1/2 max-w-[825px] flex-shrink-0 mb-[100px]">
           <div className="aspect-[210/297] bg-black p-[18px] ">
             <div className="w-full h-full border-box bg-green-400 "></div>
           </div>
