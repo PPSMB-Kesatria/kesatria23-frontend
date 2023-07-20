@@ -12,7 +12,7 @@ export default function KontribusiMasaDepan() {
             width="40%"
             alt=""
           />
-      <h1 className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 pt-16 md:mt-10">
+      <h1 className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 pt-16 md:mt-10 leading-[100%]">
         Kontribusi Di Masa Depan
       </h1>
       <p className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center">
