@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-pattern-green h-auto font-creato text-neutral-100 flex gap-3 lg:gap-9 flex-col lg:flex-row justify-evenly items-start p-10 lg:p-20 !pt-[10%] relative">
+    <footer className="w-full bg-pattern-green h-auto font-creato text-neutral-100 flex gap-3 lg:gap-9 flex-col lg:flex-row justify-evenly items-center lg:items-start p-10 lg:p-20 !pt-[10%] relative">
       <img
         src="/TransitionFooter.png"
         alt=""

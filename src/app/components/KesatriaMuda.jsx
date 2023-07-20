@@ -147,7 +147,7 @@ export default function KesatriaMuda() {
       </div>
 
       <div className="mt-[50px] lg:mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[50px] md:mb-[100px]">
-        <div className="bg-neutral-100 max-w-[940px] mt-5 lg:mt-0 p-10 lg:pl-20 text-green-400 w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
+        <div className="bg-neutral-100 max-w-[940px] mt-5 lg:mt-0 p-5 py-10 sm:p-10 lg:pl-20 text-green-400 w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
           <h1 className="font-alstoria text-[45px] 2xl:text-[60px] leading-[100%] text-center lg:text-left">
             Transisi Materi
           </h1>
