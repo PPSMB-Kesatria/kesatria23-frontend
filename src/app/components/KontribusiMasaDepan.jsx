@@ -6,6 +6,12 @@ export default function KontribusiMasaDepan() {
         alt=""
         className="w-full absolute top-0 translate-y-[-50%] drop-shadow-[0_10px_10px_rgba(0,0,0,.5)]"
       />
+      <img
+            className="max-lg:hidden opacity-50 absolute bottom-0 left-[-100px] h-[30%]"
+            src="/silhouette_crane.svg"
+            width="40%"
+            alt=""
+          />
       <h1 className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 pt-16 md:mt-10">
         Kontribusi Di Masa Depan
       </h1>
@@ -36,7 +42,7 @@ export default function KontribusiMasaDepan() {
           </p>
         </div>
       </div>
-      <div className="mt-[100px] flex flex-col lg:flex-row w-full items-center 2xl:justify-center">
+      <div className="mt-[100px] flex flex-col lg:flex-row w-full items-start 2xl:justify-center">
         <div>
           <div className=" max-w-[940px] p-10 pl-20 text-green-400 sm:w-[90%]  h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
             <h2 className="font-creato text-[40px] 2xl:text-[60px] italic font-bold">
@@ -51,15 +57,9 @@ export default function KontribusiMasaDepan() {
               Nasional).
             </p>
           </div>
-          <img
-            className="max-lg:hidden opacity-50 z-10"
-            src="/silhouette_crane.svg"
-            width="40%%"
-            alt=""
-          />
         </div>
 
-        <div className="p-4 sm:p-5 lg:p-20 2xl:p-10 sm:w-[90%] lg:w-1/2 max-w-[825px] flex-shrink-0 z-20">
+        <div className="p-4 sm:p-5 lg:p-20 2xl:p-10 sm:w-[90%] lg:w-1/2 max-w-[825px] flex-shrink-0 mb-[100px]">
           <div className="aspect-[210/297] bg-black p-[18px] ">
             <div className="w-full h-full border-box bg-green-400 "></div>
           </div>
