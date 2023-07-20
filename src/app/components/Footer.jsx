@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-pattern-green h-auto items-center font-creato text-neutral-100 flex gap-3 lg:gap-9 flex-col lg:flex-row justify-between p-10 lg:p-20 !pt-[10%] relative">
+    <footer className="w-full bg-pattern-green h-auto font-creato text-neutral-100 flex gap-3 lg:gap-9 flex-col lg:flex-row justify-evenly items-start p-10 lg:p-20 !pt-[10%] relative">
       <img
         src="/TransitionFooter.png"
         alt=""
@@ -14,7 +14,7 @@ export default function Footer() {
           PPSMB Kesatria 2023
         </h1>
 
-        <div className="flex justify-between flex-col xl:flex-row xl:gap-[200px] 2xl:gap-[250px]">
+        <div className="flex justify-between flex-col 2xl:flex-row 2xl:gap-[250px]">
           <div className="flex flex-col gap-9">
             <h1 className="font-creato font-bold italic text-[20px] md:text-[25px] 2xl:text-[30px] leading-[100%] text-center lg:text-left">
               Fakultas Teknik
@@ -31,7 +31,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="mt-12 xl:mt-0">
+          <div className="mt-12 2xl:mt-0">
             <p className="font-creato font-normal italic text-[20px] md:text-[25px] 2xl:text-[30px] leading-[100%] text-center lg:text-left">Official Accounts</p>
             <div className="mb-10 grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-x-8 mt-5 place-items-center lg:place-items-start">
               <div className="flex items-center gap-3">
