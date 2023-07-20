@@ -42,7 +42,7 @@ export default function KontribusiMasaDepan() {
           </p>
         </div>
       </div>
-      <div className="mt-[100px] flex flex-col lg:flex-row w-full items-start 2xl:justify-center">
+      <div className="mt-[100px] flex flex-col lg:flex-row w-full items-center lg:items-start 2xl:justify-center">
         <div>
           <div className=" max-w-[940px] p-10 pl-20 text-green-400 sm:w-[90%]  h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
             <h2 className="font-creato text-[40px] 2xl:text-[60px] italic font-bold">
