@@ -29,8 +29,8 @@ export default function KontribusiMasaDepan() {
             <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
           </div>
         </div>
-        <div className="bg-green-400 text-left max-w-[940px] mb-5 lg:mb-0 p-10 lg:pl-20 w-[90%] lg:w-1/2 h-fit rounded-r-[40px] lg:rounded-r-none 2xl:rounded-r-[40px] rounded-l-[40px] text-neutral-100">
-          <h2 className="font-creato text-[40px] 2xl:text-[60px] italic font-bold leading-[100%]">
+        <div className="bg-green-400 text-left max-w-[940px] mb-5 lg:mb-0 p-5 py-10 sm:p-10 lg:pl-20 w-[90%] lg:w-1/2 h-fit rounded-r-[40px] lg:rounded-r-none 2xl:rounded-r-[40px] rounded-l-[40px] text-neutral-100">
+          <h2 className="font-creato text-[40px] text-center md:text-left 2xl:text-[60px] italic font-bold leading-[100%]">
             Pengenalan Karya Aplikatif
           </h2>
           <p className="text-[18px] mt-3 sm:text-[20px] 2xl:text-[25px] font-creato text-justify">
@@ -42,13 +42,13 @@ export default function KontribusiMasaDepan() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row w-full items-center lg:items-start 2xl:justify-center mb-[100px] md:mb-[10%]">
+      <div className="flex flex-col lg:flex-row w-full items-center lg:items-start justify-center mb-[100px] md:mb-[10%]">
         <div>
-          <div className="max-w-[940px] px-10 text-green-400 sm:w-[90%] h-fit rounded-l-[40px] xl:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
+          <div className="max-w-[940px] grid place-items-center mx-auto !lg:pl-10 px-10 md:px-0 text-green-400 sm:w-[90%] h-fit rounded-l-[40px] xl:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
             <h2 className="font-creato text-[40px] 2xl:text-[60px] italic font-bold leading-[100%] mb-5">
               Modul 3 - Karya Aplikatif
             </h2>
-            <p className="text-[18px] sm:text-[20px] 2xl:text-[25px] text-justify">
+            <p className="font-creato text-[18px] sm:text-[20px] 2xl:text-[25px] text-justify mb-5">
               Dalam materi Karya Aplikatif ini, Kesatria Muda akan mempelajari
               tentang bagaimana cara membuat abstrak, poster, dan presentasi
               yang benar dalam menyampaikan ide karya yang dimiliki. Melalui
