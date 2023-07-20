@@ -3,12 +3,12 @@ import { PlaceholderVideoSejarah1 } from "./ui/videoplaceholder";
 export default function VideoSejarah() {
   return (
     <section className="min-h-screen flex flex-col bg-pattern-cream bg-repeat justify-center items-center py-10 md:py-0 gap-20 md:gap-4">
-      <div about="Sejarah Teknik" className="flex flex-col md:flex-row w-4/5 gap-10 md:gap-28 items-center">
+      <div about="Sejarah Teknik" className="flex flex-col md:flex-row w-4/5 gap-10 md:gap-28 items-center justify-center">
         <div>
           <h1 className="font-alstoria text-green-400 text-[40px] md:text-[60px] text-center md:text-left">
             Sejarah Teknik
           </h1>
-          <p className="font-creato font-medium text-[15px] text-green-400 text-center md:text-left">
+          <p className="font-creato font-medium max-w-[700px] text-[18px] sm:text-[20px] 2xl:text-[25px] text-green-400 text-center md:text-left">
             Fakultas Teknik merupakan salah satu fakultas tertua di indonesia.
             Jadi kita harus belajar tentang sejarahnya! Fakultas teknik adalah
             yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
@@ -16,13 +16,13 @@ export default function VideoSejarah() {
         </div>
         <PlaceholderVideoSejarah1 />
       </div>
-      <div about="Sejarah Kesatria" className="hidden md:flex flex-row w-4/5 gap-28 items-center">
+      <div about="Sejarah Kesatria" className="hidden md:flex flex-row w-4/5 gap-28 items-center justify-center">
         <PlaceholderVideoSejarah1 />
         <div>
           <h1 className="font-alstoria text-green-400 text-[40px] md:text-[60px] text-center md:text-left">
             Sejarah Kesatria
           </h1>
-          <p className="font-creato font-medium text-[15px] text-green-400 text-center md:text-left">
+          <p className="font-creato font-medium max-w-[700px] text-[18px] sm:text-[20px] 2xl:text-[25px] text-green-400 text-center md:text-left">
             Fakultas Teknik merupakan salah satu fakultas tertua di indonesia.
             Jadi kita harus belajar tentang sejarahnya! Fakultas teknik adalah
             yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
@@ -35,7 +35,7 @@ export default function VideoSejarah() {
           <h1 className="font-alstoria text-green-400 text-[40px] md:text-[60px] text-center md:text-left">
             Sejarah Kesatria
           </h1>
-          <p className="font-creato font-medium text-[15px] text-green-400 text-center md:text-left">
+          <p className="font-creato font-medium max-w-[660px] text-[18px] sm:text-[20px] 2xl:text-[25px] text-green-400 text-center md:text-left">
             Fakultas Teknik merupakan salah satu fakultas tertua di indonesia.
             Jadi kita harus belajar tentang sejarahnya! Fakultas teknik adalah
             yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
