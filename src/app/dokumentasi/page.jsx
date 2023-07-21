@@ -72,7 +72,7 @@ export default function Dokumentasi() {
           <IoIosArrowForward className="text-green-400" />
         </div>
       </Swiper>
-      <div className="flex md:hidden gap-8 text-[35px] sm:text-[40px] z-[100]">
+      <div className="flex lg:hidden gap-8 text-[35px] sm:text-[40px] z-[100]">
         <div
           onClick={() => {
             if (swiper.activeIndex == 0) return;
@@ -97,8 +97,8 @@ export default function Dokumentasi() {
 function Imagecard() {
   const placeholders = Array.from({ length: 2 });
   return (
-    <div className="flex flex-col lg:flex-row ml-[20px] sm:rounded-[40px] sw-fit items-center  sm:py-10 2xl:py-12 !mx-auto drop-shadow-md    ">
-      <div className=" mx-auto w-64 flex flex-wrap justify-center py-2">
+    <div className="flex flex-col justify-center lg:flex-row ml-[20px] sm:rounded-[40px] sw-fit items-center  sm:py-10 2xl:py-12 !mx-0 drop-shadow-md    ">
+      <div className=" mx-0 w-64 flex flex-wrap justify-center py-2">
         {placeholders.map((_, index) => (
           <div key={index} className=" w-64 h-36 my-2 animate-pulse m-2">
             <div className="bg-gray-300 w-full h-full"></div>
