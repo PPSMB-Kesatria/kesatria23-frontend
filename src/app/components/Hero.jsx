@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="font-alstoria lg:text-[54px] mb-[10px] md:text-[49px] sm:text-[45px] text-[40px] text-neutral-100 drop-shadow-lg text-center lg:text-left leading-[100%]">
             Selamat Datang{" "}
           </div>
-          <div className="w-max font-alstoria xl:text-[96px] lg:text-[85px] sm:text-[80px] text-[58px] text-neutral-100 drop-shadow-lg text-center lg:text-left leading-[100%]">
+          <div className="md:w-max font-alstoria xl:text-[96px] lg:text-[85px] sm:text-[80px] text-[58px] text-neutral-100 drop-shadow-lg text-center lg:text-left leading-[100%]">
             {" "}
             Kesatria Muda
           </div>
