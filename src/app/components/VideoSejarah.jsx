@@ -5,7 +5,7 @@ export default function VideoSejarah() {
   return (
     <section>
       <div className="absolute">
-        <Image src="/videosejarah_anyaman_atas.svg" width={1920} height={200}/>
+        <Image src="/videosejarah_anyaman_atas.svg" alt="pattern_img" width={1920} height={200}/>
       </div>
       <div className="min-h-screen flex flex-col bg-pattern-cream bg-contain bg-repeat justify-center items-center pt-12 pb-36 lg:pt-36 lg:pb-48 gap-20 lg:gap-15">
         
@@ -29,7 +29,7 @@ export default function VideoSejarah() {
               allowFullScreen />
             </div>
             <div className="absolute z-[11] w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[17rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
-              <Image src="/bird1.svg" alt="" fill/>
+              <Image src="/bird1.svg" alt="bird_img" fill/>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function VideoSejarah() {
               allowFullScreen />
             </div>
             <div className="absolute z-[11] w-48 h-full flex justify-end -mt-[7.5rem] mr-[23rem] ">
-              <Image src="/bird2.svg" alt="" fill/>
+              <Image src="/bird2.svg" alt="bird_2_img" fill/>
             </div>
           </div>
           <div className="flex flex-col items-end">
@@ -80,7 +80,7 @@ export default function VideoSejarah() {
               allowFullScreen />
             </div>
             <div className="absolute z-[11] w-48 h-full flex justify-end -mt-[5.5rem] mr-[18rem] md:w-40 md:-mt-[13rem] md:mr-[30rem]">
-              <Image alt="" src="/bird2.svg" fill/>
+              <Image alt="bird_img_2" src="/bird2.svg" fill/>
             </div>
           </div>
           <Link href={"/"}><button className="px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[18px] sm:text-[20px] md:text-[25px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
