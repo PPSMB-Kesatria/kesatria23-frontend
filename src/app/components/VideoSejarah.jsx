@@ -25,7 +25,7 @@ export default function VideoSejarah() {
             allowFullScreen />
           </div>
           <div className="absolute z-[11] w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[17rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
-            <Image src="/bird1.svg" fill/>
+            <Image src="/bird1.svg" alt="" fill/>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function VideoSejarah() {
             allowFullScreen />
           </div>
           <div className="absolute z-[11] w-48 h-full flex justify-end -mt-[7.5rem] mr-[23rem] ">
-            <Image src="/bird2.svg" fill/>
+            <Image src="/bird2.svg" alt="" fill/>
           </div>
         </div>
         <div className="flex flex-col items-end">
@@ -75,7 +75,7 @@ export default function VideoSejarah() {
             allowFullScreen />
           </div>
           <div className="absolute z-[11] w-48 h-full flex justify-end -mt-[5.5rem] mr-[18rem] md:w-40 md:-mt-[13rem] md:mr-[30rem]">
-            <Image src="/bird2.svg" fill/>
+            <Image alt="" src="/bird2.svg" fill/>
           </div>
         </div>
       </div>
