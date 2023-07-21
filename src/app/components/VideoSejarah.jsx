@@ -56,7 +56,7 @@ export default function VideoSejarah() {
               Jadi kita harus belajar tentang sejarahnya! Fakultas teknik adalah
               yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
             </p>
-            <Link href={"/"}><button className="mt-4 px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[20px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
+            <Link href={"/tema"}><button className="mt-4 px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[20px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
           </div>
         </div>
 
@@ -83,7 +83,7 @@ export default function VideoSejarah() {
               <Image alt="bird_img_2" src="/bird2.svg" fill/>
             </div>
           </div>
-          <Link href={"/"}><button className="px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[18px] sm:text-[20px] md:text-[25px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
+          <Link href={"/tema"}><button className="px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[18px] sm:text-[20px] md:text-[25px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
         </div>
 
       </div>
