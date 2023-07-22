@@ -18,10 +18,16 @@ export default function KesatriaMuda() {
       />
 
       <div>
-        <h1 className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 md:mt-10">
+        <h1
+          data-aos="fade-up"
+          className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 md:mt-10"
+        >
           Aku Sebagai Kesatria Muda
         </h1>
-        <p className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center">
+        <p
+          data-aos="fade-up"
+          className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center"
+        >
           Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
           "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
           "Gamadhira" layaknya burung merak yang identik dengan keberagaman,
@@ -31,6 +37,7 @@ export default function KesatriaMuda() {
       </div>
 
       <Swiper
+        data-aos="fade-up"
         slidesPerView={1}
         spaceBetween={10}
         className="w-full !overflow-y-visible !px-[10px]"
@@ -125,7 +132,10 @@ export default function KesatriaMuda() {
         </div>
       </div>
 
-      <div className="flex md:hidden gap-8 text-[35px] sm:text-[40px]">
+      <div
+        data-aos="fade-up"
+        className="flex md:hidden gap-8 text-[35px] sm:text-[40px]"
+      >
         <div
           onClick={() => {
             if (swiper.activeIndex == 0) return;
@@ -147,7 +157,10 @@ export default function KesatriaMuda() {
       </div>
 
       <div className="mt-[50px] lg:mt-[100px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[50px] md:mb-[100px]">
-        <div className="bg-neutral-100 max-w-[940px] mt-5 lg:mt-0 p-5 py-10 sm:p-10 lg:pl-20 text-green-400 w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
+        <div
+          data-aos="fade-right"
+          className="bg-neutral-100 max-w-[940px] mt-5 lg:mt-0 p-5 py-10 sm:p-10 lg:pl-20 text-green-400 w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]"
+        >
           <h1 className="font-alstoria text-[45px] 2xl:text-[60px] leading-[100%] text-center lg:text-left">
             Transisi Materi
           </h1>
@@ -159,10 +172,10 @@ export default function KesatriaMuda() {
             Kesatria Muda memiliki perjalanan yang indah.
           </p>
         </div>
-        <div className="p-0 sm:p-5 lg:p-10  w-[90%] lg:w-1/2 max-w-[600px] lg:max-w-[825px] flex-shrink-0">
-        <div className="aspect-[76.7/48] bg-[#54BB9C] p-[15px] md:p-[25px] rounded-[40px]">
-          <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
-        </div>
+        <div data-aos="fade-left" className="p-0 sm:p-5 lg:p-10  w-[90%] lg:w-1/2 max-w-[600px] lg:max-w-[825px] flex-shrink-0">
+          <div className="aspect-[76.7/48] bg-[#54BB9C] p-[15px] md:p-[25px] rounded-[40px]">
+            <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
+          </div>
         </div>
       </div>
     </section>
