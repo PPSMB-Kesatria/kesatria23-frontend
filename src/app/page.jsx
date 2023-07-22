@@ -1,3 +1,7 @@
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Head from "next/head";
 import Hero from "./components/Hero";
 import KesatriaMuda from "./components/KesatriaMuda";
@@ -11,6 +15,11 @@ export const metadata = {
 };
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  });
   return (
     <main className="overflow-x-hidden">
       <Hero />
