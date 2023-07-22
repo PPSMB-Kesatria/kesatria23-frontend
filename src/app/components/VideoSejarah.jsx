@@ -11,7 +11,7 @@ export default function VideoSejarah() {
         
         {/*Sejarah Teknik*/}
         <div about="Sejarah Teknik" className="flex flex-col lg:flex-row w-4/5 gap-14 lg:gap-28 items-center justify-center">
-          <div>
+          <div data-aos="fade-up">
             <h1 className="font-alstoria text-green-400 text-[40px] md:text-[60px] text-center lg:text-left">
               Sejarah Teknik
             </h1>
@@ -21,21 +21,21 @@ export default function VideoSejarah() {
               yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
             </p>
           </div>
-          <div id="video-sejarah-teknik" className="relative flex justify-center items-center aspect-video bg-red-100 rounded-2xl min-w-[300px] md:min-w-[550px] lg:min-w-[400px]">
+          <div data-aos="fade-up" id="video-sejarah-teknik" className="relative flex justify-center items-center aspect-video bg-red-100 rounded-2xl min-w-[300px] md:min-w-[550px] lg:min-w-[400px]">
             <div className="relative z-10 h-40 md:h-72 lg:h-52 aspect-video overflow-hidden rounded-xl">
               <iframe
               src="https://www.youtube.com/embed/kcElbm8VDy0"
               className="w-full h-full"
               allowFullScreen />
             </div>
-            <div className="absolute z-[11] w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[17rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
+            <div data-aos="fade-left" className="absolute z-[11] w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[17rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
               <Image src="/bird1.svg" alt="bird_img" fill/>
             </div>
           </div>
         </div>
 
         {/*Sejarah Kesatria @media:lg*/}
-        <div about="Sejarah Kesatria" className="hidden lg:flex flex-row w-4/5 gap-28 items-center justify-center">
+        <div data-aos="fade-up" about="Sejarah Kesatria" className="hidden lg:flex flex-row w-4/5 gap-28 items-center justify-center">
           <div id="video-sejarah-kesatria" className="relative flex justify-center items-center rounded-2xl min-w-[400px] aspect-video bg-red-100">
             <div className="relative z-10 h-40 md:h-52 aspect-video overflow-hidden rounded-xl">
               <iframe
@@ -43,7 +43,7 @@ export default function VideoSejarah() {
               className="w-full h-full"
               allowFullScreen />
             </div>
-            <div className="absolute z-[11] w-48 h-full flex justify-end -mt-[7.5rem] mr-[23rem] ">
+            <div data-aos="fade-right" className="absolute z-[11] w-48 h-full flex justify-end -mt-[7.5rem] mr-[23rem] ">
               <Image src="/bird2.svg" alt="bird_2_img" fill/>
             </div>
           </div>
