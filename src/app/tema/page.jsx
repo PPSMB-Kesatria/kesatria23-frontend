@@ -1,37 +1,52 @@
+"use client";
+
 import Image from "next/image";
 import Topbar from "../../../public/topbar_hero.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const metadata = {
   title: "Gamadhira · PPSMB Kesatria 2023",
 };
 
 export default function Tema() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  })
   return (
-    <main className="min-h-screen pt-[15vh] pb-[20vh] bg-pattern-green text-neutral-100 relative overflow-x-hidden flex gap-10 justify-center items-start flex-col xl:flex-row">
+    <main className="overflow-y-hidden min-h-screen pt-[15vh] pb-[20vh] bg-pattern-green text-neutral-100 relative overflow-x-hidden flex gap-10 justify-center items-start flex-col xl:flex-row">
       <Image
         src={Topbar}
         className=" top-[20px] sm:top-0 absolute w-[100%] min-w-[920px] right-0"
         alt=""
         width={1920}
+        data-aos="fade-down"
       />
       <img
         src="/TemaBottom1.png"
-        className="w-[105%] absolute bottom-0 left-0 min-w-[920px] z-[2] animate-translate-bnf"
+        className="w-[105%] absolute bottom-0 left-0 min-w-[920px] z-[2]"
+        data-aos="fade-up"
+        data-aos-offset="-300"
       />
       <img
         src="/TemaBottom2.png"
-        className="w-[105%] absolute bottom-0 left-0 min-w-[920px] z-[3] animate-translate-bnf-inv"
+        className="w-[105%] absolute bottom-0 left-0 min-w-[920px] z-[3]"
+        data-aos="fade-up"
+        data-aos-offset="-300"
       />
 
       <div className="relative z-[1] flex-shrink-0 flex flex-col justify-center w-full xl:w-fit">
-        <h1 className="font-alstoria text-[45px] sm:text-[60px] 2xl:text-[90px] text-center mb-7 mt-5 md:mt-10 leading-[100%]">
+        <h1 data-aos="fade-up" className="font-alstoria text-[45px] sm:text-[60px] 2xl:text-[90px] text-center mb-7 mt-5 md:mt-10 leading-[100%]">
           <span className="font-alstoria text-[35px] sm:text-[50px] 2xl:text-[60px] text-center mb-7 mt-5 md:mt-10">
             Selamat Datang <br />
           </span>
           Kesatria Muda{" "}
           <span className="font-creato font-extrabold">2023!</span>
         </h1>
-        <div className="grid place-items-center px-5 sm:px-0">
+        <div data-aos="fade-up" data-aos-delay="200" className="grid place-items-center px-5 sm:px-0">
           <div className="bg-green-100 p-2 xs:p-4 rounded-[30px] sm:rounded-[40px] aspect-[56/31.5] w-full max-w-[700px] xl:min-w-[600px] xl:max-w-[650px] 2xl:max-w-[900px]">
             <iframe
               width="560"
@@ -48,7 +63,7 @@ export default function Tema() {
       </div>
 
       <div className="relative z-[4] text-green-400 w-full md:w-fit md:mx-auto xl:mx-0 px-5 sm:px-0 flex flex-col">
-        <div className="bg-neutral-100 rounded-[30px] xs:rounded-[40px] py-10 w-full xs:w-fit xs:mx-auto">
+        <div data-aos="fade-up" data-aos-delay="200" className="bg-neutral-100 rounded-[30px] xs:rounded-[40px] py-10 w-full xs:w-fit xs:mx-auto">
           <h1 className="font-creato text-[14px] sm:text-[16px] 2xl:text-[20px] text-center mb-7 font-black text-shadow-tema">
             Mengenal PPSMB KESATRIA 2023
           </h1>
