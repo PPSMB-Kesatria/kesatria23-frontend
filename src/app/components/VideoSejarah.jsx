@@ -24,7 +24,7 @@ export default function VideoSejarah() {
           <div id="video-sejarah-teknik" className="relative flex justify-center items-center aspect-video bg-red-100 rounded-2xl min-w-[300px] md:min-w-[550px] lg:min-w-[400px]">
             <div className="relative z-10 h-40 md:h-72 lg:h-52 aspect-video overflow-hidden rounded-xl">
               <iframe
-              src="https://www.youtube.com/embed/cAfRzKW-Tyw"
+              src="https://www.youtube.com/embed/kcElbm8VDy0"
               className="w-full h-full"
               allowFullScreen />
             </div>
@@ -39,7 +39,7 @@ export default function VideoSejarah() {
           <div id="video-sejarah-kesatria" className="relative flex justify-center items-center rounded-2xl min-w-[400px] aspect-video bg-red-100">
             <div className="relative z-10 h-40 md:h-52 aspect-video overflow-hidden rounded-xl">
               <iframe
-              src="https://www.youtube.com/embed/cAfRzKW-Tyw"
+              src="https://www.youtube.com/embed/PRVEkq9dXF0"
               className="w-full h-full"
               allowFullScreen />
             </div>
@@ -75,7 +75,7 @@ export default function VideoSejarah() {
           <div id="video-sejarah-kesatria" className="relative flex justify-center items-center rounded-2xl min-w-[300px] md:min-w-[550px] aspect-video bg-red-100">
             <div className="relative z-10 h-40 md:h-72 aspect-video overflow-hidden rounded-xl">
               <iframe
-              src="https://www.youtube.com/embed/cAfRzKW-Tyw"
+              src="https://www.youtube.com/embed/PRVEkq9dXF0"
               className="w-full h-full"
               allowFullScreen />
             </div>
