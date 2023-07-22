@@ -21,7 +21,7 @@ export default function Home() {
     });
   });
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-y-hidden">
       <Hero />
       <VideoSejarah />
       <KesatriaMuda />
