@@ -11,7 +11,7 @@ export default function KontribusiMasaDepan() {
       />
       <img
             data-aos="fade-up"
-            className="max-lg:hidden opacity-50 absolute bottom-0 left-[-100px] h-[30%]"
+            className="max-lg:hidden !opacity-50 absolute bottom-0 left-[-100px] h-[30%]"
             src="/silhouette_crane.svg"
             width="40%"
             alt=""
