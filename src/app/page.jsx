@@ -8,6 +8,8 @@ import VideoSejarah from "./components/VideoSejarah";
 
 export const metadata = {
   title: "Beranda · PPSMB Kesatria 2023",
+  description:
+    "PPSMB Kesatria merupakan masa orientasi kepada Mahasiswa Baru Teknik UGM 2023 yang bertujuan untuk memperkenalkan lingkungan Teknik UGM kepada para Mahasiswa Baru",
 };
 
 export default function Home() {

@@ -1,23 +1,13 @@
-"use client";
-
 import Image from "next/image";
 import Topbar from "../../../public/topbar_hero.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 export const metadata = {
   title: "Gamadhira · PPSMB Kesatria 2023",
-  description:
-    "PPSMB Kesatria merupakan masa orientasi kepada Mahasiswa Baru Teknik UGM 2023 yang bertujuan untuk memperkenalkan lingkungan Teknik UGM kepada para Mahasiswa Baru",
 };
 
 export default function Tema() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-    });
-  });
   return (
     <main className="overflow-y-hidden min-h-screen pt-[15vh] pb-[20vh] bg-pattern-green text-neutral-100 relative overflow-x-hidden flex gap-10 justify-center items-start flex-col xl:flex-row">
       <Image
