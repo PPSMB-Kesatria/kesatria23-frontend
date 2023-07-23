@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import KesatriaMuda from "./components/KesatriaMuda";
 import KontribusiMasaDepan from "./components/KontribusiMasaDepan";
 import VideoSejarah from "./components/VideoSejarah";
+import SelamatDatang from "./components/SelamatDatang";
 
 export const metadata = {
   title: "Beranda · PPSMB Kesatria 2023",
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className="overflow-y-hidden">
       <Hero />
+      <SelamatDatang />
       <VideoSejarah />
       <KesatriaMuda />
       <KontribusiMasaDepan />
