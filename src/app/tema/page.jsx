@@ -8,6 +8,8 @@ import { useEffect } from "react";
 
 export const metadata = {
   title: "Gamadhira · PPSMB Kesatria 2023",
+  description:
+    "PPSMB Kesatria merupakan masa orientasi kepada Mahasiswa Baru Teknik UGM 2023 yang bertujuan untuk memperkenalkan lingkungan Teknik UGM kepada para Mahasiswa Baru",
 };
 
 export default function Tema() {
@@ -15,7 +17,7 @@ export default function Tema() {
     AOS.init({
       duration: 800,
     });
-  })
+  });
   return (
     <main className="overflow-y-hidden min-h-screen pt-[15vh] pb-[20vh] bg-pattern-green text-neutral-100 relative overflow-x-hidden flex gap-10 justify-center items-start flex-col xl:flex-row">
       <Image
@@ -39,14 +41,21 @@ export default function Tema() {
       />
 
       <div className="relative z-[1] flex-shrink-0 flex flex-col justify-center w-full xl:w-fit">
-        <h1 data-aos="fade-up" className="font-alstoria text-[45px] sm:text-[60px] 2xl:text-[90px] text-center mb-7 mt-5 md:mt-10 leading-[100%]">
+        <h1
+          data-aos="fade-up"
+          className="font-alstoria text-[45px] sm:text-[60px] 2xl:text-[90px] text-center mb-7 mt-5 md:mt-10 leading-[100%]"
+        >
           <span className="font-alstoria text-[35px] sm:text-[50px] 2xl:text-[60px] text-center mb-7 mt-5 md:mt-10">
             Selamat Datang <br />
           </span>
           Kesatria Muda{" "}
           <span className="font-creato font-extrabold">2023!</span>
         </h1>
-        <div data-aos="fade-up" data-aos-delay="200" className="grid place-items-center px-5 sm:px-0">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="grid place-items-center px-5 sm:px-0"
+        >
           <div className="bg-green-100 p-2 xs:p-4 rounded-[30px] sm:rounded-[40px] aspect-[56/31.5] w-full max-w-[700px] xl:min-w-[600px] xl:max-w-[650px] 2xl:max-w-[900px]">
             <iframe
               width="560"
@@ -63,7 +72,11 @@ export default function Tema() {
       </div>
 
       <div className="relative z-[4] text-green-400 w-full md:w-fit md:mx-auto xl:mx-0 px-5 sm:px-0 flex flex-col">
-        <div data-aos="fade-up" data-aos-delay="200" className="bg-neutral-100 rounded-[30px] xs:rounded-[40px] py-10 w-full xs:w-fit xs:mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="bg-neutral-100 rounded-[30px] xs:rounded-[40px] py-10 w-full xs:w-fit xs:mx-auto"
+        >
           <h1 className="font-creato text-[14px] sm:text-[16px] 2xl:text-[20px] text-center mb-7 font-black text-shadow-tema">
             Mengenal PPSMB KESATRIA 2023
           </h1>
@@ -85,19 +98,39 @@ export default function Tema() {
             </div>
             <div className="grid grid-cols-3 xs:grid-cols-5 xl:grid-cols-5 gap-3 mx-5">
               <div className="bg-white w-[70px] lg:w-[100px] aspect-square rounded-[20px] grid place-items-center p-2 lg:p-0 relative shadow-[inset_0_2px_5px_rgba(0,0,0,.3)]">
-                <img src="/Kesatria17.png" alt="Logo 2017" className="absolute h-[70%] lg:h-[75%]" />
+                <img
+                  src="/Kesatria17.png"
+                  alt="Logo 2017"
+                  className="absolute h-[70%] lg:h-[75%]"
+                />
               </div>
               <div className="bg-white w-[70px] lg:w-[100px] aspect-square rounded-[20px] grid place-items-center p-2 lg:p-0 relative shadow-[inset_0_2px_5px_rgba(0,0,0,.3)]">
-                <img src="/Kesatria18.png" alt="Logo 2018" className="absolute h-[70%] lg:h-[75%]" />
+                <img
+                  src="/Kesatria18.png"
+                  alt="Logo 2018"
+                  className="absolute h-[70%] lg:h-[75%]"
+                />
               </div>
               <div className="bg-white w-[70px] lg:w-[100px] aspect-square rounded-[20px] grid place-items-center p-2 lg:p-0 relative shadow-[inset_0_2px_5px_rgba(0,0,0,.3)]">
-                <img src="/Kesatria19.png" alt="Logo 2019" className="absolute h-[70%] lg:h-[75%]" />
+                <img
+                  src="/Kesatria19.png"
+                  alt="Logo 2019"
+                  className="absolute h-[70%] lg:h-[75%]"
+                />
               </div>
               <div className="bg-white w-[70px] lg:w-[100px] aspect-square rounded-[20px] grid place-items-center p-2 lg:p-0 relative shadow-[inset_0_2px_5px_rgba(0,0,0,.3)]">
-                <img src="/Kesatria20.png" alt="Logo 2020" className="absolute h-[80%] lg:h-[90%]" />
+                <img
+                  src="/Kesatria20.png"
+                  alt="Logo 2020"
+                  className="absolute h-[80%] lg:h-[90%]"
+                />
               </div>
               <div className="bg-white w-[70px] lg:w-[100px] aspect-square rounded-[20px] grid place-items-center p-2 lg:p-0 relative shadow-[inset_0_2px_5px_rgba(0,0,0,.3)]">
-                <img src="/Kesatria21.png" alt="Logo 2021" className="absolute h-[80%] lg:h-[90%]" />
+                <img
+                  src="/Kesatria21.png"
+                  alt="Logo 2021"
+                  className="absolute h-[80%] lg:h-[90%]"
+                />
               </div>
             </div>
           </div>
