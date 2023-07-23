@@ -64,7 +64,7 @@ export default function VideoSejarah() {
 
         {/* Sejarah Kesatria @media: sm */}
         <div about="Sejarah Kesatria" className="flex flex-col lg:hidden w-4/5 gap-14 items-center">
-          <div>
+          <div data-aos="fade-up">
             <h1 className="font-alstoria text-green-400 text-[40px] md:text-[60px] text-center lg:text-left">
               Sejarah Kesatria
             </h1>
@@ -74,18 +74,18 @@ export default function VideoSejarah() {
               yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
             </p>
           </div>
-          <div id="video-sejarah-kesatria" className="relative flex justify-center items-center rounded-2xl min-w-[300px] md:min-w-[550px] aspect-video bg-red-100">
+          <div data-aos="fade-right" id="video-sejarah-kesatria" className="relative flex justify-center items-center rounded-2xl min-w-[300px] md:min-w-[550px] aspect-video bg-red-100">
             <div className="relative z-10 h-40 md:h-72 aspect-video overflow-hidden rounded-xl">
               <iframe
               src="https://www.youtube.com/embed/PRVEkq9dXF0"
               className="w-full h-full"
               allowFullScreen />
             </div>
-            <div className="absolute z-[11] w-48 h-full flex justify-end -mt-[5.5rem] mr-[18rem] md:w-40 md:-mt-[13rem] md:mr-[30rem]">
+            <div data-aos="fade-right" className="absolute z-[11] w-48 h-full flex justify-end -mt-[5.5rem] mr-[18rem] md:w-40 md:-mt-[13rem] md:mr-[30rem]">
               <Image alt="bird_img_2" src="/bird2.svg" fill/>
             </div>
           </div>
-          <Link href={"/tema"}><button className="px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[18px] sm:text-[20px] md:text-[25px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
+          <Link data-aos="fade-up" href={"/tema"}><button className="px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[18px] sm:text-[20px] md:text-[25px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
         </div>
 
       </div>
