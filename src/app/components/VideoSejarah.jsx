@@ -85,7 +85,7 @@ export default function VideoSejarah() {
               <Image alt="bird_img_2" src="/bird2.svg" fill/>
             </div>
           </div>
-          <Link data-aos="fade-up" href={"/tema"}><button className="px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[18px] sm:text-[20px] md:text-[25px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
+          <Link data-aos="fade-up" data-aos-offset="-100" href={"/tema"}><button className="px-11 py-2 bg-red-100 rounded-full font-creato font-extrabold text-[18px] sm:text-[20px] md:text-[25px] italic text-neutral-100">Lihat Selengkapnya</button></Link>
         </div>
 
       </div>
