@@ -10,7 +10,7 @@ export default function VideoSejarah() {
           className="bottom-0 left-0 min-w-[700px] z-[2]"
         />
       </div>
-      <div className="min-h-screen flex flex-col bg-pattern-cream bg-contain bg-repeat justify-center items-center pt-12 pb-36 lg:pt-36 lg:pb-48 gap-20 lg:gap-15">
+      <div className="min-h-screen flex flex-col bg-pattern-cream-2 bg-contain bg-repeat justify-center items-center pt-12 pb-36 lg:pt-36 lg:pb-48 gap-20 lg:gap-15">
         
         {/*Sejarah Teknik*/}
         <div about="Sejarah Teknik" className="flex flex-col lg:flex-row w-4/5 gap-14 lg:gap-28 items-center justify-center">
