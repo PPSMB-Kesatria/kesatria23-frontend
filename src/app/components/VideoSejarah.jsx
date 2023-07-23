@@ -7,7 +7,7 @@ export default function VideoSejarah() {
       <div className="absolute h-20">
         <img
           src="/videosejarah_anyaman_atas.png"
-          className="bottom-0 left-0 min-w-[700px] z-[2]"
+          className="bottom-0 left-0 min-w-full z-[2]"
         />
       </div>
       <div className="min-h-screen flex flex-col bg-pattern-cream-2 bg-contain bg-repeat justify-center items-center pt-[5.5rem] pb-36 md:pt-[7rem] lg:pt-36 lg:pb-48 gap-20 lg:gap-15">
@@ -43,7 +43,7 @@ export default function VideoSejarah() {
               className="w-full h-full"
               allowFullScreen />
             </div>
-            <div data-aos="fade-left" data-aos-duration="500" className="absolute z-[11] w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[17rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
+            <div data-aos="fade-left" data-aos-duration="500" className="absolute z-[11] w-32 sm:w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[10rem] sm:ml-[13rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
               <Image src="/bird1.svg" alt="bird_img" fill/>
             </div>
           </div>
