@@ -21,47 +21,16 @@ export default function Tema() {
         src="/TemaBottom1.png"
         className="w-[105%] absolute bottom-0 left-0 min-w-[920px] z-[2]"
         data-aos="fade-up"
-        data-aos-offset="-300"
+        data-aos-offset="-500"
       />
       <img
         src="/TemaBottom2.png"
         className="w-[105%] absolute bottom-0 left-0 min-w-[920px] z-[3]"
         data-aos="fade-up"
-        data-aos-offset="-300"
+        data-aos-offset="-500"
       />
 
-      <div className="relative z-[1] flex-shrink-0 flex flex-col justify-center w-full xl:w-fit">
-        <h1
-          data-aos="fade-up"
-          className="font-alstoria text-[45px] sm:text-[60px] 2xl:text-[90px] text-center mb-7 mt-5 md:mt-10 leading-[100%]"
-        >
-          <span className="font-alstoria text-[35px] sm:text-[50px] 2xl:text-[60px] text-center mb-7 mt-5 md:mt-10">
-            Selamat Datang <br />
-          </span>
-          Kesatria Muda{" "}
-          <span className="font-creato font-extrabold">2023!</span>
-        </h1>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className="grid place-items-center px-5 sm:px-0"
-        >
-          <div className="bg-green-100 p-2 xs:p-4 rounded-[30px] sm:rounded-[40px] aspect-[56/31.5] w-full max-w-[700px] xl:min-w-[600px] xl:max-w-[650px] 2xl:max-w-[900px]">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/FUFzqaS0CHQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              className="rounded-[20px] w-full h-full !bg-green-100"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative z-[4] text-green-400 w-full md:w-fit md:mx-auto xl:mx-0 px-5 sm:px-0 flex flex-col">
+      <div className="relative z-[4] text-green-400 w-full md:mx-auto xl:mx-0 px-5 sm:px-0 flex flex-col lg:pt-[10px]">
         <div
           data-aos="fade-up"
           data-aos-delay="200"
@@ -79,7 +48,7 @@ export default function Tema() {
           </div>
 
           <div className="flex flex-col justify-center items-center gap-5">
-            <div className="bg-white aspect-square rounded-[20px] w-fit grid place-items-center mx-5 shadow-[inset_0_4px_8px_rgba(0,0,0,.3)] mt-10">
+            <div className="bg-white aspect-square rounded-[20px] grid place-items-center mx-5 shadow-[inset_0_4px_8px_rgba(0,0,0,.3)] mt-10 w-[150px] sm:w-[200px]">
               <img
                 src="/Logo2022.png"
                 alt="Logo Kesatria 2022"
@@ -125,7 +94,7 @@ export default function Tema() {
             </div>
           </div>
 
-          <p className="w-full mt-5 max-w-[530px] sm:max-w-[560px] md:max-w-[600px] font-creato font-medium text-[16px] sm:text-[18px] 2xl:text-[20px] text-justify mx-auto px-5 md:px-10">
+          <p className="w-full max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1150px] mt-5 font-creato font-medium text-[16px] sm:text-[18px] 2xl:text-[20px] text-justify mx-auto px-5 md:px-10 lg:px-20">
             Antachandra (terbang ke bulan) diawali dengan lepas landas dari
             permukaan bumi yang menggambarkan perjuangan awal atau titik awal
             para Kesatria Muda untuk mengawali kesaksian dan kegiatan mereka di
