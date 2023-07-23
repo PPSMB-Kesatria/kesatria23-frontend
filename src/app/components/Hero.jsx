@@ -2,8 +2,7 @@
 import Image from "next/image";
 import Nala from "../../../public/nala_hero.png";
 import Topbar from "../../../public/topbar_hero.svg";
-import Botbar_1 from "../../../public/HeroBottomDeco.png";
-import Silhouette from "../../../public/silhouette_tugu_teknik_hero.svg";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,7 +14,7 @@ export default function Hero() {
     });
   });
   return (
-    <section className="min-h-screen bg-pattern-green bg-repeat z-[0] flex">
+    <section className="min-h-screen bg-pattern-green bg-repeat z-[1] flex">
       <Image
         src={Topbar}
         className=" -top-[20px] absolute w-[100%] min-w-[1100px] right-0"
@@ -43,22 +42,6 @@ export default function Hero() {
             2023 !
           </div>
         </div>
-      </div>
-      <div data-aos="fade-up" data-aos-offset="-200" data-aos-delay="300" className="self-end flex absolute left-0 right-0 w-[100%]">
-        <Image
-          src={Silhouette}
-          width={1920}
-          height={220}
-          alt=""
-          className="absolute self-end min-w-[600px] w-[100%] right-0"
-        />
-        <Image
-          src={Botbar_1}
-          width={1920}
-          height={220}
-          alt=""
-          className="absolute self-end min-w-[600px] w-[100%] right-0 translate-y-[50%]"
-        />
       </div>
     </section>
   );
