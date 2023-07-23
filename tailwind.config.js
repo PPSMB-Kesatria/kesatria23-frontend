@@ -30,6 +30,7 @@ module.exports = {
       backgroundImage: {
         "pattern-green": "url('/anyaman_green.png')",
         "pattern-cream": "url('/anyaman_cream.png')",
+        "pattern-cream-2": "url('/anyaman_cream_2.png')",
       },
       screens: {
         xs: "425px",
