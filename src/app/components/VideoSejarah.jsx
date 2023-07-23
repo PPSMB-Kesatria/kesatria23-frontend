@@ -3,9 +3,12 @@ import Link from "next/link";
 
 export default function VideoSejarah() {
   return (
-    <section>
-      <div className="absolute">
-        <Image src="/videosejarah_anyaman_atas.svg" alt="pattern_img" width={1920} height={200}/>
+    <section className="relative">
+      <div className="absolute h-20">
+        <img
+          src="/videosejarah_anyaman_atas.png"
+          className="bottom-0 left-0 min-w-[700px] z-[2]"
+        />
       </div>
       <div className="min-h-screen flex flex-col bg-pattern-cream bg-contain bg-repeat justify-center items-center pt-12 pb-36 lg:pt-36 lg:pb-48 gap-20 lg:gap-15">
         
