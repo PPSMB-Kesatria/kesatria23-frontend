@@ -2,8 +2,7 @@
 import Image from "next/image";
 import Nala from "../../../public/nala_hero.png";
 import Topbar from "../../../public/topbar_hero.svg";
-import Botbar_1 from "../../../public/bot_hero_1.svg";
-import Botbar_2 from "../../../public/bot_hero_2.svg";
+import Botbar_1 from "../../../public/HeroBottomDeco.png";
 import Silhouette from "../../../public/silhouette_tugu_teknik_hero.svg";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -58,14 +57,7 @@ export default function Hero() {
           width={1920}
           height={220}
           alt=""
-          className="absolute self-end min-w-[600px] w-[100%] right-0"
-        />
-        <Image
-          src={Botbar_2}
-          width={1920}
-          height={165}
-          alt=""
-          className="absolute self-end min-w-[600px] w-[100%] right-0"
+          className="absolute self-end min-w-[600px] w-[100%] right-0 translate-y-[50%]"
         />
       </div>
     </section>
