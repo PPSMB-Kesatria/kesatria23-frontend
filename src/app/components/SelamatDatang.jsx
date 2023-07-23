@@ -55,7 +55,9 @@ export default function SelamatDatang() {
           data-aos-delay="200"
           className="grid place-items-center px-5 sm:px-0"
         >
-          <div className="bg-[#F04C4B] p-2 xs:p-4 rounded-[30px] sm:rounded-[40px] aspect-[56/31.5] w-full max-w-[800px] xl:min-w-[900px] 2xl:min-w-[1000px]">
+          <div className="bg-[#F04C4B] relative p-2 xs:p-4 rounded-[30px] sm:rounded-[40px] aspect-[56/31.5] w-full max-w-[800px] xl:min-w-[900px] 2xl:min-w-[1000px]">
+            <img src="/Burung3.png" alt="" className="absolute w-[150px] md:w-[200px] lg:w-[300px] top-[-20%] lg:bottom-[60%] left-[90%] lg:left-[calc(100%-50px)]" />
+            <img src="/Burung3.png" alt="" className="absolute w-[150px] md:w-[200px] lg:w-[300px] top-[-20%] lg:bottom-[60%] right-[90%] lg:right-[calc(100%-50px)] scale-x-[-100%]" />
             <iframe
               width="560"
               height="315"
