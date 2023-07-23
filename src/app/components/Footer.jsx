@@ -11,7 +11,7 @@ export default function Footer() {
           src="/TransitionFooter.png"
           alt=""
           className="absolute z-[2] top-0 translate-y-[-50%] left-0 !w-[105%]"
-    /> 
+        /> 
         <div className="justify-between md:flex md:flex-row md:w-full lg:h-[250px]">
           <div className="px-2 place-content-center flex flex-row gap-4 items-center text-left">
             <img 
@@ -21,17 +21,17 @@ export default function Footer() {
             />
             <div className=" max-xs:text-[10px] md:w-[200px]">
               <p className=" max-xs:text-base font-creato italic font-bold text-lg md:mb-4">PPSMB Kesatria 2023</p>
-              <p className="md:mb-4">Fakultas Teknik</p>
+              <p className="md:mb-4 font-medium">Fakultas Teknik</p>
               <p className="md:mb-4">Jalan Grafika <br />
                 Mlati, Yogyakarta, 55281, ID</p>
               <p className="">https://ppsmb.ft.ugm.ac.id</p>
             </div>
           </div>
-          <div className=" py-4 px-8 justify-center md:w-[200px] lg:w-auto lg:h-[172px]">
+          <div className=" py-4 px-8 items-center justify-center md:w-[200px] lg:w-auto lg:h-[172px]">
             
-            <p className=" font-creato font-bold italic text-lg  my-4 text-center max-md:hidden">Official Account:</p>
-            <div className="mb-10 gap-1  flex justify-between  place-items-center md:gap-10 md:w-[100px] md:grid grid-cols-3 lg:grid-cols-2 lg:gap-1 lg:w-fit lg:place-items-start">
-              <div className="flex items-center ">
+            <p className=" font-creato font-bold italic text-lg pt-3 my-2 text-left max-md:hidden">Official Account:</p>
+            <div className="mb-10 gap-1 flex justify-between  place-items-center md:gap-10 md:w-[100px] md:grid grid-cols-3 lg:grid-cols-2 lg:gap-2 lg:gap-x-10 lg:w-fit lg:place-items-start">
+              <div className="flex items-center gap-1">
                 <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"></div>
                 <p className="font-creato font-normal italic text-base  max-lg:hidden ">ppsmb_kesatria</p>
               </div>
