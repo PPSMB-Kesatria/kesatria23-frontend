@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="overflow-y-hidden">
+    <main className="overflow-y-hidden overflow-x-hidden">
       <Hero />
       <SelamatDatang />
       <VideoSejarah />
