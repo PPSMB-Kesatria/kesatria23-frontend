@@ -15,6 +15,9 @@ export default function RootLayout({ children }) {
   }, []);
   return (
     <html className="!overflow-x-hidden" lang="en">
+      <head>
+        <link rel="icon" href="/logo_cream.png" />
+      </head>
       <body>
         <Navbar />
         {children}
