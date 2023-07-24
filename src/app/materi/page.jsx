@@ -49,7 +49,7 @@ export default function Materi() {
   }
 
   return(
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <main className="bg-pattern-green min-h-screen bg-repeat bg-contain gap-4 flex flex-col items-center pt-36 pb-36 md:pb-28 lg:pb-64">
         <h1 className="font-alstoria text-6xl text-neutral-100">Materi</h1>
         <div className="flex flex-row gap-10 justify-center w-4/5">
