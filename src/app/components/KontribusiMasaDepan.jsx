@@ -17,14 +17,11 @@ export default function KontribusiMasaDepan() {
             alt=""
           />
       <h1 data-aos="fade-up" className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 pt-40 md:mt-10 leading-[100%]">
-        Kontribusi Di Masa Depan
+        Aku di Masa Depan
       </h1>
       <p data-aos="fade-up" className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center">
-        Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
-        "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
-        "Gamadhira" layaknya burung merak yang identik dengan keberagaman,
-        ketangguhan, dan keindahan. Dengan Gamadhira diharapkan Kesatria Muda
-        memiliki perjalanan yang indah.
+      Hallo Kesatria Muda!
+      Tidak terasa kita sudah mencapai akhir dari perjalanan di PPSMB Kesatria ini, yaitu Chapter 3 : Aku di Masa Depan.
       </p>
 
       <div className="mt-[50px] lg:mt-[30px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[50px] lg:mb-[30px]">
@@ -34,15 +31,11 @@ export default function KontribusiMasaDepan() {
           </div>
         </div>
         <div data-aos="fade-left" className="bg-green-400 text-left max-w-[940px] mb-5 lg:mb-0 p-5 py-10 sm:p-10 lg:pl-20 w-[90%] lg:w-1/2 h-fit rounded-r-[40px] lg:rounded-r-none 2xl:rounded-r-[40px] rounded-l-[40px] text-neutral-100">
-          <h2 className="font-creato text-[25px] text-center md:text-left 2xl:text-[30px] italic font-bold leading-[100%]">
+          <h2 className="font-creato text-[25px] text-center md:text-right 2xl:text-[30px] italic font-bold leading-[100%]">
             Pengenalan Karya Aplikatif
           </h2>
           <p className="text-[18px] mt-3 sm:text-[20px] 2xl:text-[25px] font-creato text-justify">
-            Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan
-            kata "dhira" yang berarti kebijaksanaan, kecerdasan, dan
-            keberagaman. "Gamadhira" layaknya burung merak yang identik dengan
-            keberagaman, ketangguhan, dan keindahan. Dengan Gamadhira diharapkan
-            Kesatria Muda memiliki perjalanan yang indah.
+          Pada chapter 3 ini Kesatria Muda akan diajak untuk mengeksplorasi potensi diri dan merancang rencana yang dituangkan dalam bentuk Lifeplan singkat yang ingin dilakukan selama masa perkuliahan. Lifeplan ini berisi target-target yang ingin dicapai di berbagai aspek, juga identifikasi hambatan yang mungkin akan ditemui. Selain itu, untuk menunjang kemampuan berpikir kritis dan melatih problem solving, chapter ini juga berisi Modul Karya Aplikatif tentang berbagai study kasus dalam lingkungan teknik yang bisa dipelajari Kesatria Muda sebelum kita bertemu secara offline di PPSMB Kesatria.
           </p>
         </div>
       </div>
