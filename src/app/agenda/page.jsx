@@ -29,9 +29,9 @@ export default function Agenda() {
   }
   return(
     <main className=" bg-pattern-cream bg-repeat py-32 lg:pb-40">
-      <h1 className=" font-alstoria text-center text-[48px] text-green-400 mb-7 ">Agenda</h1>
-      <div className="flex flex-row place-content-center gap-[1%] mb-12">
-      {
+      <h1 data-aos="fade-up" className=" font-alstoria text-center text-[48px] text-green-400 mb-7 ">Agenda</h1>
+      <div data-aos="fade-up" className="flex flex-row place-content-center gap-[1%] mb-12">
+          {
             activeIndex === 0 ? <ButtonClicked title={RUNDOWN_NAVIGATION[0].title} /> : <ButtonNotClicked onClick={()=>{setActiveIndex(0)}} title={RUNDOWN_NAVIGATION[0].title}/>
           }
           {

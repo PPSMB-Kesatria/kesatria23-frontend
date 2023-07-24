@@ -78,7 +78,7 @@ export const Day2 = () => {
   };
   
   return(
-    <div className="flex flex-col gap-3 xs:w-full xs:px-[81.5px]">
+    <div data-aos="fade-up" className="flex flex-col gap-3 xs:w-full xs:px-[81.5px]">
       {
             activeIndex === 0 ? <ButtonClicked time={RUNDOWN[0].time} agenda={RUNDOWN[0].agenda} deskripsi={RUNDOWN[0].deskripsi}/> : <ButtonNotClicked onClick={()=>{setActiveIndex(0)}} time={RUNDOWN[0].time} agenda={RUNDOWN[0].agenda}/>
       }
