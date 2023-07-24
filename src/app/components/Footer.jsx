@@ -1,5 +1,6 @@
 'use client';
-
+import { FaTwitter,FaYoutube,FaTiktok,FaInstagram,FaLine } from "react-icons/fa";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
@@ -20,7 +21,7 @@ export default function Footer() {
               alt=""
             />
             <div className=" max-xs:text-[10px] md:w-[200px]">
-              <p className=" max-xs:text-base font-creato italic font-bold text-lg md:mb-4">PPSMB Kesatria 2023</p>
+              <p className=" max-xs:text-base font-creato italic font-bold text-lg md:mb-4">PPSMB Kesatria 2023 </p>
               <p className="md:mb-4 font-medium">Fakultas Teknik</p>
               <p className="md:mb-4">Jalan Grafika <br />
                 Mlati, Yogyakarta, 55281, ID</p>
@@ -31,29 +32,27 @@ export default function Footer() {
             
             <p className=" font-creato font-bold italic text-lg pt-3 my-2 text-left max-md:hidden">Official Account:</p>
             <div className="mb-10 gap-1 flex justify-between  place-items-center md:gap-10 md:w-[100px] md:grid grid-cols-3 lg:grid-cols-2 lg:gap-2 lg:gap-x-10 lg:w-fit lg:place-items-start">
-              <div className="flex items-center gap-1">
-                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"></div>
+              <Link href="https://twitter.com/ppsmb_kesatria" className="flex items-center gap-1">
+                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square items-cente"><FaTwitter className="m-auto w-[40px] h-[40px] max-xs:w-[30px] max-xs:h-[30px] bg-green-400 "/></div>
                 <p className="font-creato font-normal italic text-base  max-lg:hidden ">ppsmb_kesatria</p>
-              </div>
-              <div className="flex items-center gap-1 ">
-                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"></div>
+              </Link>
+              <Link href="https://www.tiktok.com/@ppsmb_kesatria" className="flex items-center gap-1 ">
+                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"><FaTiktok className="m-auto w-[40px] h-[40px] max-xs:w-[30px] max-xs:h-[30px] bg-green-400 "/></div>
                 <p className="font-creato font-normal italic text-base max-lg:hidden">ppsmb_kesatria</p>
-              </div>
-              <div className="flex items-center gap-1 ">
-                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"></div>
+              </Link>
+              <Link href="https://line.me/R/ti/p/@NRB2565A" className="flex items-center gap-1 ">
+                <div className=" w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"><FaLine className="m-auto w-[40px] h-[40px] max-xs:w-[30px] max-xs:h-[30px] bg-green-400 "/></div>
+                <p className="font-creato font-normal italic text-base max-lg:hidden">@NRB2565A</p>
+              </Link>
+              <Link href="https://www.instagram.com/ppsmb_kesatria/" className="flex items-center gap-1 ">
+                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"><FaInstagram className="m-auto w-[40px] h-[40px] max-xs:w-[30px] max-xs:h-[30px] bg-green-400 "/></div>
                 <p className="font-creato font-normal italic text-base max-lg:hidden">ppsmb_kesatria</p>
-              </div>
-              <div className="flex items-center gap-1 ">
-                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"></div>
-                <p className="font-creato font-normal italic text-base max-lg:hidden">ppsmb_kesatria</p>
-              </div>
-              <div className="flex items-center gap-1 ">
-                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"></div>
-                <p className="font-creato font-normal italic text-base max-lg:hidden">ppsmb_kesatria</p>
-              </div>
-              
+              </Link>
+              <Link href="https://www.youtube.com/channel/UCmv4fLH2lves3QtOS4V33PQ" className="flex items-center gap-1 ">
+                <div className="bg-neutral-100 w-[40px] max-xs:w-[30px] rounded-[5px] aspect-square"><FaYoutube className="m-auto w-[40px] h-[40px] max-xs:w-[30px] max-xs:h-[30px] bg-green-400 "/></div>
+                <p className="font-creato font-normal italic text-base max-lg:hidden">PPSMB_KESATRIA</p>
+              </Link>
             </div>
-            
           </div>
         </div>
       </footer>
