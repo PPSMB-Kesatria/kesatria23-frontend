@@ -95,14 +95,14 @@ export default function Tema() {
           </div>
 
           <p className="w-full max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1150px] mt-5 font-creato font-medium text-[16px] sm:text-[18px] 2xl:text-[20px] text-justify mx-auto px-5 md:px-10 lg:px-20">
-            Antachandra (terbang ke bulan) diawali dengan lepas landas dari
-            permukaan bumi yang menggambarkan perjuangan awal atau titik awal
-            para Kesatria Muda untuk mengawali kesaksian dan kegiatan mereka di
-            lingkungan sivitas akademika UGM. Tidak pernah berhenti terbang
-            sebelum sampai ke tujuan, kesatria dapat diartikan sebagai seorang
-            pejuang yang tangguh, tetap dalam pendirian, dan konsisten dalam
-            segala tindakan yang harus siap sedia bertanggung jawab atas segala
-            tindakannya.
+            Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan
+            kata "dhira" yang berarti kebijaksanaan, kecerdasan, dan
+            keberagaman. Gamadhira layaknya burung merak yang identik dengan
+            keberagaman, ketangguhan, dan keindahan. Dengan Gamadhira diharapkan
+            Kesatria Muda memiliki perjalanan yang indah di Fakultas Teknik
+            Universitas Gadjah Mada dalam keberagaman latar belakang. Sehingga
+            dapat menghasilkan individu yang bijaksana, cerdas, tangguh dan juga
+            kolaboratif antar sesama.
           </p>
         </div>
       </div>
