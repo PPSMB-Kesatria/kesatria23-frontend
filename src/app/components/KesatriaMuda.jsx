@@ -24,25 +24,27 @@ export default function KesatriaMuda() {
         >
           Aku Sebagai Kesatria Muda
         </h1>
-        <h2 data-aos="fade-up" className="text-[30px] leading-[1] md:text-3xl font-alstoria text-center mb-7">
-          Chapter <span className="font-serif font-bold">2: <br className="md:hidden" /></span> Aku yang
-          sekarang
+        <h2
+          data-aos="fade-up"
+          className="text-[30px] leading-[1] md:text-3xl font-alstoria text-center mb-7"
+        >
+          Chapter{" "}
+          <span className="font-serif font-bold">
+            2: <br className="md:hidden" />
+          </span>{" "}
+          Aku yang sekarang
         </h2>
         <p
           data-aos="fade-up"
           className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-medium max-w-[923px] text-center"
         >
           Wahh selamat, Kesatria Muda sudah menyelesaikan Chapter 1, kini
-          saatnya untuk melangkah ke Chapter 2 : Aku yang Sekarang. <br /> <br />{" "}
-          Setelah mengenal diri, Kesatria Muda akan mulai mengenal lingkungan
-          perkuliahannya. Fakultas teknik UGM berbagai kegiatan di luar
-          akademik, mulai dari kepanitiaan, organisasi, magang, tim lomba,
-          hingga pertukaran pelajar. Pada chapter ini akan diadakan game based
-          learning tentang kegiatan non akademik. Yuk pelajari dulu modul 2
-          supaya bisa menyelesaikan game saat hari H dengan lebih baik! Selain
-          itu, Chapter ini juga dilengkapi dengan berbagai video dan modul
-          menarik tentang pengenalan lingkungan teknik seperti “Jalan-Jalan
-          Teknik”, “Jelajah Lembaga”, “Pameran Karya”, dan “Fasilitas Teknik”.
+          saatnya untuk melangkah ke Chapter 2 : Aku yang Sekarang. <br />{" "}
+          <br /> Setelah mengenal diri, pada chapter ini Kesatria Muda diajak
+          mengenal lingkungan perkuliahannya, mulai dari kepanitiaan,
+          organisasi, magang, tim lomba, hingga pertukaran pelajar melalui game
+          based learning. Yuk, pelajari dulu modul 2 untuk mempermudah
+          penyelesaian game saat PPSMB Kesatria!
         </p>
       </div>
 
@@ -58,16 +60,28 @@ export default function KesatriaMuda() {
         }}
       >
         <SwiperSlide>
-          <SwiperCard title="Pengenalan Jurusan" />
+          <SwiperCard
+            title="Pengenalan Jurusan"
+            content="Fakultas Teknik terdiri dari 8 Departemen yang di dalamnya terdapat 15 Program Studi atau yang biasa dikenal dengan jurusan. Sebelum masuk ke jurusan masing-masing, yuk kita sama-sama kenali jurusan Kesatria Muda melalui modul berikut!"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <SwiperCard title="Jelajah Lembaga" />
+          <SwiperCard
+            title="Jelajah Lembaga"
+            content="Fakultas Teknik tidak hanya bergerak dan berprestasi di bidang akademik saja, namun terdapat berbagai macam lembaga yang dapat menunjang skill mahasiswanya. Wah, lembaga mana nih yang diminati Kesatria Muda? Mari pahami modul berikut sebagai bekal bagi Kesatria Muda!"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <SwiperCard title="Pameran Karya" />
+          <SwiperCard
+            title="Pameran Karya"
+            content="Fakultas Teknik tidak terlepas dari segudang prestasinya. Penasaran siapa saja tim-tim yang bergerak di belakang untuk mengharumkan nama Fakultas Teknik? Yuk, simak modul berikut ini!"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <SwiperCard title="Fasilitas Teknik" />
+          <SwiperCard
+            title="Fasilitas Teknik"
+            content="Fakultas Teknik sebagai fakultas terbesar di Universitas Gadjah Mada memiliki beragam fasilitas yang menunjang kegiatan mahasiswanya. Mau tahu apa saja fasilitas yang ada di Fakultas Teknik? Mari simak modul berikut!"
+          />
         </SwiperSlide>
         <div
           className="z-[1] hidden cursor-pointer unselectable lg:block absolute left-[10%] text-[80px] top-[50%] translate-y-[-50%]"
@@ -172,14 +186,14 @@ export default function KesatriaMuda() {
           className="bg-neutral-100 max-w-[940px] mt-5 lg:mt-0 p-5 py-10 sm:p-10 lg:pl-20 text-green-400 w-[90%] lg:w-1/2 h-fit rounded-l-[40px] lg:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]"
         >
           <h1 className="font-alstoria text-[45px] 2xl:text-[60px] leading-[100%] text-center lg:text-left">
-            Transisi Materi
+            Bridging Movie
           </h1>
           <p className="text-[18px] md:text-[20px] 2xl:text-[25px] font-creato text-justify">
-            Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan
-            kata "dhira" yang berarti kebijaksanaan, kecerdasan, dan
-            keberagaman. "Gamadhira" layaknya burung merak yang identik dengan
-            keberagaman, ketangguhan, dan keindahan. Dengan Gamadhira diharapkan
-            Kesatria Muda memiliki perjalanan yang indah.
+            Mengenal lingkungan teknik tentunya juga termasuk mengenal
+            lingkungan sosial. Kita bisa memilih menjadi mahasiswa yang seperti
+            apa? Nah, supaya Kesatria Muda memiliki bayangan kehidupan sosial
+            dan lingkungan perkuliahan di Fakultas Teknik beserta hambatannya,
+            yuk kita tonton Short Movie berikut!
           </p>
         </div>
         <div
@@ -204,11 +218,7 @@ function SwiperCard({ title, content, img, link }) {
           {title}
         </h2>
         <p className="text-[16px] sm:text-[20px] 2xl:text-[25px] 2xl:max-w-[435px] font-normal font-creato text-justify leading-tight">
-          Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
-          "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
-          "Gamadhira" layaknya burung merak yang identik dengan keberagaman,
-          ketangguhan, dan keindahan. Dengan Gamadhira diharapkan Kesatria Muda
-          memiliki perjalanan yang indah.
+          {content}
         </p>
         <Link
           href="/"
