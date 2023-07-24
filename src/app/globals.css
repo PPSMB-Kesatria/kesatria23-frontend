@@ -109,6 +109,14 @@ html {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, .3);
 }
 
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.after-z::after {
+  transform: translateZ(-1px);
+}
+
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -118,3 +126,4 @@ html {
     )
     rgb(var(--background-start-rgb));
 } */
+
