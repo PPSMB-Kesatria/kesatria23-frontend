@@ -63,9 +63,8 @@ export default function SelamatDatang() {
               height="315"
               src="https://www.youtube.com/embed/FUFzqaS0CHQ"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
               className="rounded-[20px] w-full h-full !bg-green-100"
             ></iframe>
           </div>
