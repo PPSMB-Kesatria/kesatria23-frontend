@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Tema() {
   return (
-    <main className="overflow-y-hidden min-h-screen pt-[15vh] pb-[20vh] bg-pattern-green text-neutral-100 relative overflow-x-hidden flex gap-10 justify-center items-start flex-col xl:flex-row">
+    <main className="min-h-screen pt-[15vh] pb-[20vh] bg-pattern-green text-neutral-100 relative overflow-x-hidden flex gap-10 justify-center items-start flex-col xl:flex-row">
       <Image
         src={Topbar}
         className=" top-[20px] sm:top-0 absolute w-[100%] min-w-[920px] right-0"
@@ -19,13 +19,13 @@ export default function Tema() {
       />
       <img
         src="/TemaBottom1.png"
-        className="w-[105%] absolute bottom-0 left-0 min-w-[920px] z-[2]"
+        className="w-[105%] absolute bottom-0 left-0 min-w-[920px] translate-y-[50%] z-[2]"
         data-aos="fade-up"
         data-aos-offset="-500"
       />
       <img
         src="/TemaBottom2.png"
-        className="w-[105%] absolute bottom-0 left-0 min-w-[920px] z-[3]"
+        className="w-[105%] absolute bottom-0 left-0 min-w-[920px] translate-y-[50%] z-[3]"
         data-aos="fade-up"
         data-aos-offset="-500"
       />

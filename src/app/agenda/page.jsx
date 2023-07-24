@@ -19,12 +19,12 @@ export default function Agenda() {
   ]
   const ButtonClicked = ({title}) =>{
     return(
-      <button className=" my-2 py-2 w-[85px] xs:w-[20%] lg:w-[204.8px] bg-red-200 text-neutral-100 rounded-xl drop-shadow-xl font-creato font-medium">{title}</button>
+      <button className="cursor-pointer my-2 py-2 w-[85px] xs:w-[20%] lg:w-[204.8px] bg-red-200 text-neutral-100 rounded-xl drop-shadow-xl font-creato font-medium">{title}</button>
     )
   }
   const ButtonNotClicked = ({onClick,title})=>{
     return(
-      <button onClick={onClick} className="my-2 p-2 w-[85px] xs:w-[20%] lg:w-[204.8px] bg-neutral-100 text-red-200 rounded-xl drop-shadow-xl font-creato">{title}</button>
+      <button onClick={onClick} className="cursor-pointer my-2 p-2 w-[85px] xs:w-[20%] lg:w-[204.8px] bg-neutral-100 text-red-200 rounded-xl drop-shadow-xl font-creato">{title}</button>
     )
   }
   return(

@@ -42,7 +42,7 @@ export const Day2 = () => {
   ];
   const ButtonClicked = ({time,agenda,deskripsi})=>{
     return(
-      <div className="flex font-creato gap-3 place-content-center">
+      <div className="flex font-creato gap-3 place-content-center cursor-pointer">
         <div className="p-2 text-center bg-red-200 h-[40px] w-[75px] xs:w-[28.626%] md:w-[173px] text-neutral-100 rounded-xl drop-shadow-lg">
           {time}
         </div>
@@ -62,11 +62,11 @@ export const Day2 = () => {
   };
   const ButtonNotClicked = ({onClick,time,agenda})=>{
     return(
-      <div onClick={onClick} className="flex font-creato gap-3 place-content-center">
+      <div onClick={onClick} className="cursor-pointer flex font-creato gap-3 place-content-center">
         <div className="p-2 text-center bg-red-200 h-[40px] w-[75px] xs:w-[28.626%] md:w-[173px] text-neutral-100 rounded-xl drop-shadow-l">
           {time}
         </div>
-        <div className="p-2 bg-red-100 w-[175px] xs:w-[66.7939%] text-neutral-100 rounded-xl drop-shadow-lg xs:flex xs:flex-col">
+        <div className="p-2 bg-red-100 duration-100 hover:shadow-[0_0_10px_rgba(241,116,113)] w-[175px] xs:w-[66.7939%] text-neutral-100 rounded-xl drop-shadow-lg xs:flex xs:flex-col">
           <div className="xs:flex xs:flex-row xs:justify-between">
             <p>{agenda}</p>
             <button className="max-xs:hidden"><img className="h-[10px]" src="/icon-down.png" alt="" /></button>
