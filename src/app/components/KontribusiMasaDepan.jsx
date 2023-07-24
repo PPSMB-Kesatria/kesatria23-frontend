@@ -16,9 +16,15 @@ export default function KontribusiMasaDepan() {
             width="40%"
             alt=""
           />
-      <h1 data-aos="fade-up" className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 pt-40 md:mt-10 leading-[100%]">
-        Aku di Masa Depan
-      </h1>
+      <h1
+          data-aos="fade-up"
+          className="font-alstoria text-[45px] 2xl:text-[60px] text-center mt-5 md:mt-10 leading-[100%] pt-20"
+        >
+          Kontribusi di Masa Depan
+        </h1>
+        <h2 data-aos="fade-up" className="text-[30px] leading-[1] md:text-3xl font-alstoria text-center mb-7">
+          Chapter <span className="font-serif font-bold">3: <br className="md:hidden" /></span> Aku di masa depan
+        </h2>
       <p data-aos="fade-up" className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center">
       Hallo Kesatria Muda!
       Tidak terasa kita sudah mencapai akhir dari perjalanan di PPSMB Kesatria ini, yaitu Chapter 3 : Aku di Masa Depan.
@@ -31,7 +37,7 @@ export default function KontribusiMasaDepan() {
           </div>
         </div>
         <div data-aos="fade-left" className="bg-green-400 text-left max-w-[940px] mb-5 lg:mb-0 p-5 py-10 sm:p-10 lg:pl-20 w-[90%] lg:w-1/2 h-fit rounded-r-[40px] lg:rounded-r-none 2xl:rounded-r-[40px] rounded-l-[40px] text-neutral-100">
-          <h2 className="font-creato text-[25px] text-center md:text-right 2xl:text-[30px] italic font-bold leading-[100%]">
+          <h2 className="font-creato text-[25px] text-center 2xl:text-[30px] italic font-bold leading-[100%]">
             Pengenalan Karya Aplikatif
           </h2>
           <p className="text-[18px] mt-3 sm:text-[20px] 2xl:text-[25px] font-creato text-justify">
