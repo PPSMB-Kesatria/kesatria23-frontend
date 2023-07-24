@@ -20,19 +20,29 @@ export default function KesatriaMuda() {
       <div>
         <h1
           data-aos="fade-up"
-          className="font-alstoria text-[45px] 2xl:text-[60px] text-center mb-7 mt-5 md:mt-10"
+          className="font-alstoria text-[45px] 2xl:text-[60px] text-center mt-5 md:mt-10 leading-[100%]"
         >
           Aku Sebagai Kesatria Muda
         </h1>
+        <h2 data-aos="fade-up" className="text-[30px] leading-[1] md:text-3xl font-alstoria text-center mb-7">
+          Chapter <span className="font-serif font-bold">2: <br className="md:hidden" /></span> Aku yang
+          sekarang
+        </h2>
         <p
           data-aos="fade-up"
-          className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center"
+          className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-medium max-w-[923px] text-center"
         >
-          Gamadhira berasal dari kata "gamadi" yang berarti perjalanan dan kata
-          "dhira" yang berarti kebijaksanaan, kecerdasan, dan keberagaman.
-          "Gamadhira" layaknya burung merak yang identik dengan keberagaman,
-          ketangguhan, dan keindahan. Dengan Gamadhira diharapkan Kesatria Muda
-          memiliki perjalanan yang indah.
+          Wahh selamat, Kesatria Muda sudah menyelesaikan Chapter 1, kini
+          saatnya untuk melangkah ke Chapter 2 : Aku yang Sekarang. <br /> <br />{" "}
+          Setelah mengenal diri, Kesatria Muda akan mulai mengenal lingkungan
+          perkuliahannya. Fakultas teknik UGM berbagai kegiatan di luar
+          akademik, mulai dari kepanitiaan, organisasi, magang, tim lomba,
+          hingga pertukaran pelajar. Pada chapter ini akan diadakan game based
+          learning tentang kegiatan non akademik. Yuk pelajari dulu modul 2
+          supaya bisa menyelesaikan game saat hari H dengan lebih baik! Selain
+          itu, Chapter ini juga dilengkapi dengan berbagai video dan modul
+          menarik tentang pengenalan lingkungan teknik seperti “Jalan-Jalan
+          Teknik”, “Jelajah Lembaga”, “Pameran Karya”, dan “Fasilitas Teknik”.
         </p>
       </div>
 
@@ -172,7 +182,10 @@ export default function KesatriaMuda() {
             Kesatria Muda memiliki perjalanan yang indah.
           </p>
         </div>
-        <div data-aos="fade-left" className="p-0 sm:p-5 lg:p-10  w-[90%] lg:w-1/2 max-w-[600px] lg:max-w-[825px] flex-shrink-0">
+        <div
+          data-aos="fade-left"
+          className="p-0 sm:p-5 lg:p-10  w-[90%] lg:w-1/2 max-w-[600px] lg:max-w-[825px] flex-shrink-0"
+        >
           <div className="aspect-[76.7/48] bg-[#54BB9C] p-[15px] md:p-[25px] rounded-[40px]">
             <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
           </div>
