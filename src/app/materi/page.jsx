@@ -21,31 +21,30 @@ export default function Materi() {
     },
   ];
 
-  const Button = ({ title, ownIndex }) => {
-    return (
-      <div
-        className={
-          "w-full relative flex justify-center items-center py-3.5 rounded-2xl font-creato font-bold shadow-md shadow-black/30 cursor-pointer !transition-all duration-300 after:box-border text-green-400 after:w-full after:absolute after:bg-red-100 after:top-[5px] after:left-[3px] after:h-full after:rounded-2xl z-[2] preserve-3d after-z " +
-          (ownIndex == activeIndex ? " shadow-none after:bg-transparent text-neutral-100 after:!border-red-100 after:border-[6px] outline-neutral-100 outline-[6px] before:absolute before:w-full before:h-full before:border-neutral-100 before:border-[6px] before:rounded-2xl" : "bg-neutral-100")
-        }
-        onClick={() => {
-          setActiveIndex(ownIndex);
-        }}
-      >
-        <h1 className="px-10">{title}</h1>
-      </div>
-    );
-  };
-
   return (
     <div className="relative overflow-hidden">
       <main className="bg-pattern-green min-h-screen bg-repeat bg-contain gap-4 flex flex-col items-center pt-36 pb-36 md:pb-28 lg:pb-64">
         <h1 className="font-alstoria text-6xl text-neutral-100">Materi</h1>
         <div className="flex flex-row gap-10 justify-center w-4/5">
           <aside className="hidden md:flex md:flex-col items-center w-1/5 space-y-8 min-w-fit ">
-            <Button title="Personal Branding" ownIndex={0} />
-            <Button title="Fasilitas Fakultas" ownIndex={1} />
-            <Button title="Dummy Content" ownIndex={2} />
+            <Button
+              title="Personal Branding"
+              activeIndex={activeIndex}
+              ownIndex={0}
+              setActiveIndex={setActiveIndex}
+            />
+            <Button
+              title="Fasilitas Fakultas"
+              activeIndex={activeIndex}
+              ownIndex={1}
+              setActiveIndex={setActiveIndex}
+            />
+            <Button
+              title="Dummy Content"
+              activeIndex={activeIndex}
+              ownIndex={2}
+              setActiveIndex={setActiveIndex}
+            />
             {/* <Button title="Test" ownIndex={3} /> */}
           </aside>
           <content className="min-h-screen max-w-6xl space-y-4 md:w-4/5">
@@ -64,3 +63,27 @@ export default function Materi() {
     </div>
   );
 }
+
+const Button = ({ title, ownIndex, activeIndex, setActiveIndex }) => {
+  return (
+    <div
+      className={
+        "w-full relative flex justify-center items-center py-3.5 rounded-2xl font-creato font-bold shadow-md shadow-black/30 cursor-pointer transition-[background-color,color] duration-200 after:transition-colors after:duration-300 before:transition-colors before:duration-300 after:box-border text-green-400 after:w-full after:absolute after:bg-red-100 after:top-[5px] after:left-[3px] after:h-full after:rounded-2xl z-[2] preserve-3d after-z " +
+        (ownIndex == activeIndex
+          ? " shadow-none after:bg-transparent text-neutral-100 after:!border-red-100 after:border-[6px] outline-neutral-100 outline-[6px] before:absolute before:w-full before:h-full before:border-neutral-100 before:border-[6px] before:rounded-2xl"
+          : "bg-neutral-100")
+      }
+      onClick={() => {
+        setActiveIndex(ownIndex);
+      }}
+    >
+      <h1
+        className={
+          "px-10 select-none"
+        }
+      >
+        {title}
+      </h1>
+    </div>
+  );
+};
