@@ -4,6 +4,7 @@ import Top from "../../../public/top_dokumentasi.svg";
 import Bot from "../../../public/bot_dokumentasi.svg";
 import Silhouette from "../../../public/silhouette_tugu_teknik_hero.svg";
 
+import Dummypict from "../../../public/silhouette_tugu_teknik_hero.svg"
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,6 +16,8 @@ import AOS from "aos";
 export default function Dokumentasi() {
   const [swiper, setSwiper] = useState(null);
 
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImageUrl, setSelectedImageUrl] = useState(null);
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -28,6 +31,11 @@ export default function Dokumentasi() {
     1024: { slidesPerView: 3 },
   };
 
+  const handleImageClick = (imageUrl) => {
+    setSelectedImageUrl(imageUrl);
+    setShowModal(true);
+  };
+
   const allImages = Array.from({ length: 24 });
   // split allImages into 2d arrays of 6 images each
   const images2DArray = allImages.reduce((acc, curr, i) => {
@@ -39,9 +47,11 @@ export default function Dokumentasi() {
     return acc;
   }, []);
 
-  console.log(allImages);
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
-  console.log(images2DArray);
+  // ... (existing code)
 
   return (
     <section className="min-h-screen text-neutral-100 py-10 md:py-[100px] relative bg-pattern-green bg-contain bg-repeat flex gap-[35px] justify-center items-center flex-col">
@@ -83,11 +93,11 @@ export default function Dokumentasi() {
           className="w-full !overflow-y-visible !px-[10px] bg-green-100 rounded-[30px] sm:rounded-[50px]"
           grabCursor={true}
           onSwiper={setSwiper}
-          // breakpoints={breakpoints}
+        // breakpoints={breakpoints}
         >
           {images2DArray.map((images, i) => (
             <SwiperSlide key={i}>
-              <Imagecard array={images2DArray[i]} />
+              <Imagecard array={images2DArray[i]} onImageClick={handleImageClick} />
             </SwiperSlide>
           ))}
           <div
@@ -128,18 +138,43 @@ export default function Dokumentasi() {
           <IoIosArrowForward />
         </div>
       </div>
+
+      {showModal && <Modal imageUrl={selectedImageUrl} onClose={handleCloseModal} />}
     </section>
   );
 }
 
-function Imagecard({ index, array }) {
+function Imagecard({ array, onImageClick }) {
   return (
-    <div className="grid place-items-center gap-3 sm:gap-5 grid-cols-2 lg:grid-cols-3 mx-0 p-[5%] xs:p-5 sm:p-8 md:p-12 w-full">
+    <div className="grid place-items-center gap-3 sm:gap-5 grid-cols-2 lg:grid-cols-3 mx-0 p-[5%] xs:p-5 sm:p-8 md:p-12 w-full overflow-x-hidden overflow-y-hidden">
       {array.map((_, i) => (
-        <div key={i} className=" w-full aspect-[16/9] animate-pulse">
-          <div className="bg-gray-300 w-full h-full"></div>
+        <div
+          key={i}
+          className="w-full aspect-[16/9] animate-pulse"
+          onClick={() => onImageClick()}
+        >
+          <div className="bg-gray-300 w-full">
+          <Image src={Dummypict} alt="Dummy Image" />
+          </div>
         </div>
       ))}
     </div>
   );
 }
+
+function Modal({ imageUrl, onClose }) {
+  return (
+    <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center z-[1000]">
+      <div className="absolute w-fit bg-white p-4 rounded-lg md:mx-[50px] my-[100px] max-h-[90vh] overflow-y-hidden mx-[10px]">
+        <button
+          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 focus:outline-none"
+          onClick={onClose}
+        >
+          Close
+        </button>
+        <Image src={Dummypict} alt="Image Pop-up" className="w-[100%]"/>
+      </div>
+    </div>
+  );
+}
+
