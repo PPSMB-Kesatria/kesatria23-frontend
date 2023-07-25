@@ -73,8 +73,6 @@ export default function Dokumentasi() {
     setShowModal(false);
   };
 
-  // ... (existing code)
-
   return (
     <section className="min-h-screen text-neutral-100 py-10 md:py-[100px] relative bg-pattern-green bg-contain bg-repeat flex gap-[35px] justify-center items-center flex-col">
       <Image
