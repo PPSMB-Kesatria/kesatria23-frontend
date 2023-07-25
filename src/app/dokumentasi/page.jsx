@@ -201,7 +201,7 @@ function Modal({ imageUrl, onClose }) {
     <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center z-[1000]">
       <div className="absolute w-fit bg-neutral-100 p-4 rounded-lg md:mx-[50px] my-[100px] max-h-[90vh] overflow-y-hidden mx-[10px] min-w-[50%]">
         <button
-          className="absolute top-2 right-2 text-gray-500 hover:bg-green-200 hover:text-green-400 focus:outline-none font-creato text-neutral-100 rounded-lg bg-green-400 p-2"
+          className="absolute top-2 right-2 hover:bg-green-200 hover:text-green-400 focus:outline-none font-creato text-neutral-100 rounded-lg bg-green-400 p-2"
           onClick={onClose}
         >
           Close
