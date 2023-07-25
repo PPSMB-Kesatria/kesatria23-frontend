@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SelamatDatang() {
   return (
-    <section className="min-h-screen relative z-[0] bg-pattern-green text-neutral-100 flex flex-col justify-center items-center lg:py-40">
+    <section className="min-h-screen relative z-[0] bg-pattern-green text-neutral-100 flex flex-col justify-center items-center sm:py-20 lg:py-40">
       <img
         src="/TemaBottom1.png"
         className="w-[105%] absolute bottom-0 left-0 min-w-[700px] z-[2]"
