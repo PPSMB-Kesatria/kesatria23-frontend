@@ -55,7 +55,6 @@ export default function Materi() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    console.log(searchParams.get("materi"))
     if (searchParams.get("materi")) setActiveIndex(parseInt(searchParams.get("materi")));
   }, [])
 
@@ -120,9 +119,9 @@ export default function Materi() {
               setActiveIndex={setActiveIndex}
             />
           </aside>
-          <content className="relative z-[100] min-h-screen max-w-6xl space-y-4 px-5 sm:px-0 md:w-4/5">
+          <main className="relative z-[100] min-h-screen max-w-6xl space-y-4 px-5 sm:px-0 md:w-4/5">
             {MATERI_NAVIGATION[activeIndex].content}
-          </content>
+          </main>
         </div>
       </main>
       <img
