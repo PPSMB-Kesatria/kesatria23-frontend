@@ -13,34 +13,33 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 export default function Dokumentasi() {
-
   const imageUrls = [
-    '/image1.jpg',
-    '/image2.jpg',
-    '/image3.jpg',
-    '/image4.jpg',
-    '/image5.jpg',
-    '/image6.jpg',
-    '/image7.jpg',
-    '/image8.jpg',
-    '/image9.jpg',
-    '/image10.jpg',
-    '/image11.jpg',
-    '/image12.jpg',
-    '/image13.jpg',
-    '/image14.jpg',
-    '/image15.jpg',
-    '/image16.jpg',
-    '/image17.jpg',
-    '/image18.jpg',
-    '/image19.jpg',
-    '/image20.jpg',
-    '/image21.jpg',
-    '/image22.jpg',
-    '/image23.jpg',
-    '/image24.jpg',
+    "/image1.jpg",
+    "/image2.jpg",
+    "/image3.jpg",
+    "/image4.jpg",
+    "/image5.jpg",
+    "/image6.jpg",
+    "/image7.jpg",
+    "/image8.jpg",
+    "/image9.jpg",
+    "/image10.jpg",
+    "/image11.jpg",
+    "/image12.jpg",
+    "/image13.jpg",
+    "/image14.jpg",
+    "/image15.jpg",
+    "/image16.jpg",
+    "/image17.jpg",
+    "/image18.jpg",
+    "/image19.jpg",
+    "/image20.jpg",
+    "/image21.jpg",
+    "/image22.jpg",
+    "/image23.jpg",
+    "/image24.jpg",
   ];
-  
+
   const [swiper, setSwiper] = useState(null);
 
   const [showModal, setShowModal] = useState(false);
@@ -51,7 +50,6 @@ export default function Dokumentasi() {
       once: true,
     });
   }, []);
-
 
   const handleImageClick = (imageUrl) => {
     setSelectedImageUrl(imageUrl);
@@ -72,8 +70,6 @@ export default function Dokumentasi() {
   const handleCloseModal = () => {
     setShowModal(false);
   };
-
-  // ... (existing code)
 
   return (
     <section className="min-h-screen text-neutral-100 py-10 md:py-[100px] relative bg-pattern-green bg-contain bg-repeat flex gap-[35px] justify-center items-center flex-col">
@@ -108,18 +104,26 @@ export default function Dokumentasi() {
         </h1>
       </div>
 
-      <div className="w-[90%] max-w-full sm:max-w-[600px] lg:max-w-[920px] 2xl:max-w-[1020px]" data-aos="fade-up" data-aos-delay="500" data-aos-offset="-1000">
+      <div
+        className="w-[90%] max-w-full sm:max-w-[600px] lg:max-w-[920px] 2xl:max-w-[1020px]"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-offset="-1000"
+      >
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
           className="w-full !overflow-y-visible !px-[10px] bg-green-100 rounded-[30px] sm:rounded-[50px]"
           grabCursor={true}
           onSwiper={setSwiper}
-        // breakpoints={breakpoints}
+          // breakpoints={breakpoints}
         >
           {images2DArray.map((images, i) => (
             <SwiperSlide key={i} className="self-center">
-              <Imagecard array={images2DArray[i]} onImageClick={handleImageClick} />
+              <Imagecard
+                array={images2DArray[i]}
+                onImageClick={handleImageClick}
+              />
             </SwiperSlide>
           ))}
           <div
@@ -161,7 +165,9 @@ export default function Dokumentasi() {
         </div>
       </div>
 
-      {showModal && <Modal imageUrl={selectedImageUrl} onClose={handleCloseModal} />}
+      {showModal && (
+        <Modal imageUrl={selectedImageUrl} onClose={handleCloseModal} />
+      )}
     </section>
   );
 }
@@ -175,21 +181,20 @@ function Imagecard({ array, onImageClick }) {
           className="w-full aspect-[16/9]"
           onClick={() => onImageClick(imageUrl)}
         >
-          <div className="bg-gray-300 w-full ">
-          <Image
+          <div className="bg-gray-300 w-full h-full grid place-items-center relative overflow-hidden">
+            <Image
               src={imageUrl}
               alt={`Image ${i}`}
               width={1200}
               height={800}
-            />          
-            </div>
+              className="absolute"
+            />
+          </div>
         </div>
       ))}
     </div>
   );
 }
-
-
 
 function Modal({ imageUrl, onClose }) {
   return (
@@ -201,7 +206,13 @@ function Modal({ imageUrl, onClose }) {
         >
           Close
         </button>
-        <Image src={imageUrl} alt="Image Pop-up" className="max-w-[100%] max-h-[85vh] !my-2" width={1200} height={800} />
+        <Image
+          src={imageUrl}
+          alt="Image Pop-up"
+          className="max-w-[100%] w-auto max-h-[80vh]"
+          width={1200}
+          height={800}
+        />
       </div>
     </div>
   );
