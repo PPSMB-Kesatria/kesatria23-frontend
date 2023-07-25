@@ -4,7 +4,6 @@ import Top from "../../../public/top_dokumentasi.svg";
 import Bot from "../../../public/bot_dokumentasi.svg";
 import Silhouette from "../../../public/silhouette_tugu_teknik_hero.svg";
 
-import Dummypict from "../../../public/silhouette_tugu_teknik_hero.svg"
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -14,6 +13,34 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 export default function Dokumentasi() {
+
+  const imageUrls = [
+    '/image1.jpg',
+    '/image2.jpg',
+    '/image3.jpg',
+    '/image4.jpg',
+    '/image5.jpg',
+    '/image6.jpg',
+    '/image7.jpg',
+    '/image8.jpg',
+    '/image9.jpg',
+    '/image10.jpg',
+    '/image11.jpg',
+    '/image12.jpg',
+    '/image13.jpg',
+    '/image14.jpg',
+    '/image15.jpg',
+    '/image16.jpg',
+    '/image17.jpg',
+    '/image18.jpg',
+    '/image19.jpg',
+    '/image20.jpg',
+    '/image21.jpg',
+    '/image22.jpg',
+    '/image23.jpg',
+    '/image24.jpg',
+  ];
+  
   const [swiper, setSwiper] = useState(null);
 
   const [showModal, setShowModal] = useState(false);
@@ -25,11 +52,6 @@ export default function Dokumentasi() {
     });
   }, []);
 
-  const breakpoints = {
-    320: { slidesPerView: 1 },
-    640: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
-  };
 
   const handleImageClick = (imageUrl) => {
     setSelectedImageUrl(imageUrl);
@@ -38,7 +60,7 @@ export default function Dokumentasi() {
 
   const allImages = Array.from({ length: 24 });
   // split allImages into 2d arrays of 6 images each
-  const images2DArray = allImages.reduce((acc, curr, i) => {
+  const images2DArray = imageUrls.reduce((acc, curr, i) => {
     const groupIndex = Math.floor(i / 6);
     if (!acc[groupIndex]) {
       acc[groupIndex] = [];
@@ -96,7 +118,7 @@ export default function Dokumentasi() {
         // breakpoints={breakpoints}
         >
           {images2DArray.map((images, i) => (
-            <SwiperSlide key={i}>
+            <SwiperSlide key={i} className="self-center">
               <Imagecard array={images2DArray[i]} onImageClick={handleImageClick} />
             </SwiperSlide>
           ))}
@@ -147,34 +169,40 @@ export default function Dokumentasi() {
 function Imagecard({ array, onImageClick }) {
   return (
     <div className="grid place-items-center gap-3 sm:gap-5 grid-cols-2 lg:grid-cols-3 mx-0 p-[5%] xs:p-5 sm:p-8 md:p-12 w-full overflow-x-hidden overflow-y-hidden">
-      {array.map((_, i) => (
+      {array.map((imageUrl, i) => (
         <div
           key={i}
-          className="w-full aspect-[16/9] animate-pulse"
-          onClick={() => onImageClick()}
+          className="w-full aspect-[16/9]"
+          onClick={() => onImageClick(imageUrl)}
         >
-          <div className="bg-gray-300 w-full">
-          <Image src={Dummypict} alt="Dummy Image" />
-          </div>
+          <div className="bg-gray-300 w-full ">
+          <Image
+              src={imageUrl}
+              alt={`Image ${i}`}
+              width={1200}
+              height={800}
+            />          
+            </div>
         </div>
       ))}
     </div>
   );
 }
 
+
+
 function Modal({ imageUrl, onClose }) {
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center z-[1000]">
-      <div className="absolute w-fit bg-neutral-100 p-4 rounded-lg md:mx-[50px] my-[100px] max-h-[90vh] overflow-y-hidden mx-[10px]">
+      <div className="absolute w-fit bg-neutral-100 p-4 rounded-lg md:mx-[50px] my-[100px] max-h-[90vh] overflow-y-hidden mx-[10px] min-w-[50%]">
         <button
           className="absolute top-2 right-2 text-gray-500 hover:bg-green-200 hover:text-green-400 focus:outline-none font-creato text-neutral-100 rounded-lg bg-green-400 p-2"
           onClick={onClose}
         >
           Close
         </button>
-        <Image src={Dummypict} alt="Image Pop-up" className="w-[100%]"/>
+        <Image src={imageUrl} alt="Image Pop-up" className="max-w-[100%] max-h-[85vh] !my-2" width={1200} height={800} />
       </div>
     </div>
   );
 }
-
