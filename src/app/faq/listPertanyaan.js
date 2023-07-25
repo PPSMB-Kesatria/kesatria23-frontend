@@ -1,14 +1,14 @@
 const listPertanyaanUmum = [
   {
-    question: "Pertanyaan Umum 1",
+    question: "Tentang PPSMB Kesatria",
     answer: "Jawaban Pertanyaan Umum 1",
   },
   {
-    question: "Pertanyaan Umum 2",
+    question: "Tentang PPSMB Palapa",
     answer: "Jawaban Pertanyaan Umum 2",
   },
   {
-    question: "Pertanyaan Umum 3",
+    question: "Seputar Teknik",
     answer: "Jawaban Pertanyaan Umum 3",
   },
   {

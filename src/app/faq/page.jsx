@@ -6,6 +6,27 @@ import { listPertanyaanUmum, listPertanyaanMateri } from "./listPertanyaan"
 
 export default function Faq() {
   const [userInput, setUserInput] = useState("")
+  const [foundPertanyaanUmum, setFoundPertanyaanUmum] = useState(listPertanyaanUmum)
+  const [foundPertanyaanMateri, setFoundPertanyaanMateri] = useState(listPertanyaanMateri)
+
+  const checkSearchResult = () => {
+    let questionUmum = []
+    let questionMateri = []
+    listPertanyaanUmum.forEach((item) => {
+      let _question = item.question.toUpperCase()
+      if (_question.includes(userInput.toUpperCase())){
+        questionUmum.push(item)
+      }
+    })
+    listPertanyaanMateri.forEach((item) => {
+      let _question = item.question.toUpperCase()
+      if (_question.includes(userInput.toUpperCase())){
+        questionMateri.push(item)
+      }
+    })
+    setFoundPertanyaanUmum(questionUmum)
+    setFoundPertanyaanMateri(questionMateri)
+  }
 
   const handleChange = (e) => {
     setUserInput(e.target.value)
@@ -13,7 +34,13 @@ export default function Faq() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert(userInput)
+    if(userInput === "") {
+      setFoundPertanyaanUmum(listPertanyaanUmum)
+      setFoundPertanyaanMateri(listPertanyaanMateri)
+    }else{
+      checkSearchResult()
+    }
+    
   }
 
   const QAPlaceholder = ({question, answer}) => {
@@ -22,7 +49,6 @@ export default function Faq() {
     return (
       <div onClick={() => {
         setIsActive(!isActive)
-        console.log(isActive)
         }} className="flex flex-col border cursor-pointer">
         <div className={"flex flex-row gap-4 items-center px-5 py-2 text-green-400 font-creato bg-neutral-100 " + 
         (
@@ -58,7 +84,7 @@ export default function Faq() {
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
               </svg>
             </div>
-            <input onChange={(e)=>handleChange(e)} value={userInput} type="search" id="default-search" class="block w-full p-4 pl-10 text-base text-neutral-100 font-creato border border-green-400 rounded-lg bg-green-400 focus:outline-none focus:ring-green-200 focus:border-green-200" placeholder="Silakan ketik pertanyaanmu di sini..." required />
+            <input onChange={(e)=>handleChange(e)} value={userInput} type="search" id="default-search" class="block w-full p-4 pl-10 text-base text-neutral-100 font-creato border border-green-400 rounded-lg bg-green-400 focus:outline-none focus:ring-green-200 focus:border-green-200" placeholder="Silakan ketik pertanyaanmu di sini..." />
             <button type="submit" class="text-green-400 absolute right-2.5 bottom-2.5 bg-neutral-100 hover:bg-red-100 hover:text-neutral-100 focus:outline-none active:scale-95 font-creato font-medium rounded-lg text-base px-4 py-2">Search</button>
           </div>
         </form>
@@ -68,7 +94,7 @@ export default function Faq() {
           <h1 className="font-creato font-extrabold text-xl text-neutral-100">Pertanyaan umum</h1>
           <div className="w-full space-y-5 mt-5">
             {
-              listPertanyaanUmum.map((item, i) => {
+              foundPertanyaanUmum.map((item, i) => {
                 return (
                   <QAPlaceholder key={i} question={item.question} answer={item.answer}/>
                 )
@@ -80,7 +106,7 @@ export default function Faq() {
           <h1 className="font-creato font-extrabold text-xl text-neutral-100">Seputar Materi</h1>
           <div className="w-full space-y-5 mt-5">
             {
-              listPertanyaanMateri.map((item, i) => {
+              foundPertanyaanMateri.map((item, i) => {
                 return (
                   <QAPlaceholder key={i} question={item.question} answer={item.answer}/>
                 )
