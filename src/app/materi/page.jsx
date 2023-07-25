@@ -76,7 +76,7 @@ export default function Materi() {
               setActiveIndex={setActiveIndex}
             />
           </aside>
-          <content className="min-h-screen max-w-6xl space-y-4 md:w-4/5">
+          <content className="relative z-[100] min-h-screen max-w-6xl space-y-4 px-5 sm:px-0 md:w-4/5">
             {MATERI_NAVIGATION[activeIndex].content}
           </content>
         </div>
@@ -87,7 +87,7 @@ export default function Materi() {
       />
       <img
         src="/tugu_teknik_materi.svg"
-        className="hidden md:block w-screen absolute md:h-[36rem] lg:h-[50rem] z-[1] bottom-0 md:-ml-72 lg:-ml-96"
+        className="select-none hidden md:block w-screen absolute md:h-[36rem] lg:h-[50rem] z-[0] bottom-0 md:-ml-72 lg:-ml-96"
       />
     </div>
   );
