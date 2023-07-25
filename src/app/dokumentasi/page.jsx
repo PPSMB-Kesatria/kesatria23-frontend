@@ -199,7 +199,7 @@ function Modal({ imageUrl, onClose }) {
         >
           Close
         </button>
-        <Image src={imageUrl} alt="Image Pop-up" className="max-w-[100%] w-auto max-h-[85vh] !my-2" width={1200} height={800} />
+        <Image src={imageUrl} alt="Image Pop-up" className="max-w-[100%] w-auto max-h-[80vh]" width={1200} height={800} />
       </div>
     </div>
   );
