@@ -1,15 +1,20 @@
+"use client";
 import Image from "next/image";
 import Topbar from "../../../public/topbar_hero.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
-export const metadata = {
-  title: "Gamadhira · PPSMB Kesatria 2023",
-};
+
 
 export default function Tema() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  })
   return (
-    <main className="min-h-screen pt-[15vh] pb-[20vh] bg-pattern-green text-neutral-100 relative overflow-x-hidden flex gap-10 justify-center items-start flex-col xl:flex-row">
+    <main className="min-h-screen overflow-y-hidden pt-[15vh] pb-[20vh] bg-pattern-green text-neutral-100 relative overflow-x-hidden flex gap-10 justify-center items-start flex-col xl:flex-row">
       <Image
         src={Topbar}
         className=" top-[20px] sm:top-0 absolute w-[100%] min-w-[920px] right-0"
