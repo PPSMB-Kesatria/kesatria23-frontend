@@ -27,6 +27,7 @@ export default function Agenda() {
       </h1>
       <div
         data-aos="fade-up"
+        data-aos-delay="200"
         className="flex w-full flex-col sm:flex-row items-center sm:justify-center gap-[1%] mb-12"
       >
         <Button
@@ -42,7 +43,9 @@ export default function Agenda() {
           setActiveIndex={setActiveIndex}
         />
       </div>
-      {RUNDOWN_NAVIGATION[activeIndex].content}
+      <div 
+      data-aos="fade-up"
+      data-aos-delay="300">{RUNDOWN_NAVIGATION[activeIndex].content}</div>
     </main>
   );
 }
