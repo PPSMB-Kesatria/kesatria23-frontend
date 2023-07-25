@@ -12,8 +12,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  AOS.init();
-
   return (
     <html className="!overflow-x-hidden" lang="en">
       <head>
