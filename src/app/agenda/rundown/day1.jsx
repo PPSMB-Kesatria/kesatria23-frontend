@@ -145,7 +145,7 @@ const AgendaItem = ({ time, agenda, desc }) => {
         <div
           className={
             "bg-neutral-100 rounded-b-xl text-red-100 p-2 pt-5 transition-[grid-template-rows] duration-200 translate-y-[-15px] drop-shadow-lg grid select-none " +
-            (state ? "grid-rows-[1fr]" : "grid-rows-[0fr] p-0 pt-0")
+            (state ? "grid-rows-[1fr]" : "grid-rows-[0fr] !p-0 !pt-0")
           }
         >
           <p className="overflow-hidden">{desc}</p>
