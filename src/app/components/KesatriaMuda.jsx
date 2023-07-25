@@ -205,7 +205,11 @@ export default function KesatriaMuda() {
           className="p-0 sm:p-5 lg:p-10  w-[90%] lg:w-1/2 max-w-[600px] lg:max-w-[825px] flex-shrink-0"
         >
           <div className="aspect-[76.7/48] bg-[#54BB9C] p-[15px] md:p-[25px] rounded-[40px]">
-            <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
+            <div className="font-alstoria text-[30px] sm:text-[35px] grid place-items-center text-green-400 w-full h-full border-box bg-neutral-100 border-[#6DD5B5] border-[15px] rounded-[20px]">
+              <h1>
+                Coming Soon <span className="font-serif">!</span>
+              </h1>
+            </div>
           </div>
         </div>
       </div>
