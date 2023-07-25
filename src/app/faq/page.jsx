@@ -45,7 +45,7 @@ export default function Faq() {
   };
 
   return (
-    <div className="py-36 min-h-screen bg-pattern-cream-2 bg-repeat bg-contain flex flex-col items-center justify-center border border-red-500">
+    <div className="py-36 min-h-screen bg-pattern-cream-2 bg-repeat bg-contain flex flex-col items-center justify-center">
       <h1 className="font-alstoria text-4xl text-green-400 text-center">
         Frequently Asked Questions
       </h1>
@@ -153,7 +153,7 @@ const QAPlaceholder = ({ question, answer }) => {
         }
       >
         <div className="font-bold">Q:</div>
-        <div className="flex flex-row justify-between border w-full">
+        <div className="flex flex-row justify-between w-full">
           <div className="w-[90%] text-justify select-none">{question}</div>
           <RiArrowDownSLine size={24} className={"duration-200 " + (isActive? "rotate-180" : "rotate-0")} />
         </div>
