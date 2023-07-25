@@ -63,7 +63,7 @@ export default function Materi() {
       <main className="bg-pattern-green min-h-screen bg-repeat bg-contain gap-4 flex flex-col items-center pt-36 pb-28 md:pb-28 lg:pb-64">
         <h1 data-aos="fade-up" className="font-alstoria text-6xl text-neutral-100">Materi</h1>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-10 justify-center w-4/5">
-          <aside data-aos="fade-right" data-aos-delay="200" className="grid max-xs:grid-cols-1 grid-cols-2 sm:grid-cols-3 md:grid-cols-1 items-center md:w-[15%] lg:w-1/5 gap-4 sm:gap-3 md:gap-5 lg:gap-8 w-max md:min-w-fit ">
+          <aside data-aos="fade-right" data-aos-delay="200" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 items-center md:w-[15%] lg:w-1/5 gap-4 sm:gap-3 md:gap-5 lg:gap-8 w-max md:min-w-fit ">
             <Button
               title={MATERI_NAVIGATION[5].title}
               activeIndex={activeIndex}
@@ -119,7 +119,7 @@ export default function Materi() {
               setActiveIndex={setActiveIndex}
             />
           </aside>
-          <main data-aos="fade-left" data-aos-delay="300" className="relative z-[100] min-h-screen max-w-6xl space-y-4 px-5 sm:px-0 md:w-4/5">
+          <main data-aos="fade-left" data-aos-delay="300" data-aos-offset="-500" className="relative z-[100] min-h-screen max-w-6xl space-y-4 px-5 sm:px-0 md:w-4/5">
             {MATERI_NAVIGATION[activeIndex].content}
           </main>
         </div>
