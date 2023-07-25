@@ -1,71 +1,92 @@
-
+import Link from "next/link";
 
 export default function KontribusiMasaDepan() {
-  
   return (
-    <section className="bg-pattern-cream min-h-screen relative flex flex-col justify-center items-center text-green-400">
+    <section className="bg-pattern-cream min-h-screen relative flex flex-col justify-center items-center text-green-400 pb-[100px]">
       <img
         src="/TransitionGreenEnd.png"
         alt=""
         className="w-full absolute top-0 translate-y-[-50%] drop-shadow-[0_10px_10px_rgba(0,0,0,.5)]"
       />
       <img
-            data-aos="fade-up"
-            className="max-lg:hidden !opacity-50 absolute bottom-0 left-[-100px] h-[30%]"
-            src="/silhouette_crane.svg"
-            width="40%"
-            alt=""
-          />
+        data-aos="fade-up"
+        className="max-lg:hidden !opacity-50 absolute bottom-0 left-[-100px] h-[30%]"
+        src="/silhouette_crane.svg"
+        width="40%"
+        alt=""
+      />
       <h1
-          data-aos="fade-up"
-          className="font-alstoria text-[45px] 2xl:text-[60px] text-center mt-5 md:mt-10 leading-[100%] pt-20"
-        >
-          Kontribusi di Masa Depan
-        </h1>
-        <h2 data-aos="fade-up" className="text-[30px] leading-[1] md:text-3xl font-alstoria text-center mb-7">
-          Chapter <span className="font-serif font-bold">3: <br className="md:hidden" /></span> Aku di masa depan
-        </h2>
-      <p data-aos="fade-up" className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center">
-      Hallo Kesatria Muda!
-      Tidak terasa kita sudah mencapai akhir dari perjalanan di PPSMB Kesatria ini, yaitu Chapter 3 : Aku di Masa Depan.
+        data-aos="fade-up"
+        className="font-alstoria text-[45px] 2xl:text-[60px] text-center mt-5 md:mt-10 leading-[100%] pt-20"
+      >
+        Kontribusi di Masa Depan
+      </h1>
+      <h2
+        data-aos="fade-up"
+        className="text-[30px] leading-[1] md:text-3xl font-alstoria text-center mb-7"
+      >
+        Chapter{" "}
+        <span className="font-serif font-bold">
+          3: <br className="md:hidden" />
+        </span>{" "}
+        Aku di masa depan
+      </h2>
+      <p
+        data-aos="fade-up"
+        className="text-[18px] sm:text-[20px] 2xl:text-[25px] px-5 font-creato font-normal max-w-[923px] text-center"
+      >
+        Hallo Kesatria Muda! Tidak terasa kita sudah mencapai akhir dari
+        perjalanan di PPSMB Kesatria ini, yaitu Chapter 3 : Aku di Masa Depan.
+        <br />
+        <br />
+        Pada chapter 3 ini Kesatria Muda akan diajak untuk mengeksplorasi
+        potensi diri dan merancang rencana yang dituangkan dalam bentuk Lifeplan
+        singkat yang ingin dilakukan selama masa perkuliahan. Lifeplan ini
+        berisi target-target yang ingin dicapai di berbagai aspek, juga
+        identifikasi hambatan yang mungkin akan ditemui. Selain itu, untuk
+        menunjang kemampuan berpikir kritis dan melatih problem solving, chapter
+        ini juga berisi Modul Karya Aplikatif tentang berbagai study kasus dalam
+        lingkungan teknik yang bisa dipelajari Kesatria Muda sebelum kita
+        bertemu secara offline di PPSMB Kesatria.
       </p>
 
-      <div className="mt-[50px] lg:mt-[30px] flex flex-col-reverse lg:flex-row w-full items-center 2xl:justify-center mb-[50px] lg:mb-[30px]">
-        <div data-aos="fade-right" className="p-0 sm:p-5 lg:p-20 2xl:p-10 w-[90%] lg:w-1/2 max-w-[600px] lg:max-w-[825px] flex-shrink-0">
-          <div className="aspect-[76.7/48] bg-green-400 p-[15px] md:p-[25px] rounded-[40px]">
-            <div className="w-full h-full border-box bg-red-500 border-[#6DD5B5] border-[15px] rounded-[20px]"></div>
-          </div>
-        </div>
-        <div data-aos="fade-left" className="bg-green-400 text-left max-w-[940px] mb-5 lg:mb-0 p-5 py-10 sm:p-10 lg:pl-20 w-[90%] lg:w-1/2 h-fit rounded-r-[40px] lg:rounded-r-none 2xl:rounded-r-[40px] rounded-l-[40px] text-neutral-100">
-          <h2 className="font-creato text-[25px] text-center 2xl:text-[30px] italic font-bold leading-[100%]">
-            Pengenalan Karya Aplikatif
-          </h2>
-          <p className="text-[18px] mt-3 sm:text-[20px] 2xl:text-[25px] font-creato text-justify">
-          Pada chapter 3 ini Kesatria Muda akan diajak untuk mengeksplorasi potensi diri dan merancang rencana yang dituangkan dalam bentuk Lifeplan singkat yang ingin dilakukan selama masa perkuliahan. Lifeplan ini berisi target-target yang ingin dicapai di berbagai aspek, juga identifikasi hambatan yang mungkin akan ditemui. Selain itu, untuk menunjang kemampuan berpikir kritis dan melatih problem solving, chapter ini juga berisi Modul Karya Aplikatif tentang berbagai study kasus dalam lingkungan teknik yang bisa dipelajari Kesatria Muda sebelum kita bertemu secara offline di PPSMB Kesatria.
+      <div className="pt-12 text-neutral-100 relative z-[2] grid grid-cols-1 lg:grid-cols-2 gap-10 lg:justify-center lg:gap-8 xl:gap-20 items-center mx-[5%] lg:mx-0 mb-[100px]">
+        <div data-aos="fade-right" className="bg-green-400 grid place-items-center h-full border-green-200 border-[12px] border-box rounded-[30px] gap-5 md:rounded-[35px] w-full sm:max-w-[600px] lg:max-w-[450px] xl:max-w-[500px] py-8">
+          <h1 className="font-alstoria text-[30px] 2xl:text-[40px] text-center leading-[100%]">
+            Pengenalan Life Plan
+          </h1>
+          <p className="font-creato text-[20px] 2xl:text-[24px] font-medium w-[90%] text-center">
+            Setelah mengetahui skala prioritas selama perkuliahan, Kesatria Muda
+            diajak untuk membuat life plan. Life plan adalah rencana atau
+            strategi yang dijadikan patokan seseorang untuk mencapai tujuan
+            dalam hidupnya. Life plan membantu seseorang menjaga fokus dan
+            memberikan arah yang jelas dalam hidupnya.
           </p>
-        </div>
-      </div>
-      <div className="flex flex-col lg:flex-row w-full items-center lg:items-start justify-center mb-[100px] md:mb-[10%]">
-        <div>
-          <div data-aos="fade-right" className="max-w-[940px] grid  mx-auto !lg:pl-10 px-10 md:px-0 text-green-400 sm:w-[90%] h-fit rounded-l-[40px] xl:rounded-l-none 2xl:rounded-l-[40px] rounded-r-[40px]">
-            <h2 className="font-creato text-[25px] 2xl:text-[30px] italic font-bold leading-[100%] mb-5">
-              Modul 3 - Karya Aplikatif
-            </h2>
-            <p className="font-creato text-[18px] sm:text-[20px] 2xl:text-[25px] text-justify mb-5">
-              Dalam materi Karya Aplikatif ini, Kesatria Muda akan mempelajari
-              tentang bagaimana cara membuat abstrak, poster, dan presentasi
-              yang benar dalam menyampaikan ide karya yang dimiliki. Melalui
-              modul ini, Kesatria Muda juga akan dikenalkan dengan kegiatan
-              PKM-PIMNAS (Program Kreativitas Mahasiswa - Pekan Ilmiah Mahasiswa
-              Nasional).
-            </p>
-          </div>
+          <Link
+            href="/materi?materi=4"
+            className="block cursor-pointer bg-neutral-100 w-fit font-bold italic text-green-400 font-creato rounded-[20px] text-[18px] sm:text-[20px] 2xl:text-[25px] px-7 py-3"
+          >
+            Baca Modul
+          </Link>
         </div>
 
-        <div data-aos="fade-left" className="px-4 sm:px-5 lg:px-20 2xl:px-10 w-[90%] lg:w-1/2 max-w-[825px] flex-shrink-0">
-          <div className="aspect-[210/297] bg-black p-[18px] ">
-            <div className="w-full h-full border-box bg-green-400 "></div>
-          </div>
+        <div data-aos="fade-left" className="bg-green-400 grid place-items-center h-max border-green-200 border-[12px] border-box rounded-[30px] gap-5 md:rounded-[35px] w-full sm:max-w-[600px] lg:max-w-[450px] xl:max-w-[500px] py-8">
+          <h1 className="font-alstoria text-[30px] 2xl:text-[40px] text-center leading-[100%]">
+            Pengenalan Karya Aplikatif
+          </h1>
+          <p className="font-creato text-[20px] 2xl:text-[24px] font-medium w-[90%] text-center">
+            Kesatria Muda diharapkan mampu mengaplikasikan pengetahuan yang
+            didapat selama menempuh perkuliahan untuk menyelesaikan
+            masalah-masalah yang ada di masyarakat. Oleh karena itu, Kesatria
+            Muda akan diajak untuk berlatih, berdiskusi, dan berkolaborasi
+            bersama untuk menyelesaikan studi kasus yang diberikan.
+          </p>
+          <Link
+            href="/materi?materi=8"
+            className="block cursor-pointer bg-neutral-100 w-fit font-bold italic text-green-400 font-creato rounded-[20px] text-[18px] sm:text-[20px] 2xl:text-[25px] px-7 py-3"
+          >
+            Baca Modul
+          </Link>
         </div>
       </div>
     </section>
