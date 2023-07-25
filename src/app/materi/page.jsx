@@ -1,25 +1,35 @@
 "use client";
 import { useState } from "react";
 import { PersonalBranding } from "./contents/PersonalBranding";
-import { FasilitasFakultas } from "./contents/FasilitasFakultas";
-import { DummyContent } from "./contents/DummyContent";
+import { SoftSkill } from "./contents/SoftSkill";
+import { LifePlan } from "./contents/LifePlan";
+import { FasilitasTeknik } from "./contents/FasilitasTeknik";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import { PengenalanJurusan } from "./contents/PengenalanJurusan";
 
 export default function Materi() {
   const [activeIndex, setActiveIndex] = useState(0);
   const MATERI_NAVIGATION = [
     {
-      title: "Personal Branding",
+      title: "Pengenalan Jurusan",
+      content: <PengenalanJurusan />
+    },
+    {
+      title: "Jelajah Lembaga",
       content: <PersonalBranding />,
     },
     {
-      title: "Fasilitas Fakultas",
-      content: <FasilitasFakultas />,
+      title: "Pameran Karya",
+      content: <SoftSkill />,
     },
     {
-      title: "Dummy Content",
-      content: <DummyContent />,
+      title: "Fasilitas Teknik",
+      content: <FasilitasTeknik />,
+    },
+    {
+      title: "Lifeplan",
+      content: <LifePlan />,
     },
   ];
   const searchParams = useSearchParams();
@@ -31,31 +41,42 @@ export default function Materi() {
 
   return (
     <div className="relative overflow-hidden">
-      <main className="bg-pattern-green min-h-screen bg-repeat bg-contain gap-4 flex flex-col items-center pt-36 pb-36 md:pb-28 lg:pb-64">
+      <main className="bg-pattern-green min-h-screen bg-repeat bg-contain gap-4 flex flex-col items-center pt-36 pb-28 md:pb-28 lg:pb-64">
         <h1 className="font-alstoria text-6xl text-neutral-100">Materi</h1>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-10 justify-center w-4/5">
           <aside className="flex flex-col items-center w-1/5 space-y-8 min-w-fit ">
             <Button
-              title="Personal Branding"
+              title={MATERI_NAVIGATION[0].title}
               activeIndex={activeIndex}
               ownIndex={0}
               setActiveIndex={setActiveIndex}
             />
             <Button
-              title="Fasilitas Fakultas"
+              title={MATERI_NAVIGATION[1].title}
               activeIndex={activeIndex}
               ownIndex={1}
               setActiveIndex={setActiveIndex}
             />
             <Button
-              title="Dummy Content"
+              title={MATERI_NAVIGATION[2].title}
               activeIndex={activeIndex}
               ownIndex={2}
               setActiveIndex={setActiveIndex}
             />
-            {/* <Button title="Test" ownIndex={3} /> */}
+            <Button
+              title={MATERI_NAVIGATION[3].title}
+              activeIndex={activeIndex}
+              ownIndex={3}
+              setActiveIndex={setActiveIndex}
+            />
+            <Button
+              title={MATERI_NAVIGATION[4].title}
+              activeIndex={activeIndex}
+              ownIndex={4}
+              setActiveIndex={setActiveIndex}
+            />
           </aside>
-          <content className="min-h-screen max-w-6xl space-y-4 md:w-4/5">
+          <content className="relative z-[100] min-h-screen max-w-6xl space-y-4 px-5 sm:px-0 md:w-4/5">
             {MATERI_NAVIGATION[activeIndex].content}
           </content>
         </div>
@@ -66,7 +87,7 @@ export default function Materi() {
       />
       <img
         src="/tugu_teknik_materi.svg"
-        className="hidden md:block w-screen absolute md:h-[36rem] lg:h-[50rem] z-[1] bottom-0 md:-ml-72 lg:-ml-96"
+        className="select-none hidden md:block w-screen absolute md:h-[36rem] lg:h-[50rem] z-[0] bottom-0 md:-ml-72 lg:-ml-96"
       />
     </div>
   );
