@@ -27,7 +27,7 @@ export default function Agenda() {
       </h1>
       <div
         data-aos="fade-up"
-        className="flex flex-row place-content-center gap-[1%] mb-12"
+        className="flex w-full flex-col sm:flex-row items-center sm:justify-center gap-[1%] mb-12"
       >
         <Button
           title="Hari Pertama"
@@ -51,7 +51,7 @@ const Button = ({ title, ownIndex, activeIndex, setActiveIndex }) => {
   return (
     <button
       className={
-        "cursor-pointer my-2 py-2 w-[85px] transition-all xs:w-[20%] lg:w-[204.8px] rounded-xl drop-shadow-xl font-creato font-medium " +
+        "cursor-pointer my-2 py-2 transition-all min-w-[250px] max-w-[300px] xs:w-[20%] lg:w-[204.8px] rounded-xl drop-shadow-xl font-creato font-medium " +
         (ownIndex == activeIndex
           ? "bg-red-200 text-neutral-100"
           : "bg-neutral-100 text-red-200 hover:shadow-[0_0_10px_#F34B4C]")

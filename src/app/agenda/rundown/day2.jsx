@@ -92,15 +92,18 @@ export const Day2 = () => {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col gap-3 xs:w-full xs:px-[81.5px]"
+      className="flex flex-col gap-3 w-[90%] sm:w-[70%] mx-auto lg:max-w-[700px] xl:max-w-[900px] items-center"
     >
-      {
-        RUNDOWN.map((item, index) => {
-          return(
-            <AgendaItem key={index} time={item.time} agenda={item.agenda} desc={item.deskripsi} />
-          )
-        })
-      }
+      {RUNDOWN.map((item, index) => {
+        return (
+          <AgendaItem
+            key={index}
+            time={item.time}
+            agenda={item.agenda}
+            desc={item.deskripsi}
+          />
+        );
+      })}
     </div>
   );
 };
@@ -109,25 +112,26 @@ const AgendaItem = ({ time, agenda, desc }) => {
   const [state, setstate] = useState(false);
   return (
     <div
-      className="flex font-creato gap-3 place-content-center cursor-pointer"
+      className="flex w-full flex-col sm:flex-row font-creato items-center xs:justify-start xs:items-start sm:gap-3 cursor-pointer"
       // data-aos="fade-right"
     >
-      <div className="p-2 text-center bg-red-200 h-[40px] w-[75px] xs:w-[28.626%] md:w-[173px] text-neutral-100 rounded-xl drop-shadow-lg">
+      <div className="p-2 text-center flex-shrink-0 bg-red-200 h-[40px] w-full sm:w-[150px] md:w-[173px] text-neutral-100 rounded-t-xl sm:rounded-xl drop-shadow-lg">
         {time}
       </div>
 
       <div
-        className=" w-[175px] xs:w-[66.7939%]"
+        className="w-full"
         onClick={() => {
           setstate(!state);
         }}
       >
-        <div className=" bg-red-100  text-neutral-100 rounded-xl xs:flex xs:flex-col relative z-[1]">
-          <div className=" p-2 xs:flex xs:flex-row xs:justify-between font-normal items-center select-none">
-            <p>{agenda}</p>
+        <div className=" bg-red-100 w-full text-neutral-100 rounded-b-xl sm:rounded-xl xs:flex xs:flex-col relative z-[1]">
+          <div className="relative w-full p-2 flex xs:flex-row justify-between font-normal items-center select-none">
+            <p className="w-max">{agenda}</p>
             <img
               className={
-                "h-[10px] duration-200 " + (state ? "rotate-0" : "rotate-180")
+                "h-[10px] duration-200 flex-shrink-0 " +
+                (state ? "rotate-0" : "rotate-180")
               }
               src="/icon-up.png"
               alt=""
@@ -140,7 +144,7 @@ const AgendaItem = ({ time, agenda, desc }) => {
             (state ? "grid-rows-[1fr]" : "grid-rows-[0fr] !p-0 !pt-0")
           }
         >
-          <p className="overflow-hidden">{desc}</p>
+          <p className="overflow-hidden w-full">{desc}</p>
         </div>
       </div>
     </div>
