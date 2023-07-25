@@ -5,6 +5,8 @@ export const Guidebook = () => {
     return(
         <div className="space-y-5">
             <h1 className="text-neutral-100 font-creato font-bold text-4xl">Guidebook</h1>
+            <p className="text-neutral-100 font-creato text-base text-justify">
+                Seluruh informasi dan ketentuan pelaksanaan PPSMB Kesatria terdapat di Guidebook tersebut.</p>
             <div className="flex justify-center relative">
                 <iframe
                 onLoad={() => setIsLoading(false)}

@@ -5,6 +5,10 @@ export const FasilitasTeknik = () => {
     return(
         <div className="space-y-5">
             <h1 className="text-neutral-100 font-creato font-bold text-4xl">Fasilitas Fakultas Teknik</h1>
+            <p className="text-neutral-100 font-creato text-base text-justify">
+                Fakultas Teknik sebagai fakultas terbesar di Universitas Gadjah Mada memiliki 
+                beragam fasilitas yang menunjang kegiatan mahasiswanya. Mau tahu apa saja 
+                fasilitas yang ada di Fakultas Teknik? Mari simak modul berikut!</p>
             <div className="flex justify-center relative">
                 <iframe
                 onLoad={() => setIsLoading(false)}

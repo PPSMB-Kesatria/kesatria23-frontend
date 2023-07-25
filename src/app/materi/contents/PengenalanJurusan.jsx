@@ -9,6 +9,11 @@ export const PengenalanJurusan = () => {
     return (
         <div>
             <h1 className="text-neutral-100 font-creato font-bold text-4xl">Pengenalan Jurusan</h1>
+            <p className="text-neutral-100 font-creato text-base text-justify">
+                Fakultas Teknik terdiri dari 8 Departemen yang di dalamnya terdapat 15 
+                Program Studi atau yang biasa dikenal dengan jurusan. Sebelum masuk ke 
+                jurusan masing-masing, yuk kita sama-sama kenali jurusan Kesatria Muda 
+                melalui modul berikut!</p>
             <p className="italic text-neutral-100">Klik salah satu tombol untuk mengakses file pdf modul</p>
             <div className="space-y-8 mt-10">
                 <div>
