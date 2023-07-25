@@ -25,8 +25,8 @@ export default function Materi() {
     <div className="relative overflow-hidden">
       <main className="bg-pattern-green min-h-screen bg-repeat bg-contain gap-4 flex flex-col items-center pt-36 pb-36 md:pb-28 lg:pb-64">
         <h1 className="font-alstoria text-6xl text-neutral-100">Materi</h1>
-        <div className="flex flex-row gap-10 justify-center w-4/5">
-          <aside className="hidden md:flex md:flex-col items-center w-1/5 space-y-8 min-w-fit ">
+        <div className="flex flex-col items-center md:items-start md:flex-row gap-10 justify-center w-4/5">
+          <aside className="flex flex-col items-center w-1/5 space-y-8 min-w-fit ">
             <Button
               title="Personal Branding"
               activeIndex={activeIndex}
