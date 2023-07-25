@@ -5,6 +5,11 @@ export const PersonalBranding = () => {
     return(
         <div className="space-y-5">
             <h1 className="text-neutral-100 font-creato font-bold text-4xl">Modul 1 - Personal Branding dan SWOT</h1>
+            <p className="text-neutral-100 font-creato text-base text-justify"><i>Personal Branding</i> merupakan salah satu hal krusial bagi mahasiswa
+                baru karena dapat menjadi salah satu alat pemasaran kemampuan yang
+                dimiliki. <i>Personal branding</i> dapat dilakukan dengan membuat CV, resume,
+                dan Linkedin. Sebelum membuat <i>personal branding</i> diperlukan kemampuan untuk
+                menganalisis diri sendiri melalui SWOT (Strength, Weakness, Opportunities, Threats).</p>
             <div className="flex justify-center relative">
                 <iframe
                 onLoad={() => setIsLoading(false)}
