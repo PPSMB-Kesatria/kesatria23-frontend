@@ -64,7 +64,7 @@ export default function Materi() {
       <main className="bg-pattern-green min-h-screen bg-repeat bg-contain gap-4 flex flex-col items-center pt-36 pb-28 md:pb-28 lg:pb-64">
         <h1 className="font-alstoria text-6xl text-neutral-100">Materi</h1>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-10 justify-center w-4/5">
-          <aside className="flex flex-col items-center w-1/5 space-y-8 min-w-fit ">
+          <aside className="grid max-xs:grid-cols-1 grid-cols-2 sm:grid-cols-3 md:grid-cols-1 items-center md:w-[15%] lg:w-1/5 gap-4 sm:gap-3 lg:gap-y-8 w-max md:min-w-fit ">
             <Button
               title={MATERI_NAVIGATION[5].title}
               activeIndex={activeIndex}
@@ -141,7 +141,7 @@ const Button = ({ title, ownIndex, activeIndex, setActiveIndex }) => {
   return (
     <div
       className={
-        "w-full relative flex justify-center items-center py-3.5 rounded-2xl font-creato font-bold shadow-md shadow-black/30 cursor-pointer transition-[background-color,color] duration-200 after:transition-colors after:duration-300 before:transition-colors before:duration-300 after:box-border text-green-400 after:w-full after:absolute after:bg-red-100 after:top-[5px] after:left-[3px] after:h-full after:rounded-2xl z-[2] preserve-3d after-z " +
+        "w-full relative h-full md:h-fit flex justify-center items-center py-3.5 rounded-2xl font-creato font-bold shadow-md shadow-black/30 cursor-pointer transition-[background-color,color] duration-200 after:transition-colors after:duration-300 before:transition-colors before:duration-300 after:box-border text-green-400 after:w-full after:absolute after:bg-red-100 after:top-[5px] after:left-[3px] after:h-full after:rounded-2xl z-[2] preserve-3d after-z " +
         (ownIndex == activeIndex
           ? " shadow-none after:bg-transparent text-neutral-100 after:!border-red-100 after:border-[6px] outline-neutral-100 outline-[6px] before:absolute before:w-full before:h-full before:border-neutral-100 before:border-[6px] before:rounded-2xl"
           : "bg-neutral-100")
@@ -152,7 +152,7 @@ const Button = ({ title, ownIndex, activeIndex, setActiveIndex }) => {
     >
       <h1
         className={
-          "px-10 select-none"
+          "px-[10px] md:px-5 lg:px-10 select-none text-center"
         }
       >
         {title}
