@@ -109,7 +109,7 @@ export default function KesatriaMuda() {
         </div>
       </Swiper>
 
-      <div className="hidden md:flex gap-10 2xl:gap-40 mt-5 text-[18px] sm:text-[20px] 2xl:text-[25px]">
+      <div className="hidden select-none md:flex gap-10 2xl:gap-40 mt-5 text-[18px] sm:text-[20px] 2xl:text-[25px]">
         <div
           className={
             "font-creato cursor-pointer flex flex-col gap-1 after:duration-300 font-bold text-neutral-100 after:bg-green-200 after:h-[4px] after:w-full " +
