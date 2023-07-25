@@ -7,9 +7,13 @@ import { FasilitasTeknik } from "./contents/FasilitasTeknik";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { PengenalanJurusan } from "./contents/PengenalanJurusan";
+import { Guidebook } from "./contents/Guidebook";
+import { JelajahLembaga } from "./contents/JelajahLembaga";
+import { PameranKarya } from "./contents/PameranKarya";
+import { KaryaAplikatif } from "./contents/KaryaAplikatif";
 
 export default function Materi() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(5);
   const MATERI_NAVIGATION = [
     {
       title: "Pengenalan Jurusan",
@@ -17,19 +21,35 @@ export default function Materi() {
     },
     {
       title: "Jelajah Lembaga",
-      content: <PersonalBranding />,
+      content: <JelajahLembaga />,
     },
     {
       title: "Pameran Karya",
-      content: <SoftSkill />,
+      content: <PameranKarya />,
     },
     {
       title: "Fasilitas Teknik",
       content: <FasilitasTeknik />,
     },
     {
-      title: "Lifeplan",
+      title: "Modul 3",
       content: <LifePlan />,
+    },
+    {
+      title: "Guidebook",
+      content: <Guidebook />
+    },
+    {
+      title: "Modul 1",
+      content: <PersonalBranding />,
+    },
+    {
+      title: "Modul 2",
+      content: <SoftSkill />,
+    },
+    {
+      title: "Karya Aplikatif",
+      content: <KaryaAplikatif />,
     },
   ];
   const searchParams = useSearchParams();
@@ -45,6 +65,36 @@ export default function Materi() {
         <h1 className="font-alstoria text-6xl text-neutral-100">Materi</h1>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-10 justify-center w-4/5">
           <aside className="flex flex-col items-center w-1/5 space-y-8 min-w-fit ">
+            <Button
+              title={MATERI_NAVIGATION[5].title}
+              activeIndex={activeIndex}
+              ownIndex={5}
+              setActiveIndex={setActiveIndex}
+            />
+            <Button
+              title={MATERI_NAVIGATION[6].title}
+              activeIndex={activeIndex}
+              ownIndex={6}
+              setActiveIndex={setActiveIndex}
+            />
+            <Button
+              title={MATERI_NAVIGATION[7].title}
+              activeIndex={activeIndex}
+              ownIndex={7}
+              setActiveIndex={setActiveIndex}
+            />
+            <Button
+              title={MATERI_NAVIGATION[4].title}
+              activeIndex={activeIndex}
+              ownIndex={4}
+              setActiveIndex={setActiveIndex}
+            />
+            <Button
+              title={MATERI_NAVIGATION[8].title}
+              activeIndex={activeIndex}
+              ownIndex={8}
+              setActiveIndex={setActiveIndex}
+            />
             <Button
               title={MATERI_NAVIGATION[0].title}
               activeIndex={activeIndex}
@@ -67,12 +117,6 @@ export default function Materi() {
               title={MATERI_NAVIGATION[3].title}
               activeIndex={activeIndex}
               ownIndex={3}
-              setActiveIndex={setActiveIndex}
-            />
-            <Button
-              title={MATERI_NAVIGATION[4].title}
-              activeIndex={activeIndex}
-              ownIndex={4}
               setActiveIndex={setActiveIndex}
             />
           </aside>
