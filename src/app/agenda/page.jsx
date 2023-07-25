@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { Day1 } from "./rundown/day1";
 import { Day2 } from "./rundown/day2";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function Agenda() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -16,6 +18,12 @@ export default function Agenda() {
       content: <Day2 />,
     },
   ];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  });
 
   return (
     <main className=" bg-pattern-cream bg-repeat py-32 lg:pb-40">
@@ -43,9 +51,9 @@ export default function Agenda() {
           setActiveIndex={setActiveIndex}
         />
       </div>
-      <div 
-      data-aos="fade-up"
-      data-aos-delay="300">{RUNDOWN_NAVIGATION[activeIndex].content}</div>
+      <div data-aos="fade-up" data-aos-delay="300">
+        {RUNDOWN_NAVIGATION[activeIndex].content}
+      </div>
     </main>
   );
 }

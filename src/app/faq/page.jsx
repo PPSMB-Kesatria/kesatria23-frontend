@@ -1,8 +1,9 @@
 "use client";
 
 import { RiArrowDownSLine } from "react-icons/ri";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { listPertanyaanUmum, listPertanyaanMateri } from "./listPertanyaan";
+import AOS from "aos";
 
 export default function Faq() {
   const [userInput, setUserInput] = useState("");
@@ -10,6 +11,12 @@ export default function Faq() {
     useState(listPertanyaanUmum);
   const [foundPertanyaanMateri, setFoundPertanyaanMateri] =
     useState(listPertanyaanMateri);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  })
 
   const checkSearchResult = () => {
     let questionUmum = [];

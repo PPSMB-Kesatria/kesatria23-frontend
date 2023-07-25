@@ -11,9 +11,16 @@ import { Guidebook } from "./contents/Guidebook";
 import { JelajahLembaga } from "./contents/JelajahLembaga";
 import { PameranKarya } from "./contents/PameranKarya";
 import { KaryaAplikatif } from "./contents/KaryaAplikatif";
+import AOS from "aos";
 
 export default function Materi() {
   const [activeIndex, setActiveIndex] = useState(5);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500
+    })
+  })
   const MATERI_NAVIGATION = [
     {
       title: "Pengenalan Jurusan",
