@@ -5,3 +5,9 @@
 Pake App router dari NextJS v13
 
 - `/design-guides` - list classname custom buat colors & fonts
+- `/` - main page / beranda
+- `/tema ` - penjelasan tema Gamadhira
+- `/dokumentasi` - display foto-foto PPSMB Kesatria 2022
+- `/agenda` - daftar kegiatan dan penjelasan
+- `/materi` - daftar modul materi PPSMB Kesatria
+- `/faq` - list pertanyaan umum
