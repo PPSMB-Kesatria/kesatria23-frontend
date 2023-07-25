@@ -3,6 +3,8 @@ import { useState } from "react";
 import { PersonalBranding } from "./contents/PersonalBranding";
 import { FasilitasFakultas } from "./contents/FasilitasFakultas";
 import { DummyContent } from "./contents/DummyContent";
+import { useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function Materi() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -20,6 +22,12 @@ export default function Materi() {
       content: <DummyContent />,
     },
   ];
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    console.log(searchParams.get("materi"))
+    if (searchParams.get("materi")) setActiveIndex(parseInt(searchParams.get("materi")));
+  }, [])
 
   return (
     <div className="relative overflow-hidden">

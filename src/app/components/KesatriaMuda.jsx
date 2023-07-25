@@ -63,24 +63,28 @@ export default function KesatriaMuda() {
           <SwiperCard
             title="Pengenalan Jurusan"
             content="Fakultas Teknik terdiri dari 8 Departemen yang di dalamnya terdapat 15 Program Studi atau yang biasa dikenal dengan jurusan. Sebelum masuk ke jurusan masing-masing, yuk kita sama-sama kenali jurusan Kesatria Muda melalui modul berikut!"
+            link="/materi?materi=0"
           />
         </SwiperSlide>
         <SwiperSlide>
           <SwiperCard
             title="Jelajah Lembaga"
             content="Fakultas Teknik tidak hanya bergerak dan berprestasi di bidang akademik saja, namun terdapat berbagai macam lembaga yang dapat menunjang skill mahasiswanya. Wah, lembaga mana nih yang diminati Kesatria Muda? Mari pahami modul berikut sebagai bekal bagi Kesatria Muda!"
+            link={"/materi?materi=1"}
           />
         </SwiperSlide>
         <SwiperSlide>
           <SwiperCard
             title="Pameran Karya"
             content="Fakultas Teknik tidak terlepas dari segudang prestasinya. Penasaran siapa saja tim-tim yang bergerak di belakang untuk mengharumkan nama Fakultas Teknik? Yuk, simak modul berikut ini!"
+            link={"/materi?materi=2"}
           />
         </SwiperSlide>
         <SwiperSlide>
           <SwiperCard
             title="Fasilitas Teknik"
             content="Fakultas Teknik sebagai fakultas terbesar di Universitas Gadjah Mada memiliki beragam fasilitas yang menunjang kegiatan mahasiswanya. Mau tahu apa saja fasilitas yang ada di Fakultas Teknik? Mari simak modul berikut!"
+            link={"/materi?materi=3"}
           />
         </SwiperSlide>
         <div
@@ -221,7 +225,7 @@ function SwiperCard({ title, content, img, link }) {
           {content}
         </p>
         <Link
-          href="/"
+          href={link}
           className="block bg-neutral-100 w-fit font-bold italic text-green-400 font-creato rounded-[20px] text-[18px] sm:text-[20px] 2xl:text-[25px] px-7 py-3 mt-[10px]"
         >
           Baca Modul
