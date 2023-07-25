@@ -1,19 +1,31 @@
 const listPertanyaanUmum = [
   {
-    question: "Tentang PPSMB Kesatria",
-    answer: "Jawaban Pertanyaan Umum 1",
+    question: "Pembagian forum dan link google classroom dapat dilihat dimana?",
+    answer: "Di Simaster (Kemahasiswaan → PPSMB → Fakultas/Sekolah Vokasi)",
   },
   {
-    question: "Tentang PPSMB Palapa",
-    answer: "Jawaban Pertanyaan Umum 2",
+    question: "Untuk ketentuan topi cap berwarna hitam apakah harus polos?",
+    answer: "Warna topi dominan hitam, jika ada sedikit warna lain masih diperbolehkan.",
   },
   {
-    question: "Seputar Teknik",
-    answer: "Jawaban Pertanyaan Umum 3",
+    question: "Untuk ketentuan rambut menyentuh alis dan telinga, ditujukan untuk mahasiswa atau mahasiswi baru?",
+    answer: "Ketentuan bersifat umum bagi semua mahasiswa dan mahasiswi.",
   },
   {
-    question: "Pertanyaan Umum 4",
-    answer: "Jawaban Pertanyaan Umum 4",
+    question: "Untuk atribut formasi menggunakan karton dengan ketebalan berapa mm?",
+    answer: "Disarankan 2 mm hingga 3 mm. Namun ketebalan lain tetap diperbolehkan asalkan karton tetap kokoh.",
+  },
+  {
+    question: "Untuk ID Card apakah boleh dipotong menyesuaikan wadah dengan ukuran B4?",
+    answer: "Lembar ID Card boleh dipotong menyesuaikan ukuran asalkan data diri Kesatria Muda tetap jelas.",
+  },
+  {
+    question: "Untuk atribut formasi apakah diperbolehkan menggunakan kertas putih selain HVS?",
+    answer: "Diperbolehkan asalkan warna kertasnya sama putihnya dengan HVS.",
+  },
+  {
+    question: "Untuk warna tas Kesatria Muda apakah dibebaskan?",
+    answer: "Dibebaskan asalkan dalam bentuk ransel dan dapat membawa seluruh keperluan PPSMB Kesatria",
   },
 ]
 
