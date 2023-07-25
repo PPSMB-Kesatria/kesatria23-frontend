@@ -46,12 +46,19 @@ export default function Faq() {
 
   return (
     <div className="py-36 min-h-screen bg-pattern-cream-2 bg-repeat bg-contain flex flex-col items-center justify-center">
-      <h1 className="font-alstoria text-4xl text-green-400 text-center">
+      <h1
+        data-aos="fade-up"
+        className="font-alstoria text-4xl text-green-400 text-center"
+      >
         Frequently Asked Questions
       </h1>
       <main className="w-[90%] md:w-2/3 mt-10 space-y-16">
         {/*Search input*/}
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form
+          data-aos="fade-up"
+          data-aos-delay="200"
+          onSubmit={(e) => handleSubmit(e)}
+        >
           <label
             htmlFor="default-search"
             className="mb-2 text-sm font-medium text-neutral-100 sr-only"
@@ -95,6 +102,8 @@ export default function Faq() {
 
         {/*Accordions group*/}
         <div
+          data-aos="fade-up"
+          data-aos-delay="400"
           about="Pertanyaan umum"
           className="bg-green-400 w-full rounded-lg flex flex-col items-center pt-5 pb-16 px-10"
         >
@@ -155,15 +164,22 @@ const QAPlaceholder = ({ question, answer }) => {
         <div className="font-bold">Q:</div>
         <div className="flex flex-row justify-between w-full">
           <div className="w-[90%] text-justify select-none">{question}</div>
-          <RiArrowDownSLine size={24} className={"duration-200 " + (isActive? "rotate-180" : "rotate-0")} />
+          <RiArrowDownSLine
+            size={24}
+            className={"duration-200 " + (isActive ? "rotate-180" : "rotate-0")}
+          />
         </div>
       </div>
-      <div className={"grid duration-200 " + (isActive? "grid-rows-[1fr]" : "grid-rows-[0fr]")}>
+      <div
+        className={
+          "grid duration-200 " +
+          (isActive ? "grid-rows-[1fr]" : "grid-rows-[0fr]")
+        }
+      >
         <div
           className={
-            "select-none flex flex-row gap-4 bg-green-100 rounded-lg pt-5 mt-[-15px] text-green-400 font-creato text-base px-5 py-2 overflow-hidden " + (
-              isActive ? "" : " !py-0"
-            )
+            "select-none flex flex-row gap-4 bg-green-100 rounded-lg pt-5 mt-[-15px] text-green-400 font-creato text-base px-5 py-2 overflow-hidden " +
+            (isActive ? "" : " !py-0")
           }
         >
           <div className="font-bold overflow-hidden">A:</div>
