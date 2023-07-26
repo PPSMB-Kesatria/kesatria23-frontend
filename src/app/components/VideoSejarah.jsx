@@ -23,10 +23,21 @@ export default function VideoSejarah() {
             branding, disini juga terdapat 2 video menarik yaitu “Sejarah Teknik” dan 
             “Sejarah Kesatria” yang wajib ditonton sebelum kita bertemu secara offline di PPSMB 
             Kesatria nanti.</p>
-          <Link href="/materi?materi=6">
-            <button className=" mt-4 bg-red-100 hover:bg-[#CB3231] active:bg-[#CB3231] active:scale-95 text-neutral-100 px-5 py-2 rounded-full font-creato font-bold">Baca Modul 1</button>
-          </Link>
+          
+          
         </div>
+
+        <div data-aos="fade-up" className="bg-red-100 text-neutral-100 rounded-2xl p-2 w-4/5 flex flex-col items-center relative">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="bg-red-200 font-alstoria md:h-full rounded-3xl p-4 text-center text-[25px]  flex items-center shadow-[inset_0_2px_5px_rgba(0,0,0,.3)] ">
+                <h1>Personal Branding <span className="font-creato">&</span> SWOT </h1>
+              </div>
+              <p className="font-creato p-4 text-[18px] sm:text-[20px] 2xl:text-[25px] w-[100%] ">Personal Branding merupakan salah satu hal krusial bagi mahasiswa baru karena dapat menjadi salah satu alat pemasaran kemampuan yang dimiliki. Personal Branding dapat dilakukan dengan membuat CV, resume dan LinkedIn. Sebelum membuat personal branding diperlukan kemampuan untuk menganalisis diri sendiri melalui SWOT(strength, Weakness, Opportunities, Threats).</p>
+            </div>
+            <Link href="/materi?materi=6" className="absolute -my-4 bottom-0">
+            <button className=" mt-4 bg-green-400 hover:bg-green-300 active:bg-green-300 active:scale-95 text-neutral-100 px-5 py-2 rounded-full font-creato font-bold">Lihat Modul</button>
+          </Link>
+          </div>
         {/*Sejarah Teknik*/}
         <div about="Sejarah Teknik" className="flex flex-col lg:flex-row w-4/5 gap-14 lg:gap-28 items-center justify-center">
           <div data-aos="fade-up">
