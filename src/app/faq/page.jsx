@@ -4,6 +4,7 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import { listPertanyaanUmum, listPertanyaanMateri } from "./listPertanyaan";
 import AOS from "aos";
+import Image from "next/image";
 
 export default function Faq() {
   const [userInput, setUserInput] = useState("");
@@ -52,103 +53,121 @@ export default function Faq() {
   };
 
   return (
-    <div className="py-36 min-h-screen bg-pattern-cream-2 bg-repeat bg-contain flex flex-col items-center justify-center">
-      <h1
-        data-aos="fade-up"
-        className="font-alstoria text-4xl text-green-400 text-center"
-      >
-        Frequently Asked Questions
-      </h1>
-      <main className="w-[90%] md:w-2/3 mt-10 space-y-16">
-        {/*Search input*/}
-        <form
+    <div className="border border-red-500 flex flex-col">
+      <div className="relative py-36 min-h-screen bg-pattern-cream-2 bg-repeat bg-contain flex flex-col items-center justify-center">
+        <h1
           data-aos="fade-up"
-          data-aos-delay="200"
-          onSubmit={(e) => handleSubmit(e)}
+          className="relative z-[30] font-alstoria text-4xl text-green-400 text-center"
         >
-          <label
-            htmlFor="default-search"
-            className="mb-2 text-sm font-medium text-neutral-100 sr-only"
+          Frequently Asked Questions
+        </h1>
+        <main className="w-[90%] md:w-2/3 mt-10 space-y-16">
+          {/*Search input*/}
+          <form
+            data-aos="fade-up"
+            data-aos-delay="200"
+            onSubmit={(e) => handleSubmit(e)}
           >
-            Search
-          </label>
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg
-                className="w-4 h-4 text-gray-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-            </div>
-            <input
-              onChange={(e) => handleChange(e)}
-              value={userInput}
-              type="search"
-              id="default-search"
-              className="block w-full p-4 pl-10 text-base text-neutral-100 font-creato border border-green-400 rounded-lg bg-green-400 focus:outline-none focus:ring-green-200 focus:border-green-200"
-              placeholder="Silakan ketik pertanyaanmu di sini..."
-            />
-            <button
-              type="submit"
-              className="text-green-400 absolute right-2.5 bottom-2.5 bg-neutral-100 hover:bg-red-100 hover:text-neutral-100 focus:outline-none active:scale-95 font-creato font-medium rounded-lg text-base px-4 py-2"
+            <label
+              htmlFor="default-search"
+              className="mb-2 text-sm font-medium text-neutral-100 sr-only"
             >
               Search
-            </button>
-          </div>
-        </form>
+            </label>
+            <div className="relative">
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg
+                  className="w-4 h-4 text-gray-500"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                onChange={(e) => handleChange(e)}
+                value={userInput}
+                type="search"
+                id="default-search"
+                className="relative z-[80] block w-full p-4 pl-10 text-base text-neutral-100 font-creato border border-green-400 rounded-lg bg-green-400 focus:outline-none focus:ring-green-200 focus:border-green-200"
+                placeholder="Cari di sini..."
+              />
+              <button
+                type="submit"
+                className="text-green-400 hidden md:block absolute z-[81] right-2.5 bottom-2.5 bg-neutral-100 hover:bg-red-100 hover:text-neutral-100 focus:outline-none active:scale-95 font-creato font-medium rounded-lg text-base px-4 py-2"
+              >
+                Search
+              </button>
+            </div>
+          </form>
 
-        {/*Accordions group*/}
-        <div
-          data-aos="fade-up"
-          data-aos-delay="400"
-          about="Pertanyaan umum"
-          className="bg-green-400 w-full rounded-lg flex flex-col items-center pt-5 pb-16 px-10"
-        >
-          <h1 className="font-creato font-extrabold text-xl text-neutral-100">
-            Pertanyaan umum
-          </h1>
-          <div className="w-full space-y-5 mt-5">
-            {foundPertanyaanUmum.map((item, i) => {
-              return (
-                <QAPlaceholder
-                  key={i}
-                  question={item.question}
-                  answer={item.answer}
-                />
-              );
-            })}
+          {/*Accordions group*/}
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            about="Pertanyaan umum"
+            className="bg-green-400 w-full rounded-lg flex relative z-[100] flex-col items-center pt-5 pb-16 px-10"
+          >
+            <h1 className="font-creato font-extrabold text-xl text-neutral-100">
+              Pertanyaan umum
+            </h1>
+            <div className="w-full space-y-5 mt-5">
+              {foundPertanyaanUmum.map((item, i) => {
+                return (
+                  <QAPlaceholder
+                    key={i}
+                    question={item.question}
+                    answer={item.answer}
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div>
-        {/* <div
-          about="Pertanyaan Materi"
-          className="bg-green-400 w-full rounded-lg flex flex-col items-center pt-5 pb-16 px-10"
-        >
-          <h1 className="font-creato font-extrabold text-xl text-neutral-100">
-            Seputar Materi
-          </h1>
-          <div className="w-full space-y-5 mt-5">
-            {foundPertanyaanMateri.map((item, i) => {
-              return (
-                <QAPlaceholder
-                  key={i}
-                  question={item.question}
-                  answer={item.answer}
-                />
-              );
-            })}
-          </div>
-        </div> */}
-      </main>
+          {/* <div
+            about="Pertanyaan Materi"
+            className="bg-green-400 w-full rounded-lg flex flex-col items-center pt-5 pb-16 px-10"
+          >
+            <h1 className="font-creato font-extrabold text-xl text-neutral-100">
+              Seputar Materi
+            </h1>
+            <div className="w-full space-y-5 mt-5">
+              {foundPertanyaanMateri.map((item, i) => {
+                return (
+                  <QAPlaceholder
+                    key={i}
+                    question={item.question}
+                    answer={item.answer}
+                  />
+                );
+              })}
+            </div>
+          </div> */}
+        </main>
+      </div>
+      <div className="absolute h-full z-[3] w-28 md:w-48 -mt-[12rem] sm:-mt-[15rem] md:-mt-96 lg:-mt-48 self-start">
+        <Image
+          src="/buwong_merah.svg"
+          fill
+        />
+      </div>
+      <div className="absolute h-full w-20 mt-4 md:mt-0 md:w-28 z-[5] self-end">
+        <Image
+          src="/Bunga_kanan.svg"
+          fill />
+      </div>
+      <div className="absolute h-full w-20 flex flex-row items-end mt-[50rem] md:mt-96 md:w-28 z-[0] self-start">
+        <Image
+          src="/bunga_kiri.svg"
+          fill />
+      </div>
     </div>
   );
 }
@@ -165,7 +184,7 @@ const QAPlaceholder = ({ question, answer }) => {
     >
       <div
         className={
-          "flex flex-row gap-4 items-center px-5 py-2 text-green-400 font-creato bg-neutral-100 relative z-[1] rounded-lg"
+          "flex flex-row gap-4 items-center px-5 py-2 text-green-400 font-creato bg-neutral-100 relative z-[10] rounded-lg"
         }
       >
         <div className="font-bold">Q:</div>
