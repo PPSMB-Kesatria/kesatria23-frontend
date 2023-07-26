@@ -23,6 +23,9 @@ export default function VideoSejarah() {
             branding, disini juga terdapat 2 video menarik yaitu “Sejarah Teknik” dan 
             “Sejarah Kesatria” yang wajib ditonton sebelum kita bertemu secara offline di PPSMB 
             Kesatria nanti.</p>
+          <Link href="/materi?materi=6">
+            <button className=" mt-4 bg-red-100 hover:bg-[#CB3231] active:bg-[#CB3231] active:scale-95 text-neutral-100 px-5 py-2 rounded-full font-creato font-bold">Baca Modul 1</button>
+          </Link>
         </div>
         {/*Sejarah Teknik*/}
         <div about="Sejarah Teknik" className="flex flex-col lg:flex-row w-4/5 gap-14 lg:gap-28 items-center justify-center">
@@ -31,9 +34,10 @@ export default function VideoSejarah() {
               Sejarah Teknik
             </h1>
             <p className="font-creato font-medium max-w-[700px] text-[18px] sm:text-[20px] 2xl:text-[25px] text-green-400 text-center lg:text-left">
-              Fakultas Teknik merupakan salah satu fakultas tertua di indonesia.
-              Jadi kita harus belajar tentang sejarahnya! Fakultas teknik adalah
-              yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
+              Fakultas teknik berdiri pada tahun 1949 ini menjadi salah satu 
+              fakultas tertua di Universitas Gadjah Mada. Sampai saat ini Fakultas 
+              Teknik terus mengalami berbagai penyesuaian dan perkembangan. 
+              Mari simak video berikut ini!
             </p>
           </div>
           <div data-aos="zoom-in-right" data-aos-easing="ease-in" id="video-sejarah-teknik" className="relative flex justify-center items-center aspect-video bg-red-100 rounded-2xl min-w-[300px] md:min-w-[550px] lg:min-w-[400px]">
@@ -43,7 +47,7 @@ export default function VideoSejarah() {
               className="w-full h-full select-none"
               allowFullScreen />
             </div>
-            <div data-aos="fade-left" data-aos-duration="500" className="absolute z-[11] w-32 sm:w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[10rem] sm:ml-[13rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
+            <div className="absolute z-[11] w-32 sm:w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[10rem] sm:ml-[13rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
               <Image src="/bird1.svg" alt="bird_img" fill className="select-none"/>
             </div>
           </div>
@@ -67,9 +71,11 @@ export default function VideoSejarah() {
               Sejarah Kesatria
             </h1>
             <p className="font-creato font-medium max-w-[700px] text-[18px] sm:text-[20px] 2xl:text-[25px] text-green-400 text-center md:text-right">
-              Fakultas Teknik merupakan salah satu fakultas tertua di indonesia.
-              Jadi kita harus belajar tentang sejarahnya! Fakultas teknik adalah
-              yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
+              Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa perubahan 
+              dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas terbesar 
+              di Universitas Gadjah Mada memiliki segudang filosofi di dalamnya. 
+              Penasaran bagaimana PPSMB Kesatria dapat mempertahankan esensinya? 
+              Yuk, simak video berikut untuk memahami lebih dalam!
             </p>
             <Link href={"/tema"}>
               <button className="mt-4 px-11 py-2 bg-red-200 rounded-full font-creato font-extrabold text-[20px] italic text-neutral-100 hover:bg-[#CB3231] active:bg-[#CB3231] active:scale-95">Lihat Selengkapnya</button>
@@ -84,9 +90,11 @@ export default function VideoSejarah() {
               Sejarah Kesatria
             </h1>
             <p className="font-creato font-medium max-w-[660px] text-[18px] sm:text-[20px] 2xl:text-[25px] text-green-400 text-center lg:text-left">
-              Fakultas Teknik merupakan salah satu fakultas tertua di indonesia.
-              Jadi kita harus belajar tentang sejarahnya! Fakultas teknik adalah
-              yang terbaik. Senang bisa tembus  ke teknik hihi. Semoga IPK aman :D
+              Tahukah kalian kalau PPSMB Kesatria pernah mengalami beberapa perubahan 
+              dari tahun ke tahun? PPSMB Kesatria sebagai PPSMB Fakultas terbesar 
+              di Universitas Gadjah Mada memiliki segudang filosofi di dalamnya. 
+              Penasaran bagaimana PPSMB Kesatria dapat mempertahankan esensinya? 
+              Yuk, simak video berikut untuk memahami lebih dalam!
             </p>
           </div>
           <div data-aos="fade-right" id="video-sejarah-kesatria" className="relative flex justify-center items-center rounded-2xl min-w-[300px] md:min-w-[550px] aspect-video bg-red-100">
