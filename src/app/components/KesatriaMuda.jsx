@@ -241,7 +241,7 @@ function SwiperCard({ title,coomingsoon, content, img, link }) {
   else 
   return (
     <div className="flex flex-col lg:flex-row ml-[20px] !mx-auto bg-green-400 p-5 sm:px-10 sm:py-10 2xl:py-12 2xl:px-20 rounded-[30px] sm:rounded-[40px] gap-10 shadow-[0_0_10px_#54BB9C] w-[90%] lg:w-[900px] 2xl:w-[1200px] items-center h-[400px] place-content-center">
-      <h1 className="font-alstoria text-8xl">Coming Soon</h1>
+      <h1 className="font-alstoria text-center text-3xl sm:text-8xl">Coming Soon</h1>
     </div>
   )
 }
