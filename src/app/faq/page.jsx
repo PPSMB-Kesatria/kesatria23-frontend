@@ -53,7 +53,7 @@ export default function Faq() {
   };
 
   return (
-    <div className="border border-red-500 flex flex-col">
+    <div className="flex flex-col">
       <div className="relative py-36 min-h-screen bg-pattern-cream-2 bg-repeat bg-contain flex flex-col items-center justify-center">
         <h1
           data-aos="fade-up"
