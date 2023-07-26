@@ -5,12 +5,6 @@ export const Day1 = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
   const RUNDOWN = [
     {
-      time: "06.45",
-      agenda: "Pengecekan Atribut",
-      deskripsi:
-        "Kesatria Muda akan melakukan pengecekan atribut sebelum memulai melaksanakan kegiatan.",
-    },
-    {
       time: "07.30",
       agenda: "Upacara Pembukaan PPSMB 2023",
       deskripsi:

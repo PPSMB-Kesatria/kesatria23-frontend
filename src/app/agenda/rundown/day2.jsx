@@ -4,13 +4,7 @@ import { useState } from "react";
 export const Day2 = () => {
   const RUNDOWN = [
     {
-      time: "06.45",
-      agenda: "Pengecekan Atribut",
-      deskripsi:
-        "Kesatria Muda akan melakukan pengecekan atribut sebelum memulai melaksanakan kegiatan.",
-    },
-    {
-      time: "07.45",
+      time: "07.30",
       agenda: "Pameran Karya",
       deskripsi:
         "Pengenalan karya-karya yang ada di Fakultas Teknik.",
@@ -44,7 +38,7 @@ export const Day2 = () => {
         "-",
     },
     {
-      time: "13.50",
+      time: "15.00",
       agenda: "Upacara Penutuban PPSMB Kesatria 2023",
       deskripsi:
         "Rangkaian Upacara Penutupan Kesatria yang dilakukan oleh Kesatria Muda.",
