@@ -5,100 +5,49 @@ export const Day1 = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
   const RUNDOWN = [
     {
-      time: "00.01",
-      agenda: "Upacara Pembukaan",
+      time: "06.45",
+      agenda: "Pengecekan Atribut",
       deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
+        "Kesatria Muda akan melakukan pengecekan atribut sebelum memulai melaksanakan kegiatan.",
     },
     {
-      time: "00.02",
+      time: "07.30",
+      agenda: "Upacara Pembukaan PPSMB 2023",
+      deskripsi:
+        "Pemberian sambutan oleh koordinator umum dan pihak dekanat kepada Kesatria Muda.",
+    },
+    {
+      time: "09.55",
       agenda: "Kepemanduan",
-      deskripsi: "lorem100",
+      deskripsi: "Kegiatan dan materi yang akan diberikan oleh pemandu kepada Kesatria Muda.",
     },
     {
-      time: "00.03",
-      agenda: "Jalan-Jalan Teknik",
-      deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
-    },
-    {
-      time: "00.04",
+      time: "11.25",
       agenda: "ISHOMA",
       deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
+        "Kesatria Muda dapat melakukan Istirahat, Sholat, dan Makan.",
     },
     {
-      time: "00.05",
+      time: "13.05",
       agenda: "Jelajah Lembaga",
       deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
+        "Kegiatan pengenalan fasilitas yang ada di Fakultas Teknik.",
     },
     {
-      time: "00.06",
-      agenda: "Games Angkatan",
+      time: "15.30",
+      agenda: "Penutupan Hari Pertama",
       deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy.<br/>Apa lagi ya.",
+        "Upacara penutupan kegiatan hari pertama PPSMB Kesatria 2023.",
     },
-    {
-      time: "00.07",
-      agenda: "Penutupuan Hari Pertama",
-      deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
-    },
+    
   ];
-  const ButtonClicked = ({ time, agenda, deskripsi }) => {
-    return (
-      <div className="flex font-creato gap-3 place-content-center cursor-pointer">
-        <div className="p-2 text-center bg-red-200 h-[40px] w-[75px] xs:w-[28.626%] md:w-[173px] text-neutral-100 rounded-xl drop-shadow-lg">
-          {time}
-        </div>
-        <div className=" w-[175px] xs:w-[66.7939%]">
-          <div className=" bg-red-100  text-neutral-100 rounded-t-xl xs:flex xs:flex-col">
-            <div className=" p-2 xs:flex xs:flex-row xs:justify-between font-normal">
-              <p>{agenda}</p>
-              <button className="max-xs:hidden">
-                <img className="h-[10px]" src="/icon-up.png" alt="" />
-              </button>
-            </div>
-          </div>
-          <div className="bg-neutral-100 rounded-b-xl text-red-100 p-2 drop-shadow-lg">
-            {deskripsi}
-          </div>
-        </div>
-      </div>
-    );
-  };
-  const ButtonNotClicked = ({ onClick, time, agenda }) => {
-    return (
-      <div
-        onClick={onClick}
-        className="cursor-pointer flex font-creato gap-3 place-content-center"
-      >
-        <div className="p-2 text-center bg-red-200 h-[40px] w-[75px] xs:w-[28.626%] md:w-[173px] text-neutral-100 rounded-xl drop-shadow-l">
-          {time}
-        </div>
-        <div className="p-2 bg-red-100 duration-100 hover:shadow-[0_0_10px_rgba(241,116,113)] w-[175px] xs:w-[66.7939%] text-neutral-100 rounded-xl drop-shadow-lg xs:flex xs:flex-col">
-          <div className="xs:flex xs:flex-row xs:justify-between">
-            <p>{agenda}</p>
-            <button className="max-xs:hidden">
-              <img className="h-[10px]" src="/icon-down.png" alt="" />
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  };
+  
 
   return (
     <div
       data-aos="fade-up"
       className="flex flex-col gap-3 w-[90%] sm:w-[70%] mx-auto lg:max-w-[700px] xl:max-w-[900px] items-center"
     >
-      <AgendaItem
-        time="69.42"
-        agenda="Upacara Pembukaan"
-        desc="mamah aku takut 😭"
-        />
         {RUNDOWN.map((item, index) => {
           return (
             <AgendaItem
@@ -148,7 +97,7 @@ const AgendaItem = ({ time, agenda, desc }) => {
             (state ? "grid-rows-[1fr]" : "grid-rows-[0fr] !p-0 !pt-0")
           }
         >
-          <p className="overflow-hidden w-full">{desc}</p>
+          <p className="overflow-hidden w-full text-justify">{desc}</p>
         </div>
       </div>
     </div>
