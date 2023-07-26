@@ -27,6 +27,9 @@ export default function Agenda() {
 
   return (
     <main className=" bg-pattern-cream bg-repeat py-32 lg:pb-40">
+      <img src="/ornament-agenda.svg" className=" absolute w-[50px] left-0 top-[15%]" alt="" />
+      <img src="/ornament-agenda2.svg" className=" absolute w-[50px] right-0 bottom-[5%] sm:bottom-[10%]" alt="" />
+
       <h1
         data-aos="fade-up"
         className=" font-alstoria text-center text-[48px] text-green-400 mb-7 "

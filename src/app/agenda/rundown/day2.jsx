@@ -2,48 +2,46 @@
 import { useState } from "react";
 
 export const Day2 = () => {
-  const [activeIndex, setActiveIndex] = useState(-1);
   const RUNDOWN = [
     {
-      time: "00.01",
-      agenda: "Upacara Pembukaan Kedua",
+      time: "07.30",
+      agenda: "Pameran Karya",
       deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
+        "Pengenalan karya-karya yang ada di Fakultas Teknik.",
     },
     {
-      time: "00.02",
+      time: "09.25",
+      agenda: "Talkshow",
+      deskripsi: "Kegiatan bincang-bincang yang akan diberikan oleh tamu undangan kepada Kesatria Muda.",
+    },
+    {
+      time: "10.50",
       agenda: "Kepemanduan",
-      deskripsi: "lorem100",
+      deskripsi:
+        "Kegiatan dan materi yang akan diberikan oleh pemandu kepada Kesatria Muda.",
     },
     {
-      time: "00.03",
-      agenda: "Jalan-Jalan Teknik",
-      deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
+      time: "11.25",
+      agenda: "Ishoma",
+      deskripsi:"Kesatria Muda dapat melakukan Istirahat, Sholat, dan Makan.",
     },
     {
-      time: "00.04",
-      agenda: "ISHOMA",
+      time: "12.40",
+      agenda: "Karya Aplikatif",
       deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
+        "Kesatria Muda menciptakan karya yang dapat diaplikasikan di Fakultas Teknik.",
     },
     {
-      time: "00.05",
-      agenda: "Jelajah Lembaga",
+      time: "13.50",
+      agenda: "Formasi Angkatan",
       deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
+        "-",
     },
     {
-      time: "00.06",
-      agenda: "Games Angkatan",
+      time: "15.00",
+      agenda: "Upacara Penutuban PPSMB Kesatria 2023",
       deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy.<br/>Apa lagi ya.",
-    },
-    {
-      time: "00.07",
-      agenda: "Penutupuan Hari Pertama",
-      deskripsi:
-        "Rincian / Deskripsi Kegiatan, Keperluan yang perlu di bawa. Tempat Kegiata, dsb jika perlu ygy",
+        "Rangkaian Upacara Penutupan Kesatria yang dilakukan oleh Kesatria Muda.",
     },
   ];
   const ButtonClicked = ({ time, agenda, deskripsi }) => {
