@@ -49,7 +49,7 @@ export default function VideoSejarah() {
                 </h1>
               </div>
             </div>
-            <p className="font-creato text-[18px] sm:text-[20px] 2xl:text-[25px] w-full md:w-[60%] flex-shrink-0">
+            <p className="font-creato text-[18px] sm:text-[20px] 2xl:text-[25px] w-full md:w-[60%] flex-shrink-0 text-justify px-2">
               Personal Branding merupakan salah satu hal krusial bagi mahasiswa
               baru karena dapat menjadi salah satu alat pemasaran kemampuan yang
               dimiliki. Personal Branding dapat dilakukan dengan membuat CV,
