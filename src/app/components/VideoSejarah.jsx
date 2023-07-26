@@ -41,7 +41,7 @@ export default function VideoSejarah() {
           className="bg-red-100 text-neutral-100 rounded-2xl p-2 w-[90%] md:w-4/5 lg:max-w-[900px] xl:max-w-[1100px] 2xl:max-w-[1250px] flex flex-col items-center relative shadow-[inset_0_2px_5px_rgba(0,0,0,.3)]"
         >
           <div className="flex flex-col h-max gap-4 md:flex-row items-center pb-5">
-            <div className="bg-red-200 font-alstoria md:!h-full w-full rounded-3xl p-4 text-center text-[25px] items-center shadow-[inset_0_2px_5px_rgba(0,0,0,.3)] ">
+            <div className="bg-red-200 font-alstoria md:!h-full w-full rounded-3xl p-4 text-center text-[25px] items-center shadow-[inset_0_2px_5px_rgba(0,0,0,.3)] mb-4">
               <div className="grid place-items-center h-[215px]">
                 <h1>
                   Personal Branding{" "}
@@ -49,11 +49,11 @@ export default function VideoSejarah() {
                 </h1>
               </div>
             </div>
-            <p className="font-creato text-[18px] sm:text-[20px] 2xl:text-[25px] w-full md:w-[60%] flex-shrink-0 text-justify px-2">
+            <p className="font-creato text-[18px] sm:text-[20px] 2xl:text-[25px] w-full md:w-[60%] flex-shrink-0 text-justify px-2 mb-2">
               Personal Branding merupakan salah satu hal krusial bagi mahasiswa
               baru karena dapat menjadi salah satu alat pemasaran kemampuan yang
               dimiliki. Personal Branding dapat dilakukan dengan membuat CV,
-              resume dan LinkedIn. Sebelum membuat personal branding diperlukan
+              resume dan, LinkedIn. Sebelum membuat personal branding diperlukan
               kemampuan untuk menganalisis diri sendiri melalui SWOT(strength,
               Weakness, Opportunities, Threats).
             </p>
@@ -81,7 +81,7 @@ export default function VideoSejarah() {
             </p>
           </div>
           <div
-            data-aos="zoom-in-right"
+            data-aos="fade-left"
             data-aos-easing="ease-in"
             id="video-sejarah-teknik"
             className="relative flex justify-center items-center aspect-video bg-red-100 rounded-2xl min-w-[300px] md:min-w-[550px] lg:min-w-[400px]"
@@ -95,6 +95,7 @@ export default function VideoSejarah() {
             </div>
             <div className="absolute z-[11] w-32 sm:w-36 md:w-48 lg:w-36 h-full flex justify-end -mt-[11.5rem] ml-[10rem] sm:ml-[13rem] md:-mt-80 md:ml-[33rem] lg:-mt-60 lg:ml-[23rem] ">
               <Image
+                data-aos="fade-left"
                 src="/bird1.svg"
                 alt="bird_img"
                 fill
