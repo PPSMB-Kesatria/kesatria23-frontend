@@ -8,11 +8,14 @@ export const JelajahLembaga = () => {
                 namun terdapat berbagai macam lembaga yang dapat menunjang skill mahasiswanya.
                 Wah, lembaga mana nih yang diminati Kesatria Muda? Mari pahami modul berikut 
                 sebagai bekal bagi Kesatria Muda!</p>
-            {/* <div className="flex justify-center">
-                <iframe src="https://drive.google.com/file/d/1KXdWXAMxfyTLy6nts1EF7xZ-CoffPJ3r/preview"
-                allow="autoplay" className="w-full md:w-3/4 aspect-[.75]"/>
-            </div> */}
-            <h1 className="text-neutral-100 font-creato font-bold text-4xl">Coming Soon</h1>
+             <div className="flex justify-center">
+             <iframe 
+             onLoad={() => setIsLoading(false)}
+             src="https://drive.google.com/file/d/1UBm6mIpnXBwYKPQz2wjO5O8t9qZE_pej/preview"
+             allow="autoplay"
+             className="w-full md:w-3/4 aspect-[.75] relative z-[2]"/>
+            </div> 
+            
         </div>
     )
 }
