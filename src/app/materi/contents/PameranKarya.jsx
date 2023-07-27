@@ -1,5 +1,6 @@
+import { useState } from "react";
 export const PameranKarya = () => {
-
+    const [isLoading, setIsLoading] = useState(true);
     return(
         <div className="space-y-5">
             <h1 className="text-neutral-100 font-creato font-bold text-4xl">Pameran Karya</h1>
@@ -7,11 +8,13 @@ export const PameranKarya = () => {
                 Fakultas Teknik tidak terlepas dari segudang prestasinya. 
                 Penasaran siapa saja tim-tim yang bergerak di belakang untuk 
                 mengharumkan nama Fakultas Teknik? Yuk, simak modul berikut ini!</p>
-            {/* <div className="flex justify-center">
-                <iframe src="https://drive.google.com/file/d/1KXdWXAMxfyTLy6nts1EF7xZ-CoffPJ3r/preview"
-                allow="autoplay" className="w-full md:w-3/4 aspect-[.75]"/>
-            </div> */}
-            <h1 className="text-neutral-100 font-creato font-bold text-4xl">Coming Soon</h1>
+            <div className="flex justify-center">
+             <iframe 
+             onLoad={() => setIsLoading(false)}
+             src="https://drive.google.com/file/d/1P6XEGJM0RIJqADe8Yg2ydErJnR3tqmth/preview"
+             allow="autoplay"
+             className="w-full md:w-3/4 aspect-[.75] relative z-[2]"/>
+            </div> 
         </div>
     )
 }

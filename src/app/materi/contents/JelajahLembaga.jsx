@@ -1,5 +1,6 @@
+import { useState } from "react";
 export const JelajahLembaga = () => {
-
+    const [isLoading, setIsLoading] = useState(true);
     return(
         <div className="space-y-5">
             <h1 className="text-neutral-100 font-creato font-bold text-4xl">Jelajah Lembaga</h1>
