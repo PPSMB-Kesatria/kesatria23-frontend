@@ -14,6 +14,7 @@ export const PameranKarya = () => {
              src="https://drive.google.com/file/d/1P6XEGJM0RIJqADe8Yg2ydErJnR3tqmth/preview"
              allow="autoplay"
              className="w-full md:w-3/4 aspect-[.75] relative z-[2]"/>
+             {isLoading && (<div className="w-full md:w-3/4 aspect-[.75] bg-neutral-100/70 animate-pulse absolute"></div>)}
             </div> 
         </div>
     )
