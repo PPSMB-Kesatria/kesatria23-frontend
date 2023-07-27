@@ -15,6 +15,7 @@ export const JelajahLembaga = () => {
              src="https://drive.google.com/file/d/1UBm6mIpnXBwYKPQz2wjO5O8t9qZE_pej/preview"
              allow="autoplay"
              className="w-full md:w-3/4 aspect-[.75] relative z-[2]"/>
+             {isLoading && (<div className="w-full md:w-3/4 aspect-[.75] bg-neutral-100/70 animate-pulse absolute"></div>)}
             </div> 
             
         </div>
