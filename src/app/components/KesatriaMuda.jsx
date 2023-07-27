@@ -64,6 +64,8 @@ export default function KesatriaMuda() {
             title="Pengenalan Jurusan"
             content="Fakultas Teknik terdiri dari 8 Departemen yang di dalamnya terdapat 15 Program Studi atau yang biasa dikenal dengan jurusan. Sebelum masuk ke jurusan masing-masing, yuk kita sama-sama kenali jurusan Kesatria Muda melalui modul berikut!"
             link="/materi?materi=0"
+            img="dteti"
+            coomingsoon={false}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -71,6 +73,8 @@ export default function KesatriaMuda() {
             title="Jelajah Lembaga"
             content="Fakultas Teknik tidak hanya bergerak dan berprestasi di bidang akademik saja, namun terdapat berbagai macam lembaga yang dapat menunjang skill mahasiswanya. Wah, lembaga mana nih yang diminati Kesatria Muda? Mari pahami modul berikut sebagai bekal bagi Kesatria Muda!"
             link={"/materi?materi=1"}
+            coomingsoon={false}
+            img="jelajah"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -78,6 +82,8 @@ export default function KesatriaMuda() {
             title="Pameran Karya"
             content="Fakultas Teknik tidak terlepas dari segudang prestasinya. Penasaran siapa saja tim-tim yang bergerak di belakang untuk mengharumkan nama Fakultas Teknik? Yuk, simak modul berikut ini!"
             link={"/materi?materi=2"}
+            img="arjuna"
+            coomingsoon={false}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -85,10 +91,12 @@ export default function KesatriaMuda() {
             title="Fasilitas Teknik"
             content="Fakultas Teknik sebagai fakultas terbesar di Universitas Gadjah Mada memiliki beragam fasilitas yang menunjang kegiatan mahasiswanya. Mau tahu apa saja fasilitas yang ada di Fakultas Teknik? Mari simak modul berikut!"
             link={"/materi?materi=3"}
+            img="sglc"
+            coomingsoon={false}
           />
         </SwiperSlide>
         <div
-          className="z-[1] hidden cursor-pointer unselectable lg:block absolute left-[10%] text-[80px] top-[50%] translate-y-[-50%]"
+          className="z-[1] hidden cursor-pointer unselectable xl:block absolute left-[10%] text-[80px] top-[50%] translate-y-[-50%]"
           onClick={() => {
             if (swiper.activeIndex == 0) return;
             swiper.slidePrev();
@@ -98,7 +106,7 @@ export default function KesatriaMuda() {
           <IoIosArrowBack />
         </div>
         <div
-          className="z-[1] hidden cursor-pointer unselectable lg:block absolute right-[10%] text-[80px] top-[50%] translate-y-[-50%]"
+          className="z-[1] hidden cursor-pointer unselectable xl:block absolute right-[10%] text-[80px] top-[50%] translate-y-[-50%]"
           onClick={() => {
             if (swiper.activeIndex == 3) return;
             swiper.slideNext();
@@ -221,7 +229,12 @@ function SwiperCard({ title,coomingsoon, content, img, link }) {
   if(coomingsoon==false)
   return (
     <div className="flex flex-col lg:flex-row ml-[20px] !mx-auto bg-green-400 p-5 sm:px-10 sm:py-10 2xl:py-12 2xl:px-20 rounded-[30px] sm:rounded-[40px] gap-10 shadow-[0_0_10px_#54BB9C] w-[90%] lg:w-[900px] 2xl:w-[1200px] items-center">
-      <div className="bg-red-500 flex-shrink-0 w-full sm:w-[400px] !aspect-[65.5/41] 2xl:w-[655px] self-center 2xl:h-[410px] outline outline-[11px] outline-green-200 rounded-[20px]"></div>
+      <div className={"flex-shrink-0 w-full sm:w-[400px] relative after:absolute overflow-hidden after:w-full after:h-full after:bg-gradient-to-tl after:from-green-100/40 after:to-red-200/50 !aspect-[65.5/41] 2xl:w-[655px] self-center 2xl:h-[410px] outline outline-[11px] outline-green-200 rounded-[20px]" + 
+        (img == "dteti" ? " bg-[url('/dteti.jpg')] bg-cover" : "") + 
+        (img == "arjuna" ? " bg-[url('/arjuna.jpg')] bg-cover" : "") + 
+        (img == "sglc" ? " bg-[url('/sglc.jpg')] bg-cover" : "") + 
+        (img == "jelajah" ? " bg-[url('/jelajah.jpg')] bg-cover bg-center" : "") 
+      }></div>
       <div className="flex flex-col justify-evenly gap-2 md:gap-5 h-max">
         <h2 className="font-creato text-center lg:text-left text-[25px] sm:text-[30px] 2xl:text-[40px] font-bold italic leading-[100%]">
           {title}
