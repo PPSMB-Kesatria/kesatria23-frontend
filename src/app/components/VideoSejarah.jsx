@@ -59,7 +59,7 @@ export default function VideoSejarah() {
             </p>
           </div>
           <Link href="/materi?materi=6" className="absolute -my-4 bottom-0">
-            <button className=" mt-4 bg-green-400 hover:bg-green-300 active:bg-green-300 active:scale-95 text-neutral-100 px-5 py-2 rounded-full font-creato font-bold">
+            <button className=" mt-4 bg-green-400 hover:bg-green-300 active:bg-green-300 active:scale-95 text-neutral-100 px-5 py-2 rounded-full font-creato font-bold md:w-[200px]">
               Lihat Modul
             </button>
           </Link>
