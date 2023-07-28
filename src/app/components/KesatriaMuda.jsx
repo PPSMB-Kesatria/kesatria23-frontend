@@ -214,7 +214,7 @@ export default function KesatriaMuda() {
         >
           <div className="aspect-[76.7/48] bg-[#54BB9C] p-[15px] md:p-[25px] rounded-[40px]">
             <iframe
-                src="https://www.youtube.com/embed/3gnVzjoUJhA" 
+                src="https://www.youtube.com/embed/BDED8afTc0U" 
             className=" w-full h-full border-box border-[#6DD5B5] border-[15px] rounded-[20px]"
             allowFullScreen>
             </iframe>
